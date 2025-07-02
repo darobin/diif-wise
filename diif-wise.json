@@ -1,6 +1,6 @@
 {
-  "title": "[DIIF] Re-Opening The Web",
-  "revisionId": "ALBJ4LsHoGdJee1tLrYWIFprdrhVEo0Gv61jJbbCMal6OKNzBsaXUGkJrWut8n5kmkD122Ey6wG8toUkw7r0fA",
+  "title": "Re-Opening The Web",
+  "revisionId": "ALBJ4LtnAfDu9yOqLWeUgFcL5470XYxaTk7HAwxaZx0FddfKBs0xJslWkvSQmdMDpDNbJgIZ3CtH4XFRo42P2Q",
   "suggestionsViewMode": "SUGGESTIONS_INLINE",
   "documentId": "1RNejJAwu0NzAGeVqR2wapLBmjd7sQWCCrkwzu8uoLxA",
   "tabs": [
@@ -61,6 +61,86 @@
                 "paragraphStyle": {
                   "headingId": "h.cyvwy7rf3fil",
                   "namedStyleType": "SUBTITLE",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 88,
+              "endIndex": 676,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 88,
+                    "endIndex": 676,
+                    "textRun": {
+                      "content": "Browsers, and the browser engines that power them, provide critical public infrastructure to over five billion people and yet no one pays for their browser. To cover the high cost of maintaining such highly complex systems, browser vendors and search engine providers have developed a system in which money is levied from search revenue and distributed to browsers. This arrangement benefits both: browsers don’t have an obvious revenue model and web search engines are only relevant to the extent that the web is, which in turn requires a high quality, frictionless browsing experience.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 676,
+              "endIndex": 1151,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 676,
+                    "endIndex": 1151,
+                    "textRun": {
+                      "content": "Over the years, this ad hoc system has succeeded in providing funding to browsers but it suffers from a string of issues that produce detrimental effects on the web and the digital sphere in general: lack of transparency, poor funding of browser engines, defunding of other parts of the web, massive market concentration, plummeting search quality, harms to privacy, improved funding for misinformation, reduced revenue for quality journalism, and loss of opinion pluralism.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 1151,
+              "endIndex": 1308,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1151,
+                    "endIndex": 1308,
+                    "textRun": {
+                      "content": "This report documents the existing system, analyses its negative externalities so as to determine requirements for alternatives, and proposes paths forward.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 1308,
+              "endIndex": 1309,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1308,
+                    "endIndex": 1309,
+                    "textRun": {
+                      "content": "\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
                   "direction": "LEFT_TO_RIGHT"
                 }
               }
