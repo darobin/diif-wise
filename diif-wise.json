@@ -1,6 +1,6 @@
 {
   "title": "Re-Opening The Web",
-  "revisionId": "ALBJ4LtnAfDu9yOqLWeUgFcL5470XYxaTk7HAwxaZx0FddfKBs0xJslWkvSQmdMDpDNbJgIZ3CtH4XFRo42P2Q",
+  "revisionId": "ALBJ4Lup0qEyeSx73kxj6VJXYB1Is06groYHOh9qVLWShiSllKhkbuEuOxRwPQ18TpSrbzzeh-cd7Uwfnz3xiA",
   "suggestionsViewMode": "SUGGESTIONS_INLINE",
   "documentId": "1RNejJAwu0NzAGeVqR2wapLBmjd7sQWCCrkwzu8uoLxA",
   "tabs": [
@@ -107,14 +107,14 @@
             },
             {
               "startIndex": 1151,
-              "endIndex": 1308,
+              "endIndex": 1602,
               "paragraph": {
                 "elements": [
                   {
                     "startIndex": 1151,
-                    "endIndex": 1308,
+                    "endIndex": 1602,
                     "textRun": {
-                      "content": "This report documents the existing system, analyses its negative externalities so as to determine requirements for alternatives, and proposes paths forward.\n",
+                      "content": "This report documents the existing system, analyses its negative externalities so as to determine requirements for alternatives, and proposes paths forward. The existing levy distributes billions of USD annually; the objective is not to eliminate it but to place it under the kind of governance that can make it operate in the public interest and in a manner that is resilient to ongoing AI-driven transformations of both browsers and search engines.\n",
                       "textStyle": {}
                     }
                   }
@@ -126,15 +126,693 @@
               }
             },
             {
-              "startIndex": 1308,
-              "endIndex": 1309,
+              "startIndex": 1602,
+              "endIndex": 1635,
               "paragraph": {
                 "elements": [
                   {
-                    "startIndex": 1308,
-                    "endIndex": 1309,
+                    "startIndex": 1602,
+                    "endIndex": 1635,
                     "textRun": {
-                      "content": "\n",
+                      "content": "Introduction: The Current System\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "headingId": "h.563lvoumco2d",
+                  "namedStyleType": "HEADING_1",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 1635,
+              "endIndex": 2047,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 1635,
+                    "endIndex": 1726,
+                    "textRun": {
+                      "content": "As of 2022, 63% of the world population, or roughly 5 billion people, used the Internet ([[",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 1726,
+                    "endIndex": 1741,
+                    "textRun": {
+                      "content": "Internet-Users]",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 1741,
+                    "endIndex": 1779,
+                    "textRun": {
+                      "content": "]). While some of these may not use a ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 1779,
+                    "endIndex": 1786,
+                    "textRun": {
+                      "content": "browser",
+                      "textStyle": {
+                        "italic": true
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 1786,
+                    "endIndex": 1851,
+                    "textRun": {
+                      "content": " (the application used to navigate the web) regularly, all use a ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 1851,
+                    "endIndex": 1865,
+                    "textRun": {
+                      "content": "browser engine",
+                      "textStyle": {
+                        "italic": true
+                      }
+                    }
+                  },
+                  {
+                    "startIndex": 1865,
+                    "endIndex": 2037,
+                    "textRun": {
+                      "content": " (the software component that both browsers and other apps use to render web content) regularly as those are widely used in applications in addition to forming the core of ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2037,
+                    "endIndex": 2045,
+                    "textRun": {
+                      "content": "browsers",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2045,
+                    "endIndex": 2047,
+                    "textRun": {
+                      "content": ".\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 2047,
+              "endIndex": 2623,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 2047,
+                    "endIndex": 2055,
+                    "textRun": {
+                      "content": "Browsers",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2055,
+                    "endIndex": 2060,
+                    "textRun": {
+                      "content": " and ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2060,
+                    "endIndex": 2075,
+                    "textRun": {
+                      "content": "browser engines",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2075,
+                    "endIndex": 2267,
+                    "textRun": {
+                      "content": " are provided to people free of charge, as public goods. Their continued provision is critical since without them the web collapses. They are also complex: for instance, in 2022 Chromium (the ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2267,
+                    "endIndex": 2281,
+                    "textRun": {
+                      "content": "browser engine",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2281,
+                    "endIndex": 2315,
+                    "textRun": {
+                      "content": " powering Google Chrome and other ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2315,
+                    "endIndex": 2323,
+                    "textRun": {
+                      "content": "browsers",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2323,
+                    "endIndex": 2479,
+                    "textRun": {
+                      "content": ") ran to about 35 million lines of code. The total annual cost of maintaining the three primary browser engines is estimated to be around $2 billion USD ([[",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2479,
+                    "endIndex": 2494,
+                    "textRun": {
+                      "content": "Where-Browsers]",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2494,
+                    "endIndex": 2623,
+                    "textRun": {
+                      "content": "]). While this cost is significant, it is only a small fraction of the direct value (monetary or otherwise) produced by the web.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 2623,
+              "endIndex": 3123,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 2623,
+                    "endIndex": 2856,
+                    "textRun": {
+                      "content": "In order to assemble the funds required to operate, almost all browser vendors rely on variations on the same strategy: they exercise an ad hoc levy on search engine revenue. Variations on this levy include selling the search engine ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2856,
+                    "endIndex": 2863,
+                    "textRun": {
+                      "content": "default",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2863,
+                    "endIndex": 2900,
+                    "textRun": {
+                      "content": " (the initial and typical approach), ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2900,
+                    "endIndex": 2909,
+                    "textRun": {
+                      "content": "royalties",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2909,
+                    "endIndex": 2931,
+                    "textRun": {
+                      "content": " on search volume, or ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2931,
+                    "endIndex": 2954,
+                    "textRun": {
+                      "content": "intra-company transfers",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 2954,
+                    "endIndex": 3062,
+                    "textRun": {
+                      "content": " (when the search engine and browser belong to the same company). Taken together, these strategies form the ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 3062,
+                    "endIndex": 3066,
+                    "textRun": {
+                      "content": "AHLD",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 3066,
+                    "endIndex": 3123,
+                    "textRun": {
+                      "content": " system, which is described further in the next section.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 3123,
+              "endIndex": 3562,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 3123,
+                    "endIndex": 3182,
+                    "textRun": {
+                      "content": "Despite its critical importance to web infrastructure, the ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 3182,
+                    "endIndex": 3186,
+                    "textRun": {
+                      "content": "AHLD",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 3186,
+                    "endIndex": 3540,
+                    "textRun": {
+                      "content": " system is opaque and poorly documented, and suffers from a number of undesirable shortcomings that have large-scale detrimental effects on the web. By formalizing this levy and deliberately architecting it to produce improved results, we can simultaneously put the funding of critical public digital infrastructure on much surer footing and address the ",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 3540,
+                    "endIndex": 3544,
+                    "textRun": {
+                      "content": "AHLD",
+                      "textStyle": {}
+                    }
+                  },
+                  {
+                    "startIndex": 3544,
+                    "endIndex": 3562,
+                    "textRun": {
+                      "content": " system's issues.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 3562,
+              "endIndex": 3567,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 3562,
+                    "endIndex": 3567,
+                    "textRun": {
+                      "content": "refs\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spacingMode": "COLLAPSE_LISTS",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "indentFirstLine": {
+                    "magnitude": 18,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 36,
+                    "unit": "PT"
+                  }
+                },
+                "bullet": {
+                  "listId": "kix.xciepse2sojz",
+                  "textStyle": {
+                    "underline": false
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 3567,
+              "endIndex": 3573,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 3567,
+                    "endIndex": 3573,
+                    "textRun": {
+                      "content": "money\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spacingMode": "COLLAPSE_LISTS",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "indentFirstLine": {
+                    "magnitude": 18,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 36,
+                    "unit": "PT"
+                  }
+                },
+                "bullet": {
+                  "listId": "kix.xciepse2sojz",
+                  "textStyle": {
+                    "underline": false
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 3573,
+              "endIndex": 3586,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 3573,
+                    "endIndex": 3586,
+                    "textRun": {
+                      "content": "rename AHLD?\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spacingMode": "COLLAPSE_LISTS",
+                  "spaceAbove": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  },
+                  "indentFirstLine": {
+                    "magnitude": 18,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 36,
+                    "unit": "PT"
+                  }
+                },
+                "bullet": {
+                  "listId": "kix.xciepse2sojz",
+                  "textStyle": {
+                    "underline": false
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 3586,
+              "endIndex": 3604,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 3586,
+                    "endIndex": 3604,
+                    "textRun": {
+                      "content": "The Existing Levy\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "headingId": "h.et68ez9pr0ga",
+                  "namedStyleType": "HEADING_2",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 3604,
+              "endIndex": 3641,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 3604,
+                    "endIndex": 3641,
+                    "textRun": {
+                      "content": "do talk about exceptions, like Brave\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spacingMode": "COLLAPSE_LISTS",
+                  "indentFirstLine": {
+                    "magnitude": 18,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 36,
+                    "unit": "PT"
+                  }
+                },
+                "bullet": {
+                  "listId": "kix.rm1f8hyf860",
+                  "textStyle": {
+                    "underline": false
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 3641,
+              "endIndex": 3659,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 3641,
+                    "endIndex": 3659,
+                    "textRun": {
+                      "content": "Sankey graph for \n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spacingMode": "COLLAPSE_LISTS",
+                  "indentFirstLine": {
+                    "magnitude": 18,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 36,
+                    "unit": "PT"
+                  }
+                },
+                "bullet": {
+                  "listId": "kix.rm1f8hyf860",
+                  "textStyle": {
+                    "underline": false
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 3659,
+              "endIndex": 3676,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 3659,
+                    "endIndex": 3676,
+                    "textRun": {
+                      "content": "Acknowledgements\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "headingId": "h.5uu7ioz7i2lq",
+                  "namedStyleType": "HEADING_1",
+                  "direction": "LEFT_TO_RIGHT"
+                }
+              }
+            },
+            {
+              "startIndex": 3676,
+              "endIndex": 3958,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 3676,
+                    "endIndex": 3958,
+                    "textRun": {
+                      "content": "Many former or current employees from browser vendors and search engines large and small provided crucial information on condition of anonymity. I am deeply thankful for the time you gave me and you dedication to fixing this arrangement, even though your employers benefit from it.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 3958,
+              "endIndex": 4351,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 3958,
+                    "endIndex": 4351,
+                    "textRun": {
+                      "content": "Many thanks to all the participants in the lively and highly-attended browser funding workshop at Web Engines Hackfest 2025 — this document surfaces many of your views — and to Igalia for their warm welcome and outstanding organisation. Special mentions to Brian Kardell, Eric Meyer, Stephanie Stimac, and Xan López for your contributions to browser funding issues and precious conversations.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 4351,
+              "endIndex": 4495,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 4351,
+                    "endIndex": 4495,
+                    "textRun": {
+                      "content": "The following people (in alphabetical order) have provided invaluable input into this draft: Dietrich Ayala, Matthew Frehlich, and Max Gendler.\n",
+                      "textStyle": {}
+                    }
+                  }
+                ],
+                "paragraphStyle": {
+                  "namedStyleType": "NORMAL_TEXT",
+                  "direction": "LEFT_TO_RIGHT",
+                  "spaceBelow": {
+                    "magnitude": 12,
+                    "unit": "PT"
+                  }
+                }
+              }
+            },
+            {
+              "startIndex": 4495,
+              "endIndex": 4698,
+              "paragraph": {
+                "elements": [
+                  {
+                    "startIndex": 4495,
+                    "endIndex": 4698,
+                    "textRun": {
+                      "content": "Finally, special thanks for the Digital Infrastructure Insights Fund (DIIF), particularly to Katharina Meyer, for funding this report. I had a great time meeting and exchanging with others in my cohort.\n",
                       "textStyle": {}
                     }
                   }
@@ -534,6 +1212,326 @@
               }
             }
           ]
+        },
+        "lists": {
+          "kix.rm1f8hyf860": {
+            "listProperties": {
+              "nestingLevels": [
+                {
+                  "bulletAlignment": "START",
+                  "glyphType": "GLYPH_TYPE_UNSPECIFIED",
+                  "glyphFormat": "%0",
+                  "indentFirstLine": {
+                    "magnitude": 18,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 36,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphType": "GLYPH_TYPE_UNSPECIFIED",
+                  "glyphFormat": "%1",
+                  "indentFirstLine": {
+                    "magnitude": 54,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 72,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphType": "GLYPH_TYPE_UNSPECIFIED",
+                  "glyphFormat": "%2",
+                  "indentFirstLine": {
+                    "magnitude": 90,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 108,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphType": "GLYPH_TYPE_UNSPECIFIED",
+                  "glyphFormat": "%3",
+                  "indentFirstLine": {
+                    "magnitude": 126,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 144,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphType": "GLYPH_TYPE_UNSPECIFIED",
+                  "glyphFormat": "%4",
+                  "indentFirstLine": {
+                    "magnitude": 162,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 180,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphType": "GLYPH_TYPE_UNSPECIFIED",
+                  "glyphFormat": "%5",
+                  "indentFirstLine": {
+                    "magnitude": 198,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 216,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphType": "GLYPH_TYPE_UNSPECIFIED",
+                  "glyphFormat": "%6",
+                  "indentFirstLine": {
+                    "magnitude": 234,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 252,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphType": "GLYPH_TYPE_UNSPECIFIED",
+                  "glyphFormat": "%7",
+                  "indentFirstLine": {
+                    "magnitude": 270,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 288,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphType": "GLYPH_TYPE_UNSPECIFIED",
+                  "glyphFormat": "%8",
+                  "indentFirstLine": {
+                    "magnitude": 306,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 324,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                }
+              ]
+            }
+          },
+          "kix.xciepse2sojz": {
+            "listProperties": {
+              "nestingLevels": [
+                {
+                  "bulletAlignment": "START",
+                  "glyphType": "GLYPH_TYPE_UNSPECIFIED",
+                  "glyphFormat": "%0",
+                  "indentFirstLine": {
+                    "magnitude": 18,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 36,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphSymbol": "-",
+                  "glyphFormat": "%1",
+                  "indentFirstLine": {
+                    "magnitude": 54,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 72,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphSymbol": "-",
+                  "glyphFormat": "%2",
+                  "indentFirstLine": {
+                    "magnitude": 90,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 108,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphSymbol": "-",
+                  "glyphFormat": "%3",
+                  "indentFirstLine": {
+                    "magnitude": 126,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 144,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphSymbol": "-",
+                  "glyphFormat": "%4",
+                  "indentFirstLine": {
+                    "magnitude": 162,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 180,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphSymbol": "-",
+                  "glyphFormat": "%5",
+                  "indentFirstLine": {
+                    "magnitude": 198,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 216,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphSymbol": "-",
+                  "glyphFormat": "%6",
+                  "indentFirstLine": {
+                    "magnitude": 234,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 252,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphSymbol": "-",
+                  "glyphFormat": "%7",
+                  "indentFirstLine": {
+                    "magnitude": 270,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 288,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                },
+                {
+                  "bulletAlignment": "START",
+                  "glyphSymbol": "-",
+                  "glyphFormat": "%8",
+                  "indentFirstLine": {
+                    "magnitude": 306,
+                    "unit": "PT"
+                  },
+                  "indentStart": {
+                    "magnitude": 324,
+                    "unit": "PT"
+                  },
+                  "textStyle": {
+                    "underline": false
+                  },
+                  "startNumber": 1
+                }
+              ]
+            }
+          }
         }
       }
     }
