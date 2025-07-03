@@ -1,6 +1,6 @@
 {
   "title": "Re-Opening The Web",
-  "revisionId": "ALBJ4Lup0qEyeSx73kxj6VJXYB1Is06groYHOh9qVLWShiSllKhkbuEuOxRwPQ18TpSrbzzeh-cd7Uwfnz3xiA",
+  "revisionId": "ALBJ4LvbIgA70uvx6cDwRuTOUjd1zLl_A6XGe0aXTBu5_AE89-1EB_y3Ol5Fqx1aS0PVy2zWes90x55JJQEfXg",
   "suggestionsViewMode": "SUGGESTIONS_INLINE",
   "documentId": "1RNejJAwu0NzAGeVqR2wapLBmjd7sQWCCrkwzu8uoLxA",
   "tabs": [
@@ -153,17 +153,17 @@
                 "elements": [
                   {
                     "startIndex": 1635,
-                    "endIndex": 1726,
+                    "endIndex": 1727,
                     "textRun": {
-                      "content": "As of 2022, 63% of the world population, or roughly 5 billion people, used the Internet ([[",
+                      "content": "As of 2022, 63% of the world population, or roughly 5 billion people, used the Internet ([[i",
                       "textStyle": {}
                     }
                   },
                   {
-                    "startIndex": 1726,
+                    "startIndex": 1727,
                     "endIndex": 1741,
                     "textRun": {
-                      "content": "Internet-Users]",
+                      "content": "nternet-users]",
                       "textStyle": {}
                     }
                   },
@@ -301,17 +301,17 @@
                   },
                   {
                     "startIndex": 2323,
-                    "endIndex": 2479,
+                    "endIndex": 2480,
                     "textRun": {
-                      "content": ") ran to about 35 million lines of code. The total annual cost of maintaining the three primary browser engines is estimated to be around $2 billion USD ([[",
+                      "content": ") ran to about 35 million lines of code. The total annual cost of maintaining the three primary browser engines is estimated to be around $2 billion USD ([[w",
                       "textStyle": {}
                     }
                   },
                   {
-                    "startIndex": 2479,
+                    "startIndex": 2480,
                     "endIndex": 2494,
                     "textRun": {
-                      "content": "Where-Browsers]",
+                      "content": "here-browsers]",
                       "textStyle": {}
                     }
                   },
