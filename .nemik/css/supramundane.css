@@ -69,15 +69,15 @@ html, body {
   margin: 0;
   padding: 0;
 } */
-.logo {
+.imprimatur {
   text-align: center;
   display: inline-block;
 }
-.logo svg {
+.imprimatur svg, .imprimatur img {
   width: calc(5rem * var(--zoom, 1));
   stroke: var(--color, #000);
 }
-.logo div {
+.imprimatur div {
   white-space: pre;
   font-family: Cormorant;
   font-weight: 100;
@@ -86,7 +86,6 @@ html, body {
   color: var(--color, #000);
   line-height: 1;
 }
-
 
 header, nav, main, footer {
   max-width: var(--page-width);
@@ -126,7 +125,7 @@ hr::after {
   height: 50px;
   background: var(--highlight, #000);
   content: "";
-  mask: url(#quasi);
+  mask: url(../img/asterism.png);
   mask-position: center;
   mask-repeat: no-repeat;
 }
@@ -183,7 +182,27 @@ blockquote {
 
 /* Print */
 @page {
-  /* ... */
+  @top-left {
+    content: counter(page);
+    height: 1cm;
+    text-align: center;
+    width: 1cm;
+  }
+  @top-center {
+    background: #000;
+    content: '';
+    display: block;
+    height: .05cm;
+    opacity: .5;
+    width: 100%;
+  }
+  @top-right {
+    content: string(heading);
+    font-size: 9pt;
+    height: 1cm;
+    vertical-align: middle;
+    width: 100%;
+  }
 }
 @page :first {
   /* background-image: var(--cover); */
@@ -193,11 +212,22 @@ blockquote {
   background-size: cover;
   margin: 0;
 }
+@page :blank {
+  @top-left { background: none; content: '' }
+  @top-center { content: none }
+  @top-right { content: none }
+}
+@page no-chapter {
+  @top-left { background: none; content: none }
+  @top-center { content: none }
+  @top-right { content: none }
+}
 @media print {
   header {
     height: 297mm;
     position: relative;
-    margin: 1cm 1cm 0 1cm
+    margin: 1cm 1cm 0 1cm;
+    page: no-chapter;
   }
   header p {
     background: #fff;
@@ -210,16 +240,50 @@ blockquote {
     display: flex;
     flex-direction: column;
     align-items: end;
+    margin-top: 4rem;
   }
   header .meta div {
     font-family: var(--header-fam);
     margin-top: 1rem;
     background: #fff;
     padding: 5mm;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: #222;
     line-height: 1;
     width: fit-content;
+  }
+  header .imprimatur {
+    background: #fff;
+    position: absolute;
+    bottom: 2cm;
+    left: -1cm;
+    right: -1cm;
+    padding: 0.5cm 1cm;
+    /* min-height: 4cm; */
+  }
+  header .imprimatur img {
+    width: 1.4cm;
+  }
+  header .imprimatur div {
+    font-size: 1.4rem;
+  }
+  h1 {
+    break-before: always;
+    string-set: heading content();
+  }
+  #abstract {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 297mm;
+    break-before: always;
+    break-after: always;
+    page: no-chapter;
+    font-style: italic;
+    font-size: 10pt;
+  }
+  #abstract p {
+    margin: 0 0 1em 0;
   }
 }
