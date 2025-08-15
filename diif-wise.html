@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Re-Opening The Web</title>
     <meta name="document-id" content="1RNejJAwu0NzAGeVqR2wapLBmjd7sQWCCrkwzu8uoLxA">
-    <meta name="revision-id" content="ALBJ4Lvg69fMvNzuNXiI5DZVegbyR7Ww8dOuEInYkNea4mZ3F6puvoUmrz2Ht73fP_aq98a1NwcHvkosR12RFw">
+    <meta name="revision-id" content="ALBJ4Ltky6HtZXSZIpedqvx8bQ0u20fI1e4dL0K_udeyeWMrflXqIdYQ2ejklwo_I4wS2FHhsPKQZnYZG575Rw">
     <link rel="stylesheet" href=".nemik/css/supramundane.css">
     <style>
         @page :first {
@@ -23,7 +23,7 @@
         </p>
         <div class="meta">
             <div class="author">Robin Berjon</div>
-            <div class="date">2025-07-25</div>
+            <div class="date">2025-08-15</div>
         </div>
         <div class="imprimatur" style="--color: #000; --zoom: 1"><img src=".nemik/img/asterism.png" alt="abstract shape">
             <div>supramundane <em>agency</em>.</div>
@@ -41,36 +41,317 @@
         <section>
             <h1 id="h.563lvoumco2d">Introduction: The Current System
             </h1>
-            <p>As of 2022, 63% of the world population, or roughly 5 billion people, used the Internet ([<cite><a class="bibref" href="#bib-internet-users">internet-users</a></cite>]). While some of these may not use a <em>browser</em> (the application used to navigate the web) regularly, all use a <em>browser engine</em> (the software component that both browsers and other apps use to render web content) regularly as those are widely used in applications in addition to forming the core of browsers.
+            <p>As of 2022, 63% of the world population, or roughly 5 billion people, used the Internet ([<cite><a class="bibref" href="#bib-internet-users">internet-users</a></cite>]). While some of these may not regularly use a <em>browser</em> (the application used to navigate the web), all use a <em>browser engine</em> (the software component that both browsers and other apps use to render web content) almost every time they use a device as those are widely used in applications in addition to forming the core of browsers.
             </p>
-            <p>Browsers and browser engines are provided to people free of charge, as public goods. Their continued provision is critical since without them the web collapses. They are also complex: for instance, in 2022 Chromium (the browser engine powering Google Chrome and other browsers) ran to about 35 million lines of code. The total annual cost of maintaining the three primary browser engines is estimated to be around $2 billion USD ([<cite><a class="bibref" href="#bib-where-browsers">where-browsers</a></cite>]). While this cost is significant, it is only a small fraction of the direct value (monetary or otherwise) produced by the web.
+            <p>Browsers and browser engines are provided to people free of charge, as public goods. Their continued provision is critical since without them the web collapses. They are also complex: for instance, in 2022 Chromium (the browser engine powering Google Chrome and other browsers) ran to about 35 million lines of code which puts it in roughly the same category as operating systems. The exact cost of maintaining the three primary browser engines or of operating a major browser is subject to debate (covered in a later chapter) but even the higher estimates, while significant, amount to only a small fraction of the direct value (monetary or otherwise) produced by the web.
             </p>
-            <p>In order to assemble the funds required to operate, almost all browser vendors rely on variations on the same strategy: they exercise an ad hoc levy on search engine revenue. Variations on this levy include selling the search engine default (the initial and typical approach), royalties on search volume, or intra-company transfers (when the search engine and browser belong to the same company). Taken together, these strategies form the AHLD system, which is described further in the next section.
+            <p>In order to assemble the funds required to operate, almost all browser vendors rely on variations on the same strategy: they exercise an ad hoc levy on search engine revenue. Variations on this levy include selling the search engine default (the initial and typical approach), royalties on search volume, or intra-company transfers (when the search engine and browser belong to the same company). Taken together, these strategies form the AHLD system, which is described further in this report.
             </p>
-            <p>Despite its critical importance to web infrastructure, the AHLD system is opaque and poorly documented, and suffers from a number of undesirable shortcomings that have large-scale detrimental effects on the web. By formalizing this levy and deliberately architecting it to produce improved results, we can simultaneously put the funding of critical public digital infrastructure on much surer footing and address the AHLD system's issues.
+            <p>Despite its critical importance to web infrastructure, the AHLD system is opaque and poorly documented, and suffers from a number of undesirable shortcomings that have large-scale detrimental effects on the web. This report looks at those issues in detail, establishes requirements from them, and outlines a set of approaches that can produce a solution.
             </p>
-            <ul>
-                <li><input type="checkbox"> refs
-                </li>
-                <li><input type="checkbox"> money
-                </li>
-                <li><input type="checkbox"> rename AHLD?
-                </li>
-            </ul>
+            <section>
+                <h2 id="h.5vssvhrrhc0i">The Mutualistic Web
+                </h2>
+                <ul>
+                    <li><input type="checkbox"> Explain that we have a mutualistic ecosystem: the web needs search to be usable, the web needs browsers to be usable, search needs the web to be useful, search needs browsers to make the web successful, browsers need the web to be useful, browsers need search to be usable
+                    </li>
+                    <li><input type="checkbox"> Mutualistic -&gt; Parasitic
+                    </li>
+                    <li><input type="checkbox"> How the web
+                    </li>
+                    <li><input type="checkbox"> killing the web is accelerated by AI but not new to it
+                    </li>
+                    <li><input type="checkbox"> How LLMs may change the model
+                    </li>
+                    <li><input type="checkbox"> <a href="https://www.digitaldigging.org/p/how-ai-bots-quietly-dismantle-paywalls">https://www.digitaldigging.org/p/how-ai-bots-quietly-dismantle-paywalls</a></li>
+                    <li><input type="checkbox"> <a href="https://www.economist.com/business/2025/07/14/ai-is-killing-the-web-can-anything-save-it">https://www.economist.com/business/2025/07/14/ai-is-killing-the-web-can-anything-save-it</a></li>
+                    <li><input type="checkbox"> LLMs still require control over distribution channels, though they may be more diversified than for web search
+                    </li>
+                    <li><input type="checkbox"> AI Prefs
+                    </li>
+                    <li><input type="checkbox"> Can we pay for summary sources?
+                    </li>
+                    <li><input type="checkbox"> The problem is substitutive use not indexing — can licensing target this?
+                    </li>
+                    <li><input type="checkbox"> Need to make sure this section is tied to browsers
+                        <ul>
+                            <li><input type="checkbox"> Tie this to mutualistic web
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
             <section>
                 <h2 id="h.et68ez9pr0ga">The Existing Levy
                 </h2>
+                <p>The <strong>Ad Hoc Levy on Defaults (AHLD)</strong> is a system in which a portion of search engine revenue is levied and used to pay browsers. (It is also used for operating systems and other agents, but our focus in this document is browsers.) The levy can take multiple general forms:
+                </p>
+                <ul>
+                    <li><input type="checkbox"> <strong>Default Placement</strong>. The browser vendor sells its default search function to a search engine. Defaults have an outsized impact on search volume as few users change them, in part because users don’t necessarily distinguish browser from search since the experience of both is intertwined, and in part because changing the default is made hard. This practice also includes selling a presence (that isn't the default position) on the list of search engine alternatives that browsers provide.
+                    </li>
+                    <li><input type="checkbox"> <strong>Royalties</strong>. The browser vendor gets a share of the revenue when directing traffic to a given search engine. Royalties and default placements are not mutually exclusive.
+                    </li>
+                    <li><input type="checkbox"> <strong>Intra-Company Transfers</strong>. The browser vendor and search engine vendor are the same company, and revenue from the latter contributes to paying for the former. In effect, this is a horizontally integrated variant of default placements that is cheaper and of greater strategic value. (For smaller search engines, it may also be the only deal they can make, which drives the existence of the DuckDuckGo or Ecosia browsers.)
+                    </li>
+                </ul>
+                <p>These deals are confidential and negotiated bilaterally, and in practice an AHLD agreement between a browser vendor and a search engine vendor can marry aspects from several of these forms.
+                </p>
+                <p>AHLD levies are economically significant and constitute one of the larger commercial exchanges on the web. For instance, in the year 2021 Google Search spent over $26 billion USD on default placement deals ([<cite><a class="bibref" href="#bib-26-billion-default">26-billion-default</a></cite>]) — which does not include its intra-company transfer costs — and paid 36% of its search advertising revenue made in Safari to Apple ([<cite><a class="bibref" href="#bib-apple-36">apple-36</a></cite>]). In 2020, Mozilla made 86% of its revenue from the Google Search levy ([<cite><a class="bibref" href="#bib-mozilla-revenue">mozilla-revenue</a></cite>]).
+                </p>
+                <p><strong>Note</strong>: As discussed below, the AHLD system is very opaque and most relevant numbers are not available unless they were revealed through legal discovery. Even though some of these numbers are relatively old, interviews with people involved in these deals indicate that the situation has not significantly evolved compared to what information is publicly available.
+                </p>
                 <ul>
                     <li><input type="checkbox"> do talk about exceptions, like Brave
                     </li>
-                    <li><input type="checkbox"> Sankey graph for
+                </ul>
+                <ul>
+                    <li><input type="checkbox"> <a href="https://infrequently.org/2024/03/why-browsers-get-built/">https://infrequently.org/2024/03/why-browsers-get-built/</a></li>
+                    <li><input type="checkbox"> GLOW — Global Levy for an Open Web
                     </li>
                 </ul>
-                <p>GLOW — Global Levy for an Open Web
+            </section>
+        </section>
+        <section>
+            <h1 id="h.40w2dhwwdau6">Incumbent Problems
+            </h1>
+            <p>The AHLD levy was an excellent invention and remains a great idea twenty years on. Taking a system view of the web, search is a key logical places at which to apply a levy. Search extracts value from content and behaviour on the web (it would have no value otherwise) and renders it available at a functional choke point (since search is one of the required components of web discovery). In turn, web content is only valuable in the first place because browsers provide critical infrastructure services that render that content available and attractive to people, as well as for the most part safe. Initially, the AHLD produced a virtuous, regenerative cycle: the search levy financed core web infrastructure and that core web infrastructure made the web continuously successful such that search engines enjoyed strong businesses that could then be levied from.
+            </p>
+            <p>Unfortunately, the AHLD levy has failed to evolve as the web grew from a time of relative infancy when only 14% of the world population (fewer than a billion, [<cite><a class="bibref" href="#bib-internet-users">internet-users</a></cite>]) used the Internet to the essential part of society that it is today. Over time, serious shortcomings with this ad hoc approach have surfaced that have not been addressed to date. It is this report’s position that this needs to change if we are to return the web to better health. The changes need not be revolutionary since the core principle — a levy on search to pay for web infrastructure — can readily remain the same and much of the existing system can remain in place. As pressure mounts to address the problems caused by an unmaintained, ad hoc system, if we fail to act we may lose the levy altogether. Should that happen, the web will suffer from the impact on its infrastructure and it may become difficult to maintain a high-quality browser engine, let alone a diverse set of them.
+            </p>
+            <p>This chapter captures a hopefully comprehensive view of the AHLD’s issues so as to provide a solid shared background from which to produce requirements and improvements.
+            </p>
+            <section>
+                <h2 id="h.k1zux5suu455">Artificial Search Monopoly
+                </h2>
+                <p>tk
+                </p>
+                <p>Last but not least, the manner in which the AHLD system is structured means that <strong>it mechanically increases concentration in the search market</strong>. Few people change their default search engine (particularly on mobile devices), which means that purchasing a default placement effectively purchases market share. In turn, the search engine with the highest market share has greater profits from which to pay a higher price for further default placements. This eventually leads to almost every browser defaulting to the same search engine, and that search engine dominating the web by insuperable margins. In turn, this artificially-crated and -sustained concentration creates further problems:
+                </p>
+                <ul>
+                    <li><input type="checkbox"> <strong>Decreasing search quality</strong>. It is both much easier and far more valuable for sites to optimize for a single ranking function that changes occasionally than for many different ones that evolve in different directions. This makes signals of content quality easier to fake, thereby empowering low-quality sites to rate higher. The decrease in search quality ([<cite><a class="bibref" href="#bib-bad-search">bad-search</a></cite>]) and the effect of search monoculture on the web ([<cite><a class="bibref" href="#bib-perfect-webpage">perfect-webpage</a></cite>]) are well-documented.
+                    </li>
+                    <li><input type="checkbox"> </li>
+                    <li><input type="checkbox"> <strong>One company pays for all browsers</strong>. Every major browser engine and browsers accounting for at least 90% of the market are all paid for by one single search engine. Without ascribing malice or asserting misbehavior, this level of privatized control over critical infrastructure is incompatible with a free and equal Internet.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="h.rsr99da905q1">Unique Source of Funding
+                </h2>
+                <p>tk
+                </p>
+                <ul>
+                    <li><input type="checkbox"> Sankey graph
+                    </li>
+                    <li><input type="checkbox"> what happens when this goes away?
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="h.678bryb9ovbr">Loss of Pluralism
+                </h2>
+                <p>tk
+                </p>
+                <ul>
+                    <li><input type="checkbox"> <strong>Higher misinformation</strong>. As signals of quality lose their value, it becomes increasingly easier for misinformation to weave its way into search results.
+                    </li>
+                    <li><input type="checkbox"> <strong>Loss of pluralism</strong>. A search engine defines an editorial policy: like newspapers or TV channels before it, it determines what is and isn't relevant. The modality differs in that the editorial policy is applied on demand and automatically, but it is no different from and no less subjective than that set by other forms of media. Having close to a single editorial policy for the entire web eliminates media pluralism, which has negative impacts on society and democracy, and leads to privatized censorship.
+                    </li>
+                    <li><input type="checkbox"> Be sure to review dark patterns from Chrome
+                    </li>
+                    <li><input type="checkbox"> Ads about privacy but sending everyone to Google Search is deceptive (can this be evidenced?)
+                    </li>
+                    <li><input type="checkbox"> <a href="https://techcrunch.com/2025/08/12/perplexity-offers-to-buy-chrome-for-billions-more-than-its-raised/">https://techcrunch.com/2025/08/12/perplexity-offers-to-buy-chrome-for-billions-more-than-its-raised/</a></li>
+                </ul>
+                <ul>
+                    <li><input type="checkbox"> Democratic Resilience and epistemicide
+                    </li>
+                    <li><input type="checkbox"> Algorithmic pluralism (reference work + the open letter)
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="h.nx0j01yp33os">Opacity
+                </h2>
+                <p>tk
+                </p>
+                <p>Search is a key architectural component of the web, browsers provide critical infrastructure, but unfortunately there is <strong>no transparency</strong> into the system. Almost everything that the web community knows about AHLD we know thanks to material released via court cases. If we are to take seriously the W3C's goals of building a web for all humankind, we need to ensure that the web community is able to evaluate how the beating heart of web infrastructure operates.
+                </p>
+            </section>
+            <section>
+                <h2 id="h.r4r3o8v754r5">Unaccountability
+                </h2>
+                <p>tk
+                </p>
+                <p>There is also <strong>no accountability</strong> concerning the bilateral ad hoc deals made within AHLD. A search engine may impose additional requirements on browser vendors that might not be in users' best interests (e.g. that the browser must not implement certain privacy protections) without oversight. A system deployed at such a scale needs to be trustworthy.
+                </p>
+                <p>The system <strong>gives power to search engines over how browsers work</strong>, including over aspects of browsers that may not seem search-related, for instance privacy features that can be used for advertising attribution may have to be approved by the search engine before they can ship in a browser. The lack of public accountability over the royalties part of the system means that there is a strong information asymmetry between the search engine and the browser in terms of where the royalties come from and what may affect them, which empowers the search engine to threaten potential revenue loss when the browser makes a change they dislike in ways that cannot be verified. Because of this, <strong>the search engine is both judge and party</strong> in the relationship, and in a position to exert undue influence over browsers.
+                </p>
+                <ul>
+                    <li><input type="checkbox"> detail the privacy issues more, explain it’s from interviews that are kept confidential for obvious reasons
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="h.yml15dun0i6s">Harms Users and Publishers
+                </h2>
+                <p>tk (or hurts other stakeholders)
+                </p>
+                <p>It <strong>does not respect the priority of constituencies</strong>. Search deals made via the levy can have terms that forbid the browser from intervening on the search engine results page (SERP) even when such changes would be beneficial to the user. For instance, a search engine may benefit from making its ads look like search results or from pushing users to be logged in, sacrificing privacy. A browser is expected to counteract such practices, but the AHLD levy prevents that.
+                </p>
+                <p>The logic of applying a web infrastructure levy on search is because search can be considered to distill the value produced by publishers, ecommerce sites, and content creators. Unfortunately, <strong>publishers, ecommerce sites, and content creators have no say in a system eventually build on their work</strong>. While indexing content for the purpose of providing links back to the original source is evidently in everyone's interest, the lack of checks and balances in the system has led to a race to the bottom in which search engines provide fewer-and-fewer links back to sources ([<cite><a class="bibref" href="#bib-amp">amp</a></cite>]) while increasing the number of non-linking purposes for which they process the indexed content, such as generative AI.
+                </p>
+                <ul>
+                    <li><input type="checkbox"> explain web defunding
+                    </li>
+                    <li><input type="checkbox"> collusive
+                    </li>
+                    <li><input type="checkbox"> diagram: needs numbers of supracompetitive prices in ads, how that compares to the rest of the web
+                    </li>
+                    <li><input type="checkbox"> explain lack of intervention in fixing search, notably blocking AI, AMP, ads, etc.
+                    </li>
+                    <li><input type="checkbox"> alignment with Joe’s screenshot
+                    </li>
+                </ul>
+                <p><img src=".nemik/img/0bdef7a8f62dbe67c4af4716f1f999cac119d9ac5ab827827b154e899eeb3844" alt="" title=""></p>
+            </section>
+            <section>
+                <h2 id="h.xqw92dgpsq3x">No Browser Governance
+                </h2>
+                <p>tk
+                </p>
+                <p>Browsers are paid by the AHLD levy and may be subject to private requirements imposed by search engines, but from the perspective of the web community <strong>no requirements are placed on browsers</strong> in exchange for benefitting from the system.
+                </p>
+            </section>
+            <section>
+                <h2 id="h.ck9mojtcp16">Browser Engine Financing
+                </h2>
+                <p>tk
+                </p>
+                <p>The levy system pays for browsers but <strong>it does not pay for browser engines</strong>. Browser engines are the more complicated component and ought to be supported directly. As things stand, a<a href="https://darobin.github.io/wise/#dfn-browser">browser</a> can use an open source browser engine, collect funds from the levy, but not contribute anything back to the browser engine. This free riding is detrimental to the maintenance of a rich ecosystem of browser engines.
+                </p>
+            </section>
+            <section>
+                <h2 id="h.8wcnxaqqd3cr">Other Web Infrastructure
+                </h2>
+                <p>tk
+                </p>
+                <p>Worryingly, <strong>most appropriated funds don't go towards web infrastructure</strong>. While the purpose of the levy is manifestly to support web infrastructure, the overwhelming majority of funds is directed elsewhere. To take but one example: based on 2021 numbers, of the $26 billion USD that Google Search paid in levy, $18 billion went to Apple (about 70%). There is scant evidence that Apple, a publicly-traded company, spends in the vicinity of $18 billion USD per year on web infrastructure. The levy therefore suffers from very low efficiency, and in turn this causes value produced on the web to be directed outside of the web, which subsidizes its proprietary competitors.
+                </p>
+            </section>
+            <section>
+                <h2 id="h.qy9jc5xapl2">Effect on AI
+                </h2>
+                <p>tk
                 </p>
             </section>
         </section>
         <section>
+            <h1 id="h.k2om6yleyr2w">How Much Does A Browser Cost?
+            </h1>
+            <ul>
+                <li><input type="checkbox"> Brian
+                </li>
+                <li><input type="checkbox"> Workshop on funding
+                </li>
+                <li><input type="checkbox"> Alissa
+                </li>
+                <li><input type="checkbox"> Tara
+                </li>
+                <li><input type="checkbox"> Alex Russell
+                </li>
+                <li><input type="checkbox"> Try to summarise this
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="h.6iy5qfuco4wq">Requirements
+            </h1>
+            <ul>
+                <li><input type="checkbox"> What do we need from this?
+                </li>
+                <li><input type="checkbox"> We need a mutualistic system that works
+                </li>
+                <li><input type="checkbox"> Explain this for all three constituencies (be a bit more precise about “the web”, perhaps detail people rather than systems?)
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="h.8auvth4i93u2">Solution Space
+            </h1>
+            <section>
+                <h2 id="h.ce1pxq7f8tsk">Fiduciary UA
+                </h2>
+                <ul>
+                    <li><input type="checkbox"> explain, summarise, This matters because you can't just default to a bad solution under these conditions
+                    </li>
+                    <li><input type="checkbox"> DFA as vehicle
+                    </li>
+                    <li><input type="checkbox"> This includes AI agents
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="h.urgg7pv53of4">Global Levies
+                </h2>
+                <ul>
+                    <li><input type="checkbox"> Explain existing ones
+                    </li>
+                    <li><input type="checkbox"> Transnational taxation
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="h.pdo7xq8nk91d">Enforcement Through Choice Screens
+                </h2>
+                <ul>
+                    <li><input type="checkbox"> DMA choice screens
+                    </li>
+                    <li><input type="checkbox"> How this would work
+                    </li>
+                    <li><input type="checkbox"> Mozilla report
+                    </li>
+                    <li><input type="checkbox"> DDG work
+                    </li>
+                    <li><input type="checkbox"> </li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="h.hy5wxbsfh29i">Next Generation
+                </h2>
+                <ul>
+                    <li><input type="checkbox"> Browsers are old and boring, and they are controlled
+                    </li>
+                    <li><input type="checkbox"> Newer browsers atop networks that have runtime covenants
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h1 id="h.d4t9gwqh4rb7">Can Search Not Kill The Web?
+            </h1>
+        </section>
+        <section>
+            <h1 id="h.fmbtexpqkhby">Governance of the Levy
+            </h1>
+            <ul>
+                <li><input type="checkbox"> How does this not break browsers with bad ideas (explain history of failed standards — the value and problems of market-backed standards)
+                </li>
+                <li><input type="checkbox"> How do funds get distributed
+                </li>
+                <li><input type="checkbox"> How to avoid corruption
+                </li>
+                <li><input type="checkbox"> “Apple and Google don’t come here to be forced”
+                </li>
+                <li><input type="checkbox"> jurisdictional concerns
+                </li>
+                <li><input type="checkbox"> conditionalities
+                </li>
+                <li><input type="checkbox"> the idea of runtime governance vs static governance, democratic vs voluntary standards
+                </li>
+            </ul>
+        </section>
+        <section class="special-section appendix">
             <h1 id="h.5uu7ioz7i2lq">Acknowledgements
             </h1>
             <p>Many former or current employees from browser vendors and search engines large and small provided crucial information on condition of anonymity. I am deeply thankful for the time you gave me and you dedication to fixing this arrangement, even though your employers benefit from it.
@@ -85,10 +366,20 @@
         <section id="references" class="special-section">
             <h1>References</h1>
             <dl class="bibliography">
+                <dt id="bib-26-billion-default">[26-billion-default]</dt>
+                <dd><a href="https://www.theverge.com/2023/10/27/23934961/google-antitrust-trial-defaults-search-deal-26-3-billion"><cite>Google paid a whopping $26.3 billion in 2021 to be the default search engine everywhere</cite></a>. David Pierce. 2023-10-27. <a href="https://www.theverge.com/2023/10/27/23934961/google-antitrust-trial-defaults-search-deal-26-3-billion">https://www.theverge.com/2023/10/27/23934961/google-antitrust-trial-defaults-search-deal-26-3-billion</a></dd>
+                <dt id="bib-amp">[amp]</dt>
+                <dd><a href="https://amp.dev/"><cite>Accelerated Mobile Pages</cite></a>. Google. Proprietary Format. <a href="https://amp.dev/">https://amp.dev/</a></dd>
+                <dt id="bib-apple-36">[apple-36]</dt>
+                <dd><a href="https://www.bloomberg.com/news/articles/2023-11-13/apple-gets-36-of-google-revenue-from-search-deal-witness-says"><cite>Apple Gets 36% of Google Revenue in Search Deal, Expert Says</cite></a>. Leah Nylen. 2023-11-13. <a href="https://www.bloomberg.com/news/articles/2023-11-13/apple-gets-36-of-google-revenue-from-search-deal-witness-says">https://www.bloomberg.com/news/articles/2023-11-13/apple-gets-36-of-google-revenue-from-search-deal-witness-says</a></dd>
+                <dt id="bib-bad-search">[bad-search]</dt>
+                <dd><a href="https://danluu.com/seo-spam/"><cite>How bad are search results?</cite></a>. Dan Luu. <a href="https://danluu.com/seo-spam/">https://danluu.com/seo-spam/</a></dd>
                 <dt id="bib-internet-users">[internet-users]</dt>
-                <dd><a href="https://data.worldbank.org/indicator/it.net.user.zs?end=2022&amp;start=1960&amp;view=chart"><cite>Individuals using the Internet (% of population)</cite></a>. International Telecommunication Union (ITU) World Telecommunication/ICT Indicators Database (via The World Bank). <a href="https://data.worldbank.org/indicator/it.net.user.zs?end=2022&amp;start=1960&amp;view=chart">https://data.worldbank.org/indicator/it.net.user.zs?end=2022&amp;start=1960&amp;view=chart</a></dd>
-                <dt id="bib-where-browsers">[where-browsers]</dt>
-                <dd><a href="https://bkardell.com/blog/WhereBrowsersComeFrom.html"><cite>Where Browsers Come From</cite></a>. Brian Kardell. <a href="https://bkardell.com/blog/WhereBrowsersComeFrom.html">https://bkardell.com/blog/WhereBrowsersComeFrom.html</a></dd>
+                <dd><a href="https://data.worldbank.org/indicator/it.net.user.zs?end=2022&amp;start=1960&amp;view=chart"><cite>Individuals using the Internet (% of population)</cite></a>. International Telecommunication Union (ITU) World Telecommunication/ICT Indicators Database (via The World Bank). 2022. <a href="https://data.worldbank.org/indicator/it.net.user.zs?end=2022&amp;start=1960&amp;view=chart">https://data.worldbank.org/indicator/it.net.user.zs?end=2022&amp;start=1960&amp;view=chart</a></dd>
+                <dt id="bib-mozilla-revenue">[mozilla-revenue]</dt>
+                <dd><a href="https://techcrunch.com/2021/12/13/mozilla-expects-to-generate-more-than-500m-in-revenue-this-year/"><cite>Mozilla expects to generate more than $500M in revenue this year</cite></a>. Frederic Lardinois. 2021-12-13. <a href="https://techcrunch.com/2021/12/13/mozilla-expects-to-generate-more-than-500m-in-revenue-this-year/">https://techcrunch.com/2021/12/13/mozilla-expects-to-generate-more-than-500m-in-revenue-this-year/</a></dd>
+                <dt id="bib-perfect-webpage">[perfect-webpage]</dt>
+                <dd><a href="https://www.theverge.com/c/23998379/google-search-seo-algorithm-webpage-optimization"><cite>The Perfect Webpage</cite></a>. Mia Sato. <a href="https://www.theverge.com/c/23998379/google-search-seo-algorithm-webpage-optimization">https://www.theverge.com/c/23998379/google-search-seo-algorithm-webpage-optimization</a></dd>
             </dl>
         </section>
     </main>

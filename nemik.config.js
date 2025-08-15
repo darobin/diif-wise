@@ -10,6 +10,7 @@ export default async function (nemik) {
       cover: 'ernst-haeckel.png',
       date: true,
       author: 'Robin Berjon',
+      appendices: ['Acknowledgements'],
     })
     .wordCount(40_000)
     .pdf('diif-wise.pdf')
