@@ -13,7 +13,8 @@ export default async function (nemik) {
       appendices: ['Acknowledgements'],
     })
     .wordCount(30_000)
-    .pdf('diif-wise.pdf')
+    // .pdf('diif-wise.pdf')
+    .typst('diif-wise.typst', 'DEV-diif-wise.pdf')
     .saveHTML({ to: 'diif-wise.html', pretty: true })
   ;
 }
