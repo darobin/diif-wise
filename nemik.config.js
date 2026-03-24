@@ -12,7 +12,7 @@ export default async function (nemik) {
       author: 'Robin Berjon',
       appendices: ['Acknowledgements'],
     })
-    .wordCount(30_000)
+    .wordCount(20_000)
     // .pdf('diif-wise.pdf')
     .typst('diif-wise.typst', 'DEV-diif-wise.pdf')
     .saveHTML({ to: 'diif-wise.html', pretty: true })

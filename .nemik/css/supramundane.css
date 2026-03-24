@@ -31,13 +31,6 @@
   --header-fam: "Catamaran";
   --logo-fam: "Cormorant";
   --body-fam: "Mulish";
-  --line: 0;
-  --mid-green: #4f9c5a;
-  --bad-pink: #ae5395;
-  --desat-pink: #efa1a6;
-  --grey-teal: #729397;
-  --yelly: #f4b32c;
-  --too-red: #dc1b27;
 }
 
 * {
@@ -51,14 +44,6 @@ html, body {
 }
 
 /* Use this for page with big ass sm logo */
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-} */
 .imprimatur {
   text-align: center;
   display: inline-block;
@@ -119,7 +104,7 @@ hr::after {
   mask-position: center;
   mask-repeat: no-repeat;
 }
-.title, .subtitle, h1, h2, h3, h4, h5, h6 {
+.title, .subtitle {
   font-family: var(--header-fam);
 }
 .title {
