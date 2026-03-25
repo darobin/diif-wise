@@ -14,7 +14,7 @@ export default async function (nemik) {
     })
     .wordCount(20_000)
     // .pdf('diif-wise.pdf')
-    .typst('diif-wise.typst', 'DEV-diif-wise.pdf')
+    .typst('diif-wise.typst', 'diif-wise.pdf')
     .saveHTML({ to: 'diif-wise.html', pretty: true })
   ;
 }

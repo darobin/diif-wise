@@ -1,27 +1,19 @@
 #import ".nemik/supramundane.typ" : article
-#show: article.with(cover: "../ernst-haeckel.png", title: "Funding The Web\n", subtitle: "From Cartel to Covenant\n", author: "Robin Berjon", date: "2026-03-24", dt: datetime(year: 2026, month: 3, day: 24), abstract: {par( "Browsers, and the browser engines that power them, provide critical public infrastructure to over five billion people and yet no one pays for their browser. To cover the high cost of maintaining such highly complex systems, browser vendors and search engine providers have developed a system in which money is levied from search revenue and distributed to browsers. This arrangement benefits both: browsers don’t have an obvious revenue model and web search engines are only relevant to the extent that the web " + "is, which in turn requires a high" + "quality, frictionless browsing experience.\n" + "")+ par( "Over the years, this " + "ad hoc" + " system has succeeded in providing funding to browsers but it forms a " + "de facto " + "private government of essential web functions in ways that produce detrimental effects on the digital sphere in general: lack of transparency, poor funding of browser engines, defunding of other parts of the web, massive market concentration, plummeting search quality, harms to privacy, " + "improved funding" + " for " + "m" + "isinformation, reduced revenue for quality journalism, and loss of opinion pluralism.\n" + "")+ par( "This report documents the existing system, analyses its negative externalities so as to determine requirements for alternatives, and proposes multiple paths forward along with enforcement and governance considerations. The existing levy distributes billions of euros annually" + "; " + "t" + "he objective " + "is not to " + "eliminate it" + " but to place it " + "under the kind of governance that can make it operate in the public interest and in a manner that is resilient to ongoing AI-driven transformations of both browsers and search engines." + "")+ ""}, )
+#show: article.with(cover: "../ernst-haeckel.png", title: "Funding The Web\n", subtitle: "From Cartel to Covenant\n", author: "Robin Berjon", date: "2026-03-25", dt: datetime(year: 2026, month: 3, day: 25), abstract: {par( "Browsers, and the browser engines that power them, provide critical public infrastructure to over five billion people and yet no one pays for their browser. To cover the high cost of maintaining such highly complex systems, browser vendors and search engine providers have developed a system in which money is levied from search revenue and distributed to browsers. This arrangement benefits both: browsers don’t have an obvious revenue model and web search engines are only relevant to the extent that the web itself is, which in turn requires a high-quality, frictionless browsing experience.\n" + "")+ par( "Over the years, this " + emph( "ad hoc" + "")+ " system has succeeded in providing funding to browsers but it forms a " + emph( "de facto " + "")+ "private government of essential web functions in ways that produce detrimental effects on the digital sphere in general: lack of transparency, poor funding of browser engines, defunding of other parts of the web, massive market concentration, plummeting search quality, harms to privacy, lower cost for effective disinformation, reduced revenue for quality journalism, and loss of opinion pluralism.\n" + "")+ par( "This report documents the existing system, analyses its negative externalities so as to determine requirements for alternatives, and proposes multiple paths forward along with enforcement and governance considerations. The existing levy distributes billions of euros annually, and shows no sign of slowing. The objective here is not to break or replace this system, but to place it gradually under the kind of governance that can make it operate in the public interest and in a manner that is resilient to ongoing AI-driven transformations of both browsers and search engines." + "")+ ""}, )
 #{
 let references(b) = { text(b) }
 (
 heading(level: 1, 
-"Ding Dong! The Web Is Dead\n" +
+"Ding Dong! The Web Is Dead" +
 "")+
 par(
-"The web has been pronounced dead many times over. It’s easy to take this as a sign of its resilience but we should be wary of unfounded optimism. The fact that the web is still " +
-"around in some form is less a testament to its " +
-"resilience " +
-"than a consequence of the time it takes for such a large system to stop moving. The wheel may still be spinning but the hamster is long dead.\n" +
+"The web has been pronounced dead many times over. It’s easy to take this as a sign of its resilience but we should be wary of unfounded optimism. The fact that the web is still kicking around in some form is less a testament to its inherent resilience, let alone its good governance, than a consequence of the time it takes for such a large system to stop moving. The wheel may still be spinning but the hamster is long dead.\n" +
 "")+
 par(
-"The web’s death is commonly attributed to " +
-"A" +
-"I" +
-". The F" +
-"T" +
-" thinks the web may be fatally wounded " +
+"The web’s death is commonly attributed to “Artificial Intelligence,” by which people mean LLM disintermediation of search and displacement of older advertising delivery mechanisms. The Financial Times thinks the web may be fatally wounded " +
 references(
 "(" +
-link("#bib-8fbec0cccf5550082df12144118ec572ed7fcef5980b49100e7bcc5562fa6158", 
+link(label("bib-8fbec0cccf5550082df12144118ec572ed7fcef5980b49100e7bcc5562fa6158"), 
 "Hodgson et al. 2025" +
 "")+
 ")" +
@@ -33,27 +25,27 @@ emph(
 "\" " +
 references(
 "(" +
-link("#bib-168fab63ad2ddf1544bcde36e9818dc0edaea29c319c90333c07b2266a871c19", 
+link(label("bib-168fab63ad2ddf1544bcde36e9818dc0edaea29c319c90333c07b2266a871c19"), 
 "The Economist 2025" +
 "")+
 ")" +
 "")+
-", the BBC " +
-"has " +
-"the web " +
+", the BBC described the web “" +
+emph(
 "destroyed" +
+"")+
+"” " +
 references(
 "(" +
-link("#bib-77f12ba734f28732220751c606fa09a57b45816a88e0dc5260dc97043aabc2e7", 
+link(label("bib-77f12ba734f28732220751c606fa09a57b45816a88e0dc5260dc97043aabc2e7"), 
 "Germain 2025" +
 "")+
 ")" +
 "")+
-", the Observer has the web's economy " +
-"killed" +
+", the Observer has the web's economy “killed” " +
 references(
 "(" +
-link("#bib-bf95763c2a6ac34e0605b509dcf945d866d311e8e641f2f2feff5e06ece0b24b", 
+link(label("bib-bf95763c2a6ac34e0605b509dcf945d866d311e8e641f2f2feff5e06ece0b24b"), 
 "Tremayne-Pengelly 2025" +
 "")+
 ")" +
@@ -65,64 +57,60 @@ emph(
 "\" " +
 references(
 "(" +
-link("#bib-0b43892b131662efe0ddac8abad39b5a1c46f30d02cbac06674928726d5ca740", 
+link(label("bib-0b43892b131662efe0ddac8abad39b5a1c46f30d02cbac06674928726d5ca740"), 
 "Mahdawi 2025" +
 "")+
 ")" +
 "")+
-". But it is this report’s position that the problem started much earlier and that while LLMs do make it worse they are the continuation of an " +
-"existing " +
-"problem" +
-"." +
+". But it is this report’s position that the problem started much earlier and that while LLMs do make it worse they are the continuation of a deeper problem that predates the launch of today’s LLM products and platforms." +
 "")+
 par(
-"This " +
-"issue, thankfully, is fixable. And because the web is" +
-" for now" +
-" still slow" +
-" enough in " +
-"death" +
-", " +
+"This deeper issue, thankfully, is fixable. And because the web is, for now, still slowly settling into its purported “death”, " +
+emph(
 "we may yet revive it" +
+"")+
 ".\n" +
 "")+
 par(
-"The digital sphere we’re in sits downstream of deliberate" +
-" political choices made in the 1990s. When the Clinton-Gore administration set out to define their hugely influential framework for global electronic commerce, principle number one was: “" +
+"The digital sphere we’re in sits downstream of deliberate, explicitly neo-liberal political choices made in the 1990s. When the Clinton-Gore administration set out to define their hugely influential framework for global electronic commerce, principle number one was: “" +
 emph(
 "The private sector should lead." +
 "")+
-"” This wasn’t simply an aspirational statement gesturing in the direction of private-led innovation (the administration was also busy redirecting massive public investment from Cold War-era military industries towards the " +
-"Silicon Valley), but a comprehensive vision for the governance of the internet, which they promoted worldwide, " +
-"enforced i" +
-"n" +
-" trade agreements, and consistently returned to: " +
+"” This wasn’t simply an aspirational statement gesturing in the direction of private-led innovation (the administration was also busy redirecting massive public investment from Cold War-era military industries towards the ascendant Silicon Valley), but a comprehensive vision for the governance of the internet, which they promoted worldwide, wrote into a wave of world-historical regional trade agreements, and consistently returned to: \n" +
 "")+
 par(
 "“" +
 emph(
 "For electronic commerce to flourish, the private sector must " +
 "")+
+strong(
 emph(
 "continue to" +
+"")+
 "")+
 emph(
 " lead. (…) governments should encourage industry " +
 "")+
+strong(
 emph(
 "self-regulation" +
+"")+
 "")+
 emph(
 " (…) private entities should, where possible, take the lead (…) governments should refrain from imposing " +
 "")+
+strong(
 emph(
 "new and unnecessary regulations" +
+"")+
 "")+
 emph(
 " (…) governments should establish a " +
 "")+
+strong(
 emph(
 "predictable and simple legal environment " +
+"")+
 "")+
 emph(
 "based on a decentralized, contractual model of law" +
@@ -130,126 +118,69 @@ emph(
 "” " +
 references(
 "(" +
-link("#bib-04a8e1c4289f025ef62720d96698e609d35a2ca51651ead34439da26d75984eb", 
-"Clinton-Gore Administration 1997" +
+link(label("bib-04a8e1c4289f025ef62720d96698e609d35a2ca51651ead34439da26d75984eb"), 
+"Clinton-Gore Administration 1997, emphasis mine" +
 "")+
-")" +
-"")+
-link("https://www.zotero.org/google-docs/?XPUrJM", 
 ")" +
 "")+
 ".\n" +
 "")+
 par(
-"That the private sector may " +
-"lead" +
-"over " +
-"corporate " +
-"matters " +
-"pertaining to simple consumer products is often unproblematic" +
-". " +
-"But " +
-"private governance over large-scale infrastructure " +
-"that sets rules " +
-"for " +
-"other " +
-"actors " +
-"both business and individual " +
-"concentrates power in ways that have well-documented deleterious effects " +
+"That the private sector may “lead” the inter-corporate governance structures pertaining to simple consumer products is often unproblematic, and self-regulation in finance is unchallengeably structural to the world economy as it is currently governed. That said, private governance over large-scale infrastructure (whether financial or physical) that sets rules and liability structures and information flows for all downstream actors, both businesses and individuals, concentrates power in ways that have well-documented deleterious effects and perverse incentives even without collusion " +
 references(
 "(" +
-link("#bib-8d2fb4365813546dacf9f34242cb7cd3d10002e0d3189fcd37620c3f33a03659", 
+link(label("bib-8d2fb4365813546dacf9f34242cb7cd3d10002e0d3189fcd37620c3f33a03659"), 
 "Rahman 2018" +
 "")+
 "; " +
-link("#bib-882b90a359dfe01793046e7601524ee739d70746df1c1364e8c3f345c191d9ec", 
+link(label("bib-882b90a359dfe01793046e7601524ee739d70746df1c1364e8c3f345c191d9ec"), 
 "Frischmann 2013" +
 "")+
 "; " +
-link("#bib-49c0aa01baa0d1ff4dd0025693ebb8f463e1c3df9c758dfac102d23af3f653ad", 
+link(label("bib-49c0aa01baa0d1ff4dd0025693ebb8f463e1c3df9c758dfac102d23af3f653ad"), 
 "Barzilai-Nahon 2008" +
 "")+
 ")" +
 "")+
-". In the digital world, following thirty years of this " +
-"private-centric" +
-"policy" +
-", we are dealing with what is in essence the " +
+". In the digital world, following thirty years of this excessively private-centric, globally-harmonised laissez-faire policy on all kinds of information, innovation, and transaction platforms, we are dealing with what is in essence the " +
 strong(
 "private government" +
 "")+
 " of our lives and livelihoods " +
 references(
 "(" +
-link("#bib-9000d49d2e289d218db731c4a92d6f82edd314c806e2a992bac490b5309c4931", 
+link(label("bib-9000d49d2e289d218db731c4a92d6f82edd314c806e2a992bac490b5309c4931"), 
 "Anderson et al. 2019" +
 "")+
 ")" +
 "")+
-"." +
+" by platforms with more direct control than that enjoyed by our governments." +
 "")+
 par(
-"In the case of funding for web browsers and related parts of core web infrastructure (and with impact on the funding of content and services on the web in general), the " +
-"system " +
-"is" +
-"under the " +
-"private government of Google. The funding of all major browser engines and of over 92% of browsers by market share comes from a privately-administered levy on Google Search, " +
-"granted in exchange for enforcing Google’s monopoly in search. This is not in the least a " +
-"market-based solution" +
-", but rather a private mechanism " +
+"In the case of funding for web browsers and related parts of core web infrastructure (and with impact on the funding of content and services on the web in general), the world’s central information flows are under the opaque and extractive private government of Google. The funding of all major browser engines and of over 92% of browsers by market share comes from a privately-administered levy on Google Search, essentially granted in exchange for enforcing Google’s monopoly in search. This is not in the least a “market-based solution”, but rather a private mechanism " +
 references(
 "(" +
-link("#bib-edddd864116f8c0f847ed3a8cf5d3e34020a509c44cf8bc282e652ae560d4784", 
+link(label("bib-edddd864116f8c0f847ed3a8cf5d3e34020a509c44cf8bc282e652ae560d4784"), 
 "Viljoen et al. 2021" +
 "")+
 ")" +
 "")+
-" that interferes with" +
-" markets" +
-"," +
-" competition" +
-"," +
-" democracy, and society at large. As we will see below, for a" +
-"ll that " +
-"this system bankrolls " +
-"important " +
-"infrastructure" +
-" it does so at a steep cost for the rest of society" +
-"." +
+" that interferes with the healthy operation of not just search/browser markets but competition more generally in the entire digital sphere, to say nothing of downstream effects for our information ecosystem, democracy, and society at large. As we will see below, for as much as this system bankrolls critical infrastructure benefiting all, it does so at a steep cost for the rest of society that is all but hidden from mainstream political discourse." +
 "")+
 par(
-"Concerning as it is, the centralisation and scope of this mechanism offers us an opportunity. What if we kept it going but " +
-"put it under" +
-" democratic governance so as to ensure that it funds what needs funding" +
-" without creating " +
-"the downstream issues that it " +
-"does" +
-"?\n" +
+"Concerning as it is, the centralisation and scope of this mechanism offers us an opportunity. What if we kept it going but transitioned it to democratic governance so as to ensure that it funds what needs funding? How could democratic governance chip away at, and eventually counterveil, the downstream issues that it currently creates?\n" +
 "")+
 par(
-"This report builds not just an understanding of today’s levy arrangement and its issues, but also extends our imaginary and outlines policy entrepreneurship that can bring a " +
-"better " +
-"web back to life. It does so by opening the door to a long-needed alternative vision to that of the Cliton-Gore administration, which has more than run its course. We find ourselves at the beginning of a " +
-"democratic internet as can be seen " +
-"in emerging projects " +
-"— " +
-"the " +
-"levy system has the potential to supercharge th" +
-"i" +
-"s" +
-" trajector" +
-"y" +
-".\n" +
+"This report builds not just an understanding of today’s levy arrangement and its issues, but also extends our imaginary and outlines policy entrepreneurship that can bring a healthier web back to life. It does so by opening the door to a long-needed alternative vision to that of the Cliton-Gore administration, which has more than run its course. We find ourselves at the beginning of a more democratic internet as can be seen almost everywhere in emerging projects and tendencies — redirecting the capital flows from the current levy system has the potential to supercharge these trajectories and make a new internet bloom.\n" +
 "")+
-pagebreak() +
 heading(level: 1, 
-"The Current System\n" +
+"The Current System" +
 "")+
 par(
 "As of 2022, 63% of the world population, or roughly 5 billion people, used the Internet " +
 references(
 "(" +
-link("#bib-205618eb1b9088bd5d592c08d9fda8dfe99b900b140ad7dd517aafcf300ff68b", 
+link(label("bib-205618eb1b9088bd5d592c08d9fda8dfe99b900b140ad7dd517aafcf300ff68b"), 
 "ITU 2022" +
 "")+
 ")" +
@@ -258,90 +189,59 @@ link("#bib-205618eb1b9088bd5d592c08d9fda8dfe99b900b140ad7dd517aafcf300ff68b",
 emph(
 "browser" +
 "")+
-"(the application used to navigate the web), " +
-"all use a " +
+" per se (the application used to navigate the web), they all use a " +
 emph(
 "browser engine" +
 "")+
 " (the software component that both browsers and other apps use to render web content) almost every time they use a device as those are widely used in applications in addition to forming the core of " +
 "browsers" +
-"." +
+". Essentially all mobile and desktop applications that connect to servers are variously thin or sophisticated wrappers around a browser engine, unbeknownst to end-users who simply see them as so many “applications” in their own right.\n" +
 "")+
 par(
 "Browsers" +
 " and " +
 "browser engines" +
-" are provided to people free of charge, as public goods. Their continued provision " +
-"is critical since without them the web collapses" +
-". The" +
-"y" +
-" are also " +
-"complex: for instance, in 2022 Chromium (the " +
+" are provided to people free of charge, as public goods. Their continued provision and security vigilance is critical since without them the web collapses, as the attack surface for most apps without this upstream economy of scale would be enough to bankrupt whole swaths of software development. The browser engines are also staggeringly complex: for instance, in 2022 Chromium (the " +
 "browser engine" +
 " powering Google Chrome and other " +
 "browsers" +
-") ran to about 35 million lines of code which puts it in roughly the same " +
-"category" +
-" as " +
+") ran to about 35 million lines of code which puts it in roughly the same engineering weight class as entire " +
+strong(
 "operating systems" +
+"")+
 ". The exact cost of maintaining the three primary browser engines or of operating a major browser is subject to debate (covered in a later chapter) but even the higher estimates, while significant, amount to only a small fraction of the direct value (monetary or otherwise) produced by the web.\n" +
 "")+
 par(
-"In order to assemble the funds required to " +
-"operate, almost all browser vendors rely on variations o" +
-"n" +
-" the same strategy: they exercise an " +
+"In order to assemble the funds required to continue to operate, almost all browser vendors rely on variations of the same strategy: they exercise an " +
+emph(
 "ad hoc " +
-"levy on search engine revenue. Variations on this levy include" +
-" selling the search engine " +
-"default" +
-" (the initial and typical approach)" +
-"," +
+"")+
+"levy on search engine revenue. Variations on this levy include: selling the search engine “" +
+"default”" +
+" (the initial and typical approach); " +
 "royalties" +
-" on search volume" +
-"," +
-"or" +
-"intra-company " +
-"transfers" +
-" (when the search engine and browser belong to the same company). Taken together, these strategies form " +
-"the " +
-"levy system" +
-", which is " +
-"described " +
-"further " +
-"in this report.\n" +
+" on search volume; and/or, " +
+"intra-company balance transfers" +
+" (when the search engine and browser belong to the same company). Taken together, these strategies form what I will refer to in the rest of this piece as the broader “levy system”, which is detailed further down in this report.\n" +
 "")+
 par(
-"Despite its critical importance to web infrastructure, the levy is opaque and poorly documented, and suffers from a number of undesirable shortcomings that have large-scale detrimental effects on the web. This report looks at those issues in detail, establishes requirements from them, and outlines a set of approaches that " +
-"can " +
-"produce a solution" +
-".\n" +
+"Despite its critical importance to web infrastructure, the levy is opaque and poorly documented, and suffers from a number of undesirable shortcomings that have large-scale detrimental effects on the web. This report looks at those issues in detail, establishes requirements from them, and outlines a set of approaches that could be combined in various combinations to form a range of viable solutions.\n" +
 "")+
 par(
-"Note that search is a logical control point" +
-"s" +
-" at which to establish such a levy " +
+"Note that search is a logical control point at which to establish such a levy " +
 references(
 "(" +
-link("#bib-c55ba72ec0ebeae7d49e965805db5b2a743ca903e24c60cef76d2956119fdfe5", 
+link(label("bib-c55ba72ec0ebeae7d49e965805db5b2a743ca903e24c60cef76d2956119fdfe5"), 
 "Clark 2012" +
 "")+
 ")" +
 "")+
-".  Almost all of the value of a search engine comes from the web " +
-"(the content and services that make it worth searching " +
-"for " +
-"in the first place), which means that search engines have an incentive in keeping the web healthy " +
+".  Almost all of the value of a search engine comes from the web it indexes (the content and services that make it worth searching through in the first place), which means that search engines have an incentive in keeping the web healthy " +
 "at least so long as they aren’t in a position to enclose it all" +
-". A critical way to keep the web healthy is to invest in browsers and more generally in web infrastructure as that empowers the many people building web things to create greater marvels yet. This has the potential to create a positive cycle through which key web infrastructure is funded, leading to a better web, driving more revenue to search engines, " +
-"in turn levying more funds " +
-"to support the " +
-"web" +
-" with" +
-".\n" +
+". A critical way to keep the web healthy is to invest in browsers and more generally in web infrastructure as that empowers the many people building web things to create greater marvels yet. This has the potential to create a positive cycle through which key web infrastructure is funded, leading to a better web, driving more revenue to search engines, and in turn levying more funds with which to support the health of the web.\n" +
 "")+
 heading(level: 2, 
-"The Mutualistic Web\n" +
+"The Mutualistic Web" +
 "")+
 par(
 "The relationship between publishers and search engines originally " +
@@ -406,7 +306,7 @@ par(
 ".\n" +
 "")+
 heading(level: 2, 
-"The Search Levy\n" +
+"The Search Levy" +
 "")+
 par(
 "The " +
@@ -466,7 +366,7 @@ par(
 " deals " +
 references(
 "(" +
-link("#bib-5b2d997f6c169c263b782f6ce45a662fbac8fdad635f06714f8db5faf03dc4fd", 
+link(label("bib-5b2d997f6c169c263b782f6ce45a662fbac8fdad635f06714f8db5faf03dc4fd"), 
 "Pierce 2023" +
 "")+
 ")" +
@@ -478,7 +378,7 @@ link("#bib-5b2d997f6c169c263b782f6ce45a662fbac8fdad635f06714f8db5faf03dc4fd",
 " to Apple " +
 references(
 "(" +
-link("#bib-8f4943b0466cc823eec048c1f533229b63f001fb361f2066db22ae6e3e46d014", 
+link(label("bib-8f4943b0466cc823eec048c1f533229b63f001fb361f2066db22ae6e3e46d014"), 
 "Nylen 2023" +
 "")+
 ")" +
@@ -486,7 +386,7 @@ link("#bib-8f4943b0466cc823eec048c1f533229b63f001fb361f2066db22ae6e3e46d014",
 ". In 2020, Mozilla made 86% of its revenue from the Google Search levy " +
 references(
 "(" +
-link("#bib-903dd65d8ecb65463ab7e7d7c2ef8b821d7b76ee8d70c93ee65c22a17c8c3f86", 
+link(label("bib-903dd65d8ecb65463ab7e7d7c2ef8b821d7b76ee8d70c93ee65c22a17c8c3f86"), 
 "Lardinois 2021" +
 "")+
 ")" +
@@ -500,7 +400,7 @@ strong(
 ": As discussed below, the levy system is very opaque and most relevant numbers are not available unless they were revealed through legal discovery. Even though some of these numbers are relatively old, interviews with people involved in these deals indicate that the situation has not significantly evolved compared to what information is publicly available.\n" +
 "")+
 heading(level: 2, 
-"Out of Scope\n" +
+"Out of Scope" +
 "")+
 par(
 "In this report, I am treating the following items as mostly (but not completely) out of scope:\n" +
@@ -540,16 +440,15 @@ strong(
 "levy system.\n" +
 ""),
 ) +
-pagebreak() +
 heading(level: 1, 
-"Incumbent Problems\n" +
+"Incumbent Problems" +
 "")+
 par(
 "The levy was an important invention and remains a good starting point twenty years on. Taking a system view of the web, search is a key" +
 " logical place at which to apply a levy. Search extracts value from content and behaviour on the web (search engines would have no value otherwise) and renders it available at a functional choke point since search is one of the required components of web discovery " +
 references(
 "(" +
-link("#bib-c55ba72ec0ebeae7d49e965805db5b2a743ca903e24c60cef76d2956119fdfe5", 
+link(label("bib-c55ba72ec0ebeae7d49e965805db5b2a743ca903e24c60cef76d2956119fdfe5"), 
 "Clark 2012" +
 "")+
 ")" +
@@ -567,7 +466,7 @@ par(
 "Unfortunately, the levy failed to evolve as the web grew from a time of relative infancy when only 14% of the world population (fewer than a billion, " +
 references(
 "(" +
-link("#bib-205618eb1b9088bd5d592c08d9fda8dfe99b900b140ad7dd517aafcf300ff68b", 
+link(label("bib-205618eb1b9088bd5d592c08d9fda8dfe99b900b140ad7dd517aafcf300ff68b"), 
 "ITU 2022" +
 "")+
 ")" +
@@ -586,7 +485,7 @@ par(
 ".\n" +
 "")+
 heading(level: 2, 
-"Artificial Search Monopoly\n" +
+"Artificial Search Monopoly" +
 "")+
 par(
 "The manner in which the levy system is structured means that it " +
@@ -611,7 +510,7 @@ emph(
 " the court's central finding was that Google \"is a monopolist, and it has acted as one to maintain its monopoly.\" In 2021, Google's payments to secure preloaded defaults totalled more than $26 billion — nearly four times more than all of its other search-specific costs combined. The scale of these payments is itself diagnostic: Google would not pay this much unless it expected to receive something of comparable value in return, which helps put a price on search engine defaults. This value was captured crisply in internal Google slides obtained as part of the discovery process in that case.\n" +
 "")+
 par(
-figure(image(".nemik/img/d4e3668741face45eebd48b9d32dc312fabc2ee33340a3df961f0084a3fe1a7d")) +
+figure(image(".nemik/img/767f862816f0a909fa15c50cf40c758831e77aa74f4a7d67013700b05a38f93e")) +
 "")+
 par(
 "The case’s focus on Google, however, tends to understate the degree to which browser vendors are not merely passive recipients of Google's payments but active participants in a structural arrangement that serves their own interests. The collusion here does not need to be " +
@@ -637,13 +536,9 @@ par(
 "technical consensus " +
 "what are in substance " +
 "commercial preferences" +
-". The problems created by the levy system are " +
-"known to the web community at large, but when proposals have been raised for the W3C to exercise collective governance over search defaults — creating a standards-based mechanism that could help address the worst of the levy’s issues — major browser vendors have resisted, one representative stating in no uncertain terms: “" +
+". The problems created by the levy system are well-known to the web community at large, but when proposals have been raised for the W3C to exercise collective governance over search defaults — creating a standards-based mechanism that could help address the worst of the levy’s issues — major browser vendors have resisted, one representative stating in no uncertain terms: “" +
 emph(
-"W3C's value isn't in its ability to put limits " +
-"")+
-emph(
-"browsers." +
+"W3C's value isn't in its ability to put limits on browsers." +
 "")+
 "”\n" +
 "")+
@@ -655,19 +550,17 @@ par(
 ", but it’s very clear that Google’s structural position in search equips them with a direct path to continued monopoly precisely with the same entry point.\n" +
 "")+
 heading(level: 2, 
-"Enshittifying Search\n" +
+"Enshittifying Search" +
 "")+
 par(
 "Cory Doctorow's concept of " +
 emph(
 "enshittification" +
 "")+
-" describes a predictable sequence in the decay of platform value: platforms first allocate surplus to users to build dependency, then withdraw it in favour of business customers, and finally extract value for " +
-"themselves" +
-", leaving everyone else progressively worse off but typically unable to leave due to the two-sided nature of the market in question " +
+" describes a predictable sequence in the decay of platform value: platforms first allocate surplus to users to build dependency, then withdraw it in favour of business customers, and finally extract value for shareholders, leaving everyone else progressively worse off but typically unable to leave due to the two-sided nature of the market in question " +
 references(
 "(" +
-link("#bib-025190cb68d0ad821d08fc59690af85ace5152a6d0ded48c2c4fcfb65ad8da6e", 
+link(label("bib-025190cb68d0ad821d08fc59690af85ace5152a6d0ded48c2c4fcfb65ad8da6e"), 
 "Doctorow 2025" +
 "")+
 ")" +
@@ -678,7 +571,7 @@ par(
 "This power relationship has long enshittified the web for publishers. Under competitive conditions, publishers who allow their content to be indexed by a search engine face a meaningful check on the search engine's extractive behaviour: if one search engine becomes too parasitic, publishers can de-index from it, and users who find results deteriorating can defect to alternatives. But when a single search engine commands 90+% of search traffic, de-indexing is commercial suicide for publishers. There is no credible threat of exit, publishers have to do as they’re told as we’ve seen with AMP or CWV " +
 references(
 "(" +
-link("#bib-40420e811f38d241a22aaad85a45826bef07137278873663cf7f5fded12b4167", 
+link(label("bib-40420e811f38d241a22aaad85a45826bef07137278873663cf7f5fded12b4167"), 
 "Google 2015" +
 "")+
 ")" +
@@ -689,7 +582,7 @@ par(
 "With users locked in, the quality degradation predicted by the enshittification dynamic has been empirically documented. A systematic comparison of search engines across a representative set of queries found Google performing worse than several alternatives — including Marginalia, an independent search engine running on a fraction of Google's resources — and returning, for the most routine informational queries, a mixture of scam sites, low-quality SEO content, and ad-laden pages designed to extract clicks rather than answer questions " +
 references(
 "(" +
-link("#bib-5cd95a07ebec2cfd43345c093bfab4b327aee4d63e03fea189e43889056c4968", 
+link(label("bib-5cd95a07ebec2cfd43345c093bfab4b327aee4d63e03fea189e43889056c4968"), 
 "Luu 2023" +
 "")+
 ")" +
@@ -697,12 +590,10 @@ link("#bib-5cd95a07ebec2cfd43345c093bfab4b327aee4d63e03fea189e43889056c4968",
 ".\n" +
 "")+
 par(
-"Another aspect of search response quality is the privacy properties of the pages being pointed to by the " +
-"SERP" +
-". Privacy is a regular concern for users and a search engine could use the presence of tracking in a page to either downrank it (in service of the user) or uprank it (because the search engine benefits from lessening privacy). A recent report looked at this aspect alongside quality and found that Google came up short on both aspects " +
+"Another aspect of search response quality is the privacy properties of the pages being pointed to by the Search Engine Results Page (“SERP”). Privacy is a regular concern for users and a search engine could use the presence of tracking in a page to either downrank it (in service of the user) or uprank it (because the search engine benefits from lessening privacy). A recent report looked at this aspect alongside quality and found that Google came up short on both aspects " +
 references(
 "(" +
-link("#bib-8f8eac7a7d27f220efe54be04bcb1459a7ac79c9536ca304a7e40db2583d7a25", 
+link(label("bib-8f8eac7a7d27f220efe54be04bcb1459a7ac79c9536ca304a7e40db2583d7a25"), 
 "Kollnig 2025" +
 "")+
 ")" +
@@ -717,46 +608,35 @@ emph(
 " in the direction of its preferences " +
 references(
 "(" +
-link("#bib-2eef7cfb8dd7da84cbe433d984e9bb63a3248a4bc4ce137bcc5cf336a7615c9e", 
+link(label("bib-2eef7cfb8dd7da84cbe433d984e9bb63a3248a4bc4ce137bcc5cf336a7615c9e"), 
 "Sato 2024" +
 "")+
 ")" +
 "")+
-". When a single ranking function governs access to the majority of web traffic, the rational response for every publisher is to optimise for that function rather than for users — which is a form of enshittification, albeit one driven by the fact that web traffic isn’t a market but rather a" +
-" mechanism largely driven by Google. The result is not only that bad content rises in rankings; it is that good content, written for humans, is often outcompeted by content engineered for algorithmic legibility. \n" +
+". When a single ranking function governs access to the majority of web traffic, the rational response for every publisher is to optimise for that function rather than for users — which is a form of enshittification, albeit one driven by the fact that web traffic isn’t a market but rather a proprietary, opaque mechanism largely driven by Google. The result is not only that bad content rises in rankings; it is that good content, written for humans, is often outcompeted by content engineered for algorithmic legibility. \n" +
 "")+
 par(
-"The entire texture of the public web has been sculpted by the preferences, the whims, the errors of a single " +
-"algorithm operated by a single company for its own commercial benefit. This is what " +
+"The entire texture of the public web has been sculpted by the preferences, the whims, the errors of a single opaque, non-deterministic, and continuously-evolving algorithm operated by a single company for its own commercial benefit. This is what " +
 emph(
 "structural" +
 "")+
 " enshittification looks like: not just a platform that has gotten worse, but a platform whose gravitational field has pulled the surrounding ecosystem down the toilet with it.\n" +
 "")+
 heading(level: 2, 
-"Defunding The Web\n" +
+"Defunding The Web" +
 "")+
 par(
 "Google Search advertising alone represents approximately $224.5 billion of the roughly $600 billion global digital advertising market — about 37% of all digital ad spending. As explained above, the levy system is critical to driving Google’s market share up, but that is not its only effect. In " +
 emph(
 "United States v. Google LLC" +
 "")+
-", Judge Amit Mehta went into extensive" +
-" damning detail to show that Google’s monopoly position, enforced by exclusive distribution agreements with browsers and mobile OSs, enabled it to charge supracompetitive prices for search text ads, with no only apparent constraints " +
+", Judge Amit Mehta went into extensive, damning detail to show that Google’s monopoly position, enforced by exclusive distribution agreements with browsers and mobile OSs, enabled it to charge supracompetitive prices for search text ads, with no only apparent constraints " +
 references(
 "(" +
-link("#bib-3bb5d6077ee048d90735411402bd5ba4f7dd6e2bfd7c278a6804564ce303c2f5", 
-"" +
+link(label("bib-3bb5d6077ee048d90735411402bd5ba4f7dd6e2bfd7c278a6804564ce303c2f5"), 
+"United States v Google 2024" +
 "")+
 ")" +
-"")+
-link("https://www.zotero.org/google-docs/?7ggWXF", 
-emph(
-"United States v Google" +
-"")+
-"")+
-link("https://www.zotero.org/google-docs/?7ggWXF", 
-" 2024)" +
 "")+
 ". He explains at length how Google was able to maintain revenue growth for search at or above a 20% target — representing about 2/3rd of the company’s overall growth — for over ten years, largely by playing on ad pricing. Putting it quite simply: “" +
 emph(
@@ -765,7 +645,7 @@ emph(
 "” As far as is known the problem continues and the European Commission has recently opened an investigation into precisely this practice " +
 references(
 "(" +
-link("#bib-d7705551c297efc1329623893b8b844865d1a544306ae82203c5672f6bc85459", 
+link(label("bib-d7705551c297efc1329623893b8b844865d1a544306ae82203c5672f6bc85459"), 
 "Stolton 2026" +
 "")+
 ")" +
@@ -774,11 +654,13 @@ link("#bib-d7705551c297efc1329623893b8b844865d1a544306ae82203c5672f6bc85459",
 "")+
 par(
 "The web’s overall revenue, however, is not infinitely extensible. Marketing budgets are set and marketing teams tend to treat search as just one of the ways to reach people on the web. The ad revenue that flows to Google Search ads doesn’t go elsewhere. This means that, as illustrated below, not only does Google Search get a share of all web advertising revenue (which would be fair), not only does it get a share that should flow to competing search engines (which would be problematic), but it " +
-"gets a share that should go to non-search web properties" +
-", which results in large-scale defunding of the rest of the web.\n" +
+emph(
+"also" +
+"")+
+" gets a share that should go to non-search web properties (e.g. publishers), which results in large-scale defunding of the rest of the web.\n" +
 "")+
 par(
-figure(image(".nemik/img/3151110d0856e4cac78fb212cc7e612436a71514fc192064e59e65dc46bd29b6")) +
+figure(image(".nemik/img/1d6994731f19da89bdc98c5951201fd444a307cc73a9439d5cc85befe5fde55d")) +
 "")+
 par(
 "Browse" +
@@ -788,7 +670,7 @@ par(
 "Additionally, the gravity of Google’s search revenue undermines potential changes to the advertising system as a whole " +
 references(
 "(" +
-link("#bib-8946ce3b9f21bfb3402f9e5f11d35273169bb39c41affe36aa027e4466f4faab", 
+link(label("bib-8946ce3b9f21bfb3402f9e5f11d35273169bb39c41affe36aa027e4466f4faab"), 
 "Berjon 2025" +
 "")+
 ")" +
@@ -796,126 +678,94 @@ link("#bib-8946ce3b9f21bfb3402f9e5f11d35273169bb39c41affe36aa027e4466f4faab",
 ". This further compounds the problem by making it harder to fix the web’s many problems with ad-based revenue models." +
 "")+
 heading(level: 2, 
-"Unique Source of Funding\n" +
+"Unique Source of Funding" +
 "")+
 par(
-"The current structure of the search and browser ecosystem can give us a sense of how concentrated the " +
-"funding it" +
-". On the search side, we have Google with a 91% share and Microsoft Bing at 3%, everyone else at 1% or less. On the browser side, we have Microsoft Edge at 5%, and it’s financed by Bing. Every single other browser with market share higher than 1% (accounting for a total of 92% comprising Chrome, Safari, Firefox, Samsung Internet, and Opera) is financed by Google Search.\n" +
+"The current structure of the search and browser ecosystem can give us a sense of how concentrated the browser’s funding model is. On the search side, we have Google with a 91% share and Microsoft Bing at 3%, everyone else at 1% or less. On the browser side, we have Microsoft Edge at 5%, and it’s financed by Bing. Every single other browser with market share higher than 1% (accounting for a total of 92% comprising Chrome, Safari, Firefox, Samsung Internet, and Opera) is financed by Google Search.\n" +
 "")+
 par(
-figure(image(".nemik/img/055ab9a5934616a21e311cfa1dd90b9966239c08f95e2a1da9c58035466e30b1")) +
+figure(image(".nemik/img/6730672b44f3a267fbd1266fbc409cadee59deee4436d581af89d96f5fbb8d39")) +
 "")+
 par(
-"Looking at browser engines, the picture is even more concentrated. Three major browser engines remain in the world — Google's Blink, Apple's WebKit, and Mozilla's Gecko — and all three are financed by Google Search. (There are promising developments around Servo and Ladybird, but as things stand today a consumer-grade browser can only be produced using those three). Since Microsoft Edge uses Blink, over 97% of the market runs on Google-financed engines (a number that’s " +
-"practically " +
-"100% once we add " +
-"the sub-1% browsers).\n" +
+"Looking at browser engines, the picture is even more concentrated. Three major browser engines remain in the world — Google's Blink, Apple's WebKit, and Mozilla's Gecko — and all three are financed by Google Search. (There are promising developments around Servo and Ladybird, but as things stand today a consumer-grade browser can only be produced using those three). Since Microsoft Edge uses Blink, over 97% of the market runs on Google-financed engines (a number that’s even closer to 100% once we add in the sub-1% browsers).\n" +
 "")+
 par(
 "This shows both just how concentrated the market is, but also how dependent it is on a single source of funding. " +
-"A strategic shift from Google towards apps or LLMs could upset the entire " +
-"ecosystem overnight" +
-"." +
+emph(
+"A strategic shift from Google towards apps or LLMs could upset the entire web ecosystem overnight." +
+"")+
 "")+
 heading(level: 2, 
-"Monoculture Over Pluralism\n" +
+"Monoculture Over Pluralism" +
 "")+
 par(
-"Every search engine embodies" +
-" an " +
-"editorial policy" +
-". Like newspapers, television channels, or radio stations, a search engine " +
-"determines " +
-"what is and isn't relevant — what appears prominently, what is buried" +
+"Every search engine embodies, " +
+emph(
+"de facto" +
+"")+
 "," +
-" and what effectively ceases to exist. The implementation differs — the editorial policy is applied on demand and automatically, calibrated through algorithmic signals rather than editorial meetings — but the function is identical, and no less subjective, than that performed by any other form of media. As Cathy O’Neil puts it, an algorithm is just someone’s opinion written in code.\n" +
+" an " +
+strong(
+"editorial policy" +
+"")+
+". Like newspapers, television channels, or radio stations, a search engine frames what is and isn't relevant — what appears prominently, what is buried “beneath the fold,” how attention is directed and modulated, and what effectively ceases to exist. The implementation differs — the editorial policy is applied on demand and automatically, calibrated through algorithmic signals rather than editorial meetings — but the function is identical, and no less subjective, than that performed by any other form of media. As Cathy O’Neil puts it, an algorithm is just someone’s opinion written in code.\n" +
 "")+
 par(
-"When a newspaper editor decides which story leads the front page, we understand this as an editorial judgment shaped by institutional values, commercial incentives, and individual biases. When Google's ranking algorithm makes an equivalent determination, we have somehow convinced ourselves that this constitutes a neutral, technical process " +
-"rather than a highly consequential editorial operation" +
-". Google’s editorial decisions have a greater impact than those of any newsroom but with none of the institutional guarantees" +
-" or accountability.\n" +
+"When a newspaper editor decides which story leads the front page, we understand this as an editorial judgment shaped by institutional values, commercial incentives, and individual biases. When Google's ranking algorithm makes an equivalent determination, we have somehow convinced ourselves that this constitutes a neutral, technical process (the internet offered up this search result!) rather than a highly consequential editorial operation (Google’s algorithm and market incentive favored this search result). Google’s editorial decisions have a greater impact than those of any newsroom but with none of the institutional guarantees, appeals or corrections process, or accountability.\n" +
 "")+
 par(
-"The consequences for information integrity are direct. As a single ranking system becomes the dominant arbiter of visibility, the signals it uses to assess quality become the targets of manipulation. Th" +
-"e" +
-" result" +
-" is " +
-"a system where the appearance of authority, evaluated by a single set of criteria, progressively decouples from genuine expertise, and misinformation that successfully mimics those quality signals becomes increasingly difficult to distinguish from legitimate content. Any monoculture of relevance determination creates a single, legible attack surface for those who wish to manipulate the information environment. In a pluralistic search ecosystem, where multiple ranking editorial choices coexist, manipulating one system's signals would not automatically grant visibility across all others. The algorithmic monoculture makes " +
-"m" +
-"isinformation " +
-"scalable" +
+"The consequences for information integrity are direct. As a single ranking system becomes the dominant arbiter of visibility, the signals it uses to assess quality become the targets of manipulation. This results naturally but quietly from a system where the appearance of authority, evaluated by a single set of criteria, progressively decouples from genuine expertise, and misinformation that successfully mimics those quality signals becomes increasingly difficult to distinguish from legitimate content. Any monoculture of relevance determination creates a single, legible attack surface for those who wish to manipulate the information environment. In a pluralistic search ecosystem, where multiple ranking editorial choices coexist, manipulating one system's signals would not automatically grant visibility across all others. The algorithmic monoculture makes disinformation automatable and scalable, while making appropriate countermeasures inhibitively expensive and politically unpopular " +
+emph(
+"a priori" +
+"")+
 ".\n" +
 "")+
 par(
-"This problem compounds the longer it lasts since it impacts which sources of information are viable" +
-" and " +
-"orients " +
-"which content " +
-"i" +
-"s" +
-" recirculated and " +
-"gets to " +
-"influence" +
-" the creation of " +
-"new " +
-"content. When a single algorithm determines the relevance of all indexed human knowledge, it necessarily " +
-"imposes a particular epistemological framework (which is to say particular assumptions about what constitutes a credible source, what forms of evidence matter, and which knowledge traditions deserve amplification). Knowledge systems that do not conform to the algorithm's implicit model of authority are not censored in the traditional sense; they are rendered " +
-"invisible" +
-", which amidst the volume " +
-"of information available today amounts to the same thing. Ultimately, this implements " +
+"This problem compounds the longer it lasts since it impacts which sources of information are viable, but as a second-order effect also orients " +
+emph(
+"which content gets" +
+"")+
+" recirculated and thus influences the creation of future content. When a single algorithm determines the relevance of all indexed human knowledge, it necessarily " +
+emph(
+"and, over time, recursively " +
+"")+
+"imposes a particular epistemological framework (which is to say particular assumptions about what constitutes a credible source, what forms of evidence matter, and which knowledge traditions deserve amplification). Knowledge systems that do not conform to the algorithm's implicit model of authority are not censored in the traditional sense; they are rendered essentially invisible by deranking and deprioritizing, which amidst the volume and velocity of information available today amounts to the same thing. Ultimately, this implements " +
 emph(
 "epistemicide" +
 "")+
-": the systemic destruction or displacement of " +
-"ways of knowing.\n" +
+": the systemic destruction or displacement of alternate ways of knowing.\n" +
 "")+
 par(
 "We’ve lived in this world long enough that many can barely imagine alternatives, but the antithesis — algorithmic pluralism — is gaining traction, particularly in Europe " +
 references(
 "(" +
-link("#bib-9b82ddb5a50524bf137513e6852fd239bc5284358c63ceeb80d7623797322ddd", 
+link(label("bib-9b82ddb5a50524bf137513e6852fd239bc5284358c63ceeb80d7623797322ddd"), 
 "Collectif 2024" +
 "")+
 "; " +
-link("#bib-2a8dee07c7e146c8f44c412237ac14df9f4a4febfbfaf2d56d13f9c44e9c7f1f", 
+link(label("bib-2a8dee07c7e146c8f44c412237ac14df9f4a4febfbfaf2d56d13f9c44e9c7f1f"), 
 "Szymielewicz et al. 2025" +
 "")+
 "; " +
-link("#bib-280821d7f7207132d91b688cc8abce6f51e4ea712959bfd76c72752e17befc92", 
+link(label("bib-280821d7f7207132d91b688cc8abce6f51e4ea712959bfd76c72752e17befc92"), 
 "Elsayed-Ali and Berjon 2025" +
 "")+
 ")" +
 "")+
-". " +
-"Applied to " +
-"search, this would mean that " +
-"people " +
-"could " +
-"choose between ranking systems that embody different editorial " +
-"choices" +
-".\n" +
+". In the context of search, this would mean that end-users (and corporations) could directly choose between ranking systems that embody different editorial programmes and directly impact the information intake and cognitive health of each user.\n" +
 "")+
 par(
-"The democratic stakes are not hypothetical" +
-". When a single company's ranking algorithm can determine which political candidates receive visibility, which policy positions appear well-supported, which scientific findings seem authoritative, and which cultural narratives gain traction, the resilience of democratic discourse depends entirely on the benevolence, competence, and political neutrality of that company's leadership " +
-"— " +
-"qualities " +
-"that are neither guaranteed nor stable across time, and that we have been watching collapse in Google Search over a short few years" +
-". " +
+"The democratic stakes are not hypothetical, nor are they subjective. When a single company's ranking algorithm can determine which political candidates receive visibility, which policy positions appear well-supported, which scientific findings seem authoritative, and which cultural narratives gain traction, the resilience of democratic discourse depends entirely on the benevolence, competence, and political neutrality of that company's leadership and implementation quality — properties that are neither guaranteed nor stable across time, and that we have been watching collapse in Google Search over a short few years as market incentives and power structures shift quickly. \n" +
 "")+
 par(
-"Media pluralism has never been " +
-"supported " +
-"on claims that media owners are malicious" +
-"but " +
-"rather" +
-"on the principle that concentrated control over information flows is structurally incompatible with democratic self-determination, regardless of the (always temporary) character of those who hold that control. And the larger the scale, the more this principle applies. The question is not even whether Google is currently abusing its editorial power over search — even though it is — but whether any free society should permit such concentrated power " +
-"to exist at all.\n" +
+"Media pluralism has never been advocated for based on claims that media owners are malicious or extractive; rather, media pluralism has generally been presented as a " +
+emph(
+"prima facie " +
+"")+
+"public good, based on the principle that concentrated control over information flows is structurally incompatible with democratic self-determination, regardless of the (always temporary) character of those who hold that control. And the larger the scale, the more this principle applies. The question is not even whether Google is currently abusing its editorial power over search — even though it is — but whether any free society should permit such concentrated power over cognitive security, science, and democracy to exist at all.\n" +
 "")+
 heading(level: 2, 
-"Opacity and Unaccountability\n" +
+"Opacity and Unaccountability" +
 "")+
 par(
 "There is very little " +
@@ -931,7 +781,7 @@ par(
 "no mechanism through which the affected web community can identify the problem, trace its origins, or propose a remedy. If we are to take the W3C's stated goal of building a web for all humankind as anything other than a suburban lawn sign slogan " +
 references(
 "(" +
-link("#bib-1ff40eec73416308c9322531ce87e9eb6134272fb700be93238edb591a1468d0", 
+link(label("bib-1ff40eec73416308c9322531ce87e9eb6134272fb700be93238edb591a1468d0"), 
 "Wilson and Çelik 2025" +
 "")+
 ")" +
@@ -952,7 +802,7 @@ par(
 "other ecosystem participants " +
 references(
 "(" +
-link("#bib-282aea1761cf2d03ec38c8a02bb236bf8216e0bbab94104b713d3a5a8cd841a7", 
+link(label("bib-282aea1761cf2d03ec38c8a02bb236bf8216e0bbab94104b713d3a5a8cd841a7"), 
 "Appelquist et al. 2024" +
 "")+
 ")" +
@@ -982,7 +832,7 @@ emph(
 " is the trust of the user " +
 references(
 "(" +
-link("#bib-d2599206e4d2169f47f6d6652e0e2b2d1b76ba0d360cff7a6d4674bc2c85a9c2", 
+link(label("bib-d2599206e4d2169f47f6d6652e0e2b2d1b76ba0d360cff7a6d4674bc2c85a9c2"), 
 "Nottingham 2020" +
 "")+
 ")" +
@@ -1000,35 +850,33 @@ link("#bib-d2599206e4d2169f47f6d6652e0e2b2d1b76ba0d360cff7a6d4674bc2c85a9c2",
 "all the way to the slaughterhouse.\n" +
 "")+
 heading(level: 2, 
-"No Browser Governance\n" +
+"No Browser Governance" +
 "")+
 par(
-"Browsers are expected " +
-"to be " +
+"Browsers are expected definitionally to be “" +
 emph(
-"user agents" +
+"user agents”" +
 "")+
-", software that acts on behalf of the person and in their interest " +
+", software that acts on behalf of the person and in their interest in a trustless, open environment " +
 references(
 "(" +
-link("#bib-e8c16612eb9b980d5db1dcc16c1b39d1e8c20c9c0313588997bb793cd9142f64", 
+link(label("bib-e8c16612eb9b980d5db1dcc16c1b39d1e8c20c9c0313588997bb793cd9142f64"), 
 "Berjon and Yasskin 2025" +
 "")+
 "; " +
-link("#bib-d2599206e4d2169f47f6d6652e0e2b2d1b76ba0d360cff7a6d4674bc2c85a9c2", 
+link(label("bib-d2599206e4d2169f47f6d6652e0e2b2d1b76ba0d360cff7a6d4674bc2c85a9c2"), 
 "Nottingham 2020" +
 "")+
 "; " +
-link("#bib-282aea1761cf2d03ec38c8a02bb236bf8216e0bbab94104b713d3a5a8cd841a7", 
+link(label("bib-282aea1761cf2d03ec38c8a02bb236bf8216e0bbab94104b713d3a5a8cd841a7"), 
 "Appelquist et al. 2024" +
 "")+
 ")" +
 "")+
-". " +
-"These are not supposed to be aspirational platitudes but rather to articulate a key architectural assumption on which the entire web platform is built. The browser is the user's fiduciary in the digital sphere, the intermediary entrusted with representing their interests in every interaction with every server " +
+". (Websites and endpoints at stable domains are assumed, conversely to represent the interests of one or more legal persons and enforce business logic fairly across all classes of user agent.) These are not supposed to be aspirational platitudes but rather to articulate a key architectural assumption on which the entire web platform is built. The browser is the user's fiduciary in the digital sphere, the intermediary entrusted with representing their interests in every interaction with every server " +
 references(
 "(" +
-link("#bib-f71e8cdf4116b384bbcbb7fbd19b50b772263725d9f9ecce1cdbdaaed5b7642e", 
+link(label("bib-f71e8cdf4116b384bbcbb7fbd19b50b772263725d9f9ecce1cdbdaaed5b7642e"), 
 "Berjon 2021b" +
 "")+
 ")" +
@@ -1037,34 +885,25 @@ link("#bib-f71e8cdf4116b384bbcbb7fbd19b50b772263725d9f9ecce1cdbdaaed5b7642e",
 "")+
 par(
 "In the absence of " +
+strong(
 "enforcement" +
-" of this expectation, however, this architectural expectation finds itself violated, which in turn puts the web off kilter. Google Chrome, for instance, remains the only major browser without meaningful privacy protections. Worse, it deploys a comprehensive set of highly deceptive design patterns to trick its users into disclosing their near-entire online behaviour to Google. Architecturally, it doesn’t deserve to be " +
-"understood " +
-"as " +
-"the " +
-"user" +
-"’s" +
-" agent but rather as Google’s " +
-"access" +
-" to " +
-"eyeballs. " +
-"And yet t" +
-"here exists" +
-" no mechanism within the web standards community, within the levy system, or within any " +
-"governance structure through which the web community c" +
-"an" +
-" identify this betrayal, hold the browser accountable, and compel a change in behaviour.\n" +
+"")+
+" of this expectation, however, this architectural expectation finds itself violated, which in turn puts the web off kilter. Google Chrome, for instance, remains the only major browser without meaningful privacy protections. Worse, it deploys a comprehensive set of highly deceptive design patterns to trick its users into disclosing their near-entire online behaviour to Google. Architecturally, it doesn’t deserve to be classed as a user agent but rather as Google’s optimised access mechanism for reaching and observing users. There exists, however, no mechanism within the web standards community, within the levy system, or within any known governance structure through which the web community could identify this betrayal, hold the browser accountable, and compel a change in behaviour.\n" +
 "")+
 par(
 "This is a key structural gap that weakens the web: " +
+strong(
 "there is no runtime governance of browsers. \n" +
 "")+
+"")+
 heading(level: 2, 
-"Browser Engine Financing\n" +
+"Browser Engine Financing" +
 "")+
 par(
 "The levy finances browsers, but it does not finance browser " +
+emph(
 "engines" +
+"")+
 ". To recall, a browser is the application that users interact with whereas the browser engine is the vastly more complex substrate beneath it" +
 ":" +
 "the " +
@@ -1089,7 +928,7 @@ par(
 par(
 "Because " +
 "engine " +
-"development is not directly funded by the levy, only organizations with either massive independent resources (Google, Apple) or mission-driven commitment (Mozilla, which " +
+"development is not directly funded by the levy, only organisations with either massive independent resources (Google, Apple) or mission-driven commitment (Mozilla, which " +
 "even so " +
 "derives the overwhelming majority of its revenue from Google) can " +
 "sus" +
@@ -1101,7 +940,7 @@ heading(level: 2,
 emph(
 "Not" +
 "")+
-" Kill The Web?\n" +
+" Kill The Web?" +
 "")+
 par(
 "Looking back over the past decades, it’s tempting to ask: is it even possible for search " +
@@ -1111,34 +950,15 @@ emph(
 " to kill the web?\n" +
 "")+
 par(
-"Today’s shift in which AI overviews are substituting for " +
-"visits (and thereby destroying the revenue model of ad-driven sites) is a mark" +
-"e" +
-"d worsening of a trend that has been unfolding since Google became dominant enough to impose its will on websites" +
-"," +
-" about fifteen years ago. " +
-"B" +
-"oxed" +
-"returning content directly" +
-", " +
-"not to mention " +
-"AMP " +
+"Today’s shift in which AI overviews are substituting for publisher visits (and thereby destroying the revenue model of ad-driven sites) is a markèd worsening of a trend that has been unfolding since Google became dominant enough to impose its will on websites about fifteen years ago. Returning results in “boxed” (extended previews displayed in a box) or other inline form, to say nothing of AMP " +
 references(
 "(" +
-link("#bib-40420e811f38d241a22aaad85a45826bef07137278873663cf7f5fded12b4167", 
+link(label("bib-40420e811f38d241a22aaad85a45826bef07137278873663cf7f5fded12b4167"), 
 "Google 2015" +
 "")+
 ")" +
 "")+
-", " +
-"were " +
-"already do" +
-"ing" +
-" what AI overviews are " +
-"only " +
-"perfecting, which is eliminating the need to send people to the actual source that worked on producing the content" +
-". The problem was never " +
-"indexing — indexing the web serves the mutualistic purpose of making it discoverable, so long as it drives traffic back to the source. The problem is " +
+", already do what AI overviews are just now perfecting, which is eliminating the need to send people to the actual source that worked on producing the content extractable as a byproduct of indexing. The problem was never the indexing — indexing the web serves the mutualistic purpose of making it discoverable, so long as it drives traffic back to the source. The problem is " +
 emph(
 "substitutive use" +
 "")+
@@ -1148,7 +968,7 @@ par(
 "To make matters worse, chatbot agents have figured out how to circumvent paywalls " +
 references(
 "(" +
-link("#bib-a4a6cca63d61907d3f03b4ffb34bbcd2ccb0d9098cb57e96d5dfbe23b3404d6d", 
+link(label("bib-a4a6cca63d61907d3f03b4ffb34bbcd2ccb0d9098cb57e96d5dfbe23b3404d6d"), 
 "van Ess 2025" +
 "")+
 ")" +
@@ -1156,24 +976,14 @@ link("#bib-a4a6cca63d61907d3f03b4ffb34bbcd2ccb0d9098cb57e96d5dfbe23b3404d6d",
 ". We now find ourselves in a bind: the paywall, pillar of subscription models, creates friction for human readers while letting bots through to extract the content invisibly.\n" +
 "")+
 par(
-"The IETF is working on an upgrade to robots.txt, AI Prefs, a declarative framework through which publishers could specify terms for AI use of their content" +
-". This can help publishers who cannot readily block AI crawlers unilaterally because it loses them the (weak, but existing) discoverability benefits of AI referrals without " +
-"gaining " +
-"protection" +
-", because " +
-"the AI's training data already contains their content" +
-". It is unlikely, however, that a solution built solely from “voluntary” standards, without runtime governance, can suffice. In order to gain teeth, AI Prefs will need to be coordinated with legal instruments. This will prove challenging in the current political environment, especially as bilateral trade agreements with the USA can be mobilised to prevent the intercession of legal protections in other jurisdictions.\n" +
+"The IETF is working on an upgrade to robots.txt, AI Prefs, a declarative framework through which publishers could specify terms for AI use of their content per page or per resource. This can help publishers who cannot readily block AI crawlers unilaterally because it loses them the (weak, but existing) discoverability benefits of AI referrals without in exchange yielding any significant protection against predation (since the AI's training data already contains their content regardless of any last-mile occlusion). It is unlikely, however, that a solution built solely from “voluntary” standards, without runtime governance, can suffice. In order to gain teeth, AI Prefs will need to be coordinated with legal instruments. This will prove challenging in the current political environment, especially as bilateral trade agreements with the USA can be mobilised to prevent the intercession of legal protections in other jurisdictions.\n" +
 "")+
 par(
-"Browsers could assist" +
-". As AI assistant functionality potentially migrates into browser interfaces, browsers can act responsibly. Browsers committed to principles of mutualistic web ecology could, by design, prefer links to answers, help route compensation to publishers when their content is substitutively used" +
-", and surface provenance to users in ways that maintain the web's " +
+"Browsers could assist in this empowerment of publishers against predation by crawlers and non-human agents. As AI assistant functionality potentially migrates into browser interfaces, browsers can act responsibly. Browsers committed to principles of mutualistic web ecology could, by design, prefer links to answers, help route compensation to publishers when their content is substitutively used at runtime, and surface provenance to users in ways that maintain the web's foundational " +
+strong(
 "referral function " +
-"even within AI-summari" +
-"z" +
-"ed responses. This kind of decision — which given Google’s strategy we cannot expect to see taking place in any mainstream browser under today’s funding " +
-"system" +
-" — is exactly the sort of large-scale coordination that a funding mechanism with built-in runtime governance would be able to deploy.\n" +
+"")+
+"even within AI-summarised responses. This kind of decision — which given Google’s strategy we cannot expect to see taking place in any mainstream browser under today’s funding model — is exactly the sort of large-scale coordination that a funding mechanism with built-in runtime governance would be able to deploy.\n" +
 "")+
 par(
 "In many ways, these failings belong not solely to search engines but more broadly to the very notion of an " +
@@ -1181,42 +991,43 @@ emph(
 "open" +
 "")+
 " web. Open implies unfettered access, ungoverned use. It’s a " +
+emph(
 "libertarian " +
+"")+
 "arrangement, not a " +
+emph(
 "democratic " +
-"one. Any emerging control point will accrue power, and the difficulty of coordinating other actors will make it impossible to " +
-"balance that power " +
-"out " +
+"")+
+"one. Any emerging control point will accrue power, and the difficulty of coordinating other actors will make it impossible to counterbalance that power " +
 references(
 "(" +
-link("#bib-c55ba72ec0ebeae7d49e965805db5b2a743ca903e24c60cef76d2956119fdfe5", 
+link(label("bib-c55ba72ec0ebeae7d49e965805db5b2a743ca903e24c60cef76d2956119fdfe5"), 
 "Clark 2012" +
 "")+
 ")" +
 "")+
-". Mutualism" +
-"," +
-"c" +
-"ommons" +
-"," +
-" subsist on " +
-"enforcement" +
-"not the kindness of anyone’s heart. The way forward requires this sort of coordination as " +
-"alone " +
-"it " +
-"has the ability to " +
-"deal with " +
-"large-scale systemic shifts. Search that doesn’t kill the web is possible, but because search is by its nature " +
-"centralising" +
+". Mutualism and the commons both subsist on a distributed and ideally bottoms-up " +
+emph(
+"enforcement " +
+"")+
+"of structuring protocols" +
+emph(
+", " +
+"")+
+"not the kindness of anyone’s heart. The way forward requires this sort of coordination as it alone has the ability to adapt to large-scale systemic shifts. Search that doesn’t kill the web is possible, but because search is by its nature " +
+emph(
+"centralising, " +
+"")+
 "we can only get mutualistic search if we govern it under collective rules, as shared infrastructure.\n" +
 "")+
-pagebreak() +
 heading(level: 1, 
-"How Much Can A Browser Cost?\n" +
+"How Much Can A Browser Cost?" +
 "")+
 par(
 "A reasonable bystander might expect that the cost of maintaining the web's most critical infrastructure would be a well-established figure, the kind of number that appears in budget documents, gets debated in governance forums, and informs policy decisions about the digital sphere's future. That reasonable bystander might, perhaps even without excessive " +
+emph(
 "naïveté" +
+"")+
 ", expect that the people who earnestly declare that the web is “" +
 emph(
 "for all humanity" +
@@ -1228,45 +1039,47 @@ emph(
 "” wouldn’t dare make such grandstanding statements without at least a modicum of public accountability.\n" +
 "")+
 par(
-"The reasonable bystander would, however, be wrong. As it turns out, the web community does not know, to within multiple orders of magnitude, how much a browser or browser engine costs to develop and maintain. This is a symptom of the private government of the " +
-"web. A public resource, designed for " +
-"the good of all, could simply never exist under the opacity documented throughout this report. Based on how its most fundamental structures are governed, the web isn’t a commons but rather " +
+"The reasonable bystander would, however, be wrong. As it turns out, the web community does not know, to within multiple orders of magnitude, how much a browser or browser engine costs to develop and maintain. This is a symptom of the private government of the as-yet cyberlibertarian web. A public resource, designed for and maintained to ensure the good of all, could simply never exist under the opacity documented throughout this report. Based on how its most fundamental structures are governed, the web isn’t a commons but rather " +
+emph(
 "private property" +
-"that the public is granted access to because it’s profitable" +
-"." +
+"")+
+"that the public is granted access to because it’s profitable (for now) to grant it to them, less a commons than an " +
+strong(
+"easement" +
+"")+
+".\n" +
 "")+
 heading(level: 2, 
-"Workshop on Browser Funding\n" +
+"Workshop on Browser Funding" +
 "")+
 par(
-"In the process of developing this report, I organised a workshop on \"Browser Funding After Search Deals\" in June 2025 at the Web Engines Hackfest, which is the primary gathering of the browser engine community. The workshop convened engineers and leaders from across the browser ecosystem to examine what would happen to browser funding if the current search default payment system were disrupted, whether by antitrust remedies, regulatory intervention, " +
-"or " +
-"structural reform" +
+"In the process of developing this report, I organised a workshop on \"Browser Funding After Search Deals\" in June 2025 at the Web Engines Hackfest, which is the primary gathering of the browser engine community. The workshop convened engineers and leaders from across the browser ecosystem to examine what would happen to browser funding if the current search default payment system were disrupted, whether by antitrust remedies, regulatory intervention, structural reform, or other " +
+emph(
+"forces majeure" +
+"")+
 ".\n" +
 "")+
 par(
-"The key finding was the one noted above: the community itself — including engineers working for browser vendors — lacks a clear understanding of browser costs. Participants disagreed not merely on precise figures but" +
-" on the correct order of magnitude, reflecting fundamentally different assumptions about what counts as a " +
+"The key finding was the one noted above: the community itself — including engineers working for browser vendors — lacks a clear understanding of browser costs. Participants disagreed not merely on precise figures but even on the correct order of magnitude, reflecting fundamentally different assumptions about what counts as a " +
+emph(
 "necessary " +
+"")+
 "cost, what level of engineering investment constitutes \"" +
+emph(
 "sufficient" +
+"")+
 "\" browser development, and how to account for " +
+emph(
 "shared infrastructure " +
-"such as " +
-"Web Platform Tests (WPT) environments, browser sync servers, the Safe Browsing database, and security monitoring. The discussion made clear that greater accountability is needed. Having infrastructure serving over five billion people managed under financial obscurity " +
-"further " +
-"has a " +
-"chilling effect on novel browser engines that struggle to know how to account for necessary costs and presents a challenge for discussion about potential public funding: asking a government for 10 million" +
-"or 4 " +
+"")+
+"such as the Web Platform Tests (WPT) environments, browser sync servers, the Safe Browsing database, and security monitoring. The discussion made clear that greater accountability is needed. Having infrastructure serving over five billion people managed under financial obscurity has a further chilling effect on novel browser engines that struggle to know how to account for necessary costs and presents a challenge for discussion about potential public funding: asking a government for €10 million and asking it for €4 " +
+strong(
 "b" +
-"illion " +
-"are" +
-"n" +
-"’" +
-"t the same task.\n" +
+"")+
+"illion are not the same task.\n" +
 "")+
 heading(level: 2, 
-"The Ehrenberg-Russell Estimate\n" +
+"The Ehrenberg-Russell Estimate" +
 "")+
 par(
 "Daniel Ehrenberg, a highly experienced browser developer, offers a back-of-the-envelope estimate for Chrome's cost based on engineering headcount: somewhat fewer than 2,000 engineers at an average fully-loaded cost of $500,000 per year yields approximately $1 billion annually (" +
@@ -1286,13 +1099,13 @@ par(
 "Evidently, if monopoly pricing in search advertising were eliminated (which is desirable) that figure would drop substantially. But it can drop by a couple orders of magnitude before it ceases to be large enough to support massive improvement across the digital sphere.\n" +
 "")+
 heading(level: 2, 
-"The Kardell Estimate\n" +
+"The Kardell Estimate" +
 "")+
 par(
 "Brian Kardell, a long-time web standards expert and developer advocate at Igalia, has produced a widely-cited estimate of browser engine costs. His analysis concludes that maintaining all three major independent browser engines (Blink, WebKit, and Gecko) requires approximately $2 billion per year in aggregate " +
 references(
 "(" +
-link("#bib-38a283e98682062294526e879741ed947b4402ea25c89c200b999b653e33e420", 
+link(label("bib-38a283e98682062294526e879741ed947b4402ea25c89c200b999b653e33e420"), 
 "Kardell 2022" +
 "")+
 ")" +
@@ -1303,13 +1116,13 @@ par(
 "This figure attempts to capture the full cost of engine development, including the standards work, testing infrastructure, and platform integration that engines require but that is often invisible in other estimates.\n" +
 "")+
 heading(level: 2, 
-"The Cooper Estimate\n" +
+"The Cooper Estimate" +
 "")+
 par(
 "Alissa Cooper, a leading expert in both internet standards and tech policy, has produced a detailed analysis of browser economics, encompassing both the revenue and cost sides of the equation " +
 references(
 "(" +
-link("#bib-355d13fe0f4ad907ed6e733979379569dce30b606be813c01927355124c10e08", 
+link(label("bib-355d13fe0f4ad907ed6e733979379569dce30b606be813c01927355124c10e08"), 
 "Cooper 2025a" +
 "")+
 ")" +
@@ -1317,13 +1130,10 @@ link("#bib-355d13fe0f4ad907ed6e733979379569dce30b606be813c01927355124c10e08",
 ". On the revenue side, she finds that Chrome generates an astonishing estimated $17–35 billion per year in advertising revenue for Google in the United States alone. On the cost side, she estimates that Google spends at least $1–2 billion per year on Chrome development, while Mozilla spends slightly less than $400 million per year on both the Gecko engine and the Firefox browser.\n" +
 "")+
 par(
-"Cooper's analysis argues that since Firefox is a competitive browser that provides a fully functional browsing experience, its funding level can be considered sufficient. If $400 million per year is enough to maintain an independent browser engine and a competitive browser, then the multi-billion-dollar figures associated with Chrome reflect not the intrinsic cost of browser development but the overhead of operating within the inefficiency of a monopoly's corporate structure. Cooper " +
-"concludes that the web c" +
-"an" +
-" do perfectly well even if Google were forced to divest Chrome" +
+"Cooper's analysis argues that since Firefox is a competitive browser that provides a fully functional browsing experience, its funding level can be considered sufficient. If $400 million per year is enough to maintain an independent browser engine and a competitive browser, then the multi-billion-dollar figures associated with Chrome reflect not the intrinsic cost of browser development but the overhead of operating within the inefficiency of a monopoly's corporate structure. Cooper counterintuitively concludes that the web could do perfectly well even if Google were forced to divest Chrome, although critics point to the importance of shared infrastructure like standards, testing, etc. being significantly undercounted in these estimates and currently borne heavily by Google " +
 references(
 "(" +
-link("#bib-ae1df74ac29fe4831f4dd7d7dba6b2d414d843214e7ec3a11b8007f3d4b2324e", 
+link(label("bib-ae1df74ac29fe4831f4dd7d7dba6b2d414d843214e7ec3a11b8007f3d4b2324e"), 
 "Cooper 2025b" +
 "")+
 ")" +
@@ -1331,31 +1141,27 @@ link("#bib-ae1df74ac29fe4831f4dd7d7dba6b2d414d843214e7ec3a11b8007f3d4b2324e",
 ".\n" +
 "")+
 heading(level: 2, 
-"The Tarakiyee Estimate\n" +
+"The Tarakiyee Estimate" +
 "")+
 par(
 "Tara Tarakiyee, who works on open source funding issues at the Sovereign Tech Agency in Germany, approaches the question from an entirely different angle, looking at the empirical productivity of a small, focused engineering team " +
 references(
 "(" +
-link("#bib-329e7ac8d07bc703f7fe80fd39256e8c08dfd3647be483acad6e97eb34621dce", 
+link(label("bib-329e7ac8d07bc703f7fe80fd39256e8c08dfd3647be483acad6e97eb34621dce"), 
 "Tarakiyee 2025" +
 "")+
 ")" +
 "")+
-". They examine how much improvement in Web Platform Tests (WPT) pass" +
-"rates the cooperative Igalia has been able to achieve in the Servo browser engine with just five engineers. " +
-"By extrapolating " +
-"from that observed productivity to the full scope of engine development work, their analysis arrives at a " +
-"figure of €50–70 million per year to develop a competitive browser engine.\n" +
+". They examine how much improvement in Web Platform Tests (WPT) pass-rates the cooperative Igalia has been able to achieve in the Servo browser engine with just five engineers. Zooming out from that observed productivity to the full scope of engine development work, their analysis arrives at a ballpark figure of €50–70 million per year to develop a competitive browser engine.\n" +
 "")+
 heading(level: 2, 
-"The Ayala Estimate\n" +
+"The Ayala Estimate" +
 "")+
 par(
 "Dietrich Ayala, a veteran of browser issues and formerly of Mozilla, has developed a methodologically interesting approach to browser engine costing, grounded in a data-centric measure of feature development throughput " +
 references(
 "(" +
-link("#bib-319c879a9875bf360f47701a58b556e22d3c2d491f2da7df60e7333fa5913738", 
+link(label("bib-319c879a9875bf360f47701a58b556e22d3c2d491f2da7df60e7333fa5913738"), 
 "Ayala 2026" +
 "")+
 ")" +
@@ -1366,8 +1172,7 @@ par(
 "Ayala measures two things: how many new BWA features are added to the web platform each year (approximately 52), and how many of those features the Servo engine manages to implement at its current funding level (22). From this, he calculates that implementing 52 BWA features per year in Servo — which is to say keeping pace with the web platform's evolution — would require approximately 44 full-time engineers. At a cost of €200,000 per headcount, this yields an annual cost of approximately €8.8 million.\n" +
 "")+
 par(
-"This covers only the engine and the per-engineer cost assumption is conservative (" +
-"low by US standards). Nevertheless, the feature-based methodology offers a benchmark grounded in measurable outputs. It makes it possible to ask not \"" +
+"This covers only the engine and the per-engineer cost assumption is conservative (and very low by US standards). Nevertheless, the feature-based methodology offers a benchmark grounded in measurable outputs. It makes it possible to ask not \"" +
 emph(
 "how much are we spending?" +
 "")+
@@ -1378,12 +1183,12 @@ emph(
 "\"\n" +
 "")+
 heading(level: 2, 
-"So, What’s The Tab?\n" +
+"So, What’s The Tab?" +
 "")+
 par(
 "The state of the art reveals that every cost estimate from single-digit millions to multiple billions has its defenders, and each pricing level has a methodology to support it, even if it’s back-of-the-envelope. Summarising the estimates:\n" +
 "")+
-table(columns: 3, 
+align(center, table(columns: 3, 
 (
 strong(
 "Estimate" +
@@ -1453,20 +1258,15 @@ strong(
 (
 "$3–4 billion\n" +
 ""),
-) +
+)) +
 par(
 "This variation can be explained through several identifiable factors. There are stark differences in compensation between a massive, RSU-heavy Silicon Valley monopoly and a nimble European cooperative like Igalia. Aspects of browser operation that sit outside core engine development (from the Safe Browsing database to sync servers, to marketing and distribution) add substantial costs that some estimates include and others exclude. And the degree of organisational overhead varies enormously between a five-person focused team and a multi-thousand-person division within a trillion-dollar corporation.\n" +
 "")+
 par(
-"The most important conclusion, however, is not about the precise number but about the governance implications. The funding level required does not necessarily determine which levy reform ought to be chosen. Given a WISE-like system that formalises the levy but governs it in the interest of the web's users, transparency into funding needs be imposed as a condition of participation. And even assuming substantially depreciated revenue due to the loss of monopoly pricing in search advertising following the reform of the system, the revenue potential remains comfortably in the billions" +
-"/ T" +
-"h" +
-"is is reasonably" +
-" enough to cover the full cost of multiple engines and browsers, with ample margin for investment in standards work, testing infrastructure, accessibility, and support for the broader web commons.\n" +
+"The most important conclusion, however, is not about the precise number but about the governance implications. The funding level required does not necessarily determine which levy reform ought to be chosen. Given a WISE-like system that formalises the levy but governs it in the interest of the web's users, transparency into funding needs be imposed as a condition of participation. And even assuming substantially depreciated revenue due to the loss of monopoly pricing in search advertising following the reform of the system, the revenue potential remains comfortably in the billions. The bulk of this huge annual revenue would be more than  enough to cover the full cost of multiple engines and browsers, with ample margin for investment in standards work, testing infrastructure, accessibility, and support for the broader web commons.\n" +
 "")+
-pagebreak() +
 heading(level: 1, 
-"Solutions\n" +
+"Solutions" +
 "")+
 par(
 "This section primarily looks at solutions regarding funding sources or in some cases solutions addressing specific incumbent problems. How the funds are then potentially deployed and governed (in cases where they don't go to browsers or browser engines directly) are tackled in subsequent chapters.\n" +
@@ -1489,12 +1289,10 @@ list(
 ""),
 ) +
 heading(level: 2, 
-"Voluntary Donations\n" +
+"Voluntary Donations" +
 "")+
 par(
-"The simplest conceptual alternative to the current levy is to fund browsers and browser engines through voluntary contributions. Under this model, search engines, which have strong commercial reasons to want the web to function well, would be among the " +
-"contributors — but so too could other beneficiaries of web infrastructure: large publishers, e-commerce platforms, or governments. Some form of institution would be required to apportion the funds in a sufficiently fair " +
-"manner, ensuring that contributions flow not only to the most visible browsers but also to the engine development work that underpins them and to the smaller independent browsers that maintain competitive pressure in the ecosystem.\n" +
+"The simplest conceptual alternative to the current levy is to fund browsers and browser engines through voluntary contributions. Under this model, search engines, which have strong commercial reasons to want the web to function well, would be among the primary contributors — but so too could other beneficiaries of web infrastructure: large publishers, e-commerce platforms, or governments. Some form of institution would be required to apportion the funds in a sufficiently fair and accountable manner, ensuring that contributions flow not only to the most visible browsers but also to the engine development work that underpins them and to the smaller independent browsers that maintain competitive pressure in the ecosystem.\n" +
 "")+
 par(
 "One mechanism that could strengthen this approach is a shift in engine licensing toward what might be termed " +
@@ -1504,29 +1302,22 @@ emph(
 ". The concept of Commons Source licensing draws on Elinor Ostrom's work on commons governance, which demonstrates that sustainable commons management requires the ability to define boundaries, monitor use, and sanction free-riders " +
 references(
 "(" +
-link("#bib-90fb2269f405ae0ed941ef4090d0b60ce3cee3ff9d87277c6019b13c6a682683", 
-"Ostrom 2019" +
+link(label("bib-90fb2269f405ae0ed941ef4090d0b60ce3cee3ff9d87277c6019b13c6a682683"), 
+"E. Ostrom 2019" +
 "")+
 ")" +
 "")+
-". By contrast, the open-source model, as currently practiced, is fully open-access: anyone can use, modify, and redistribute the code without (much) obligation. This is not, however, how commons typically function. A well-governed commons assumes the ability to gate access to appropriators and to enforce rules around the shared management of the resource. Commons Source licensing would require that applications or browsers wishing to use an engine contribute back in some prescribed way: perhaps " +
-"through " +
-"code contributions" +
-", financial payments, " +
-"or " +
-"participation in governance" +
+". By contrast, the open-source model, as currently practiced, is fully open-access: anyone can use, modify, and redistribute the code without (much) obligation. This is not, however, how commons typically function. A well-governed commons assumes the ability to gate access to appropriators and to enforce rules around the shared management of the resource. Commons Source licensing would require that applications or browsers wishing to use an engine contribute back in some prescribed way: perhaps X number of significant code contributions for every Y users, financial payments, participation in governance," +
 ". This would address the free-riding problem identified in the previous chapter, in which browser vendors adopt an engine, collect levy revenue, and invest nothing in engine maintenance.\n" +
 "")+
 par(
-"Tax policy in various jurisdictions could further " +
-"incentivise voluntary contributions. Donations of money or engineering work to a commons-maintaining organisation could qualify for tax breaks, analogous to those available for contributions to scientific research or cultural heritage. In some locales, this could run into issues when tax law has a restrictive interpretation of charitable purposes which tends to exclude organizations focused on developing or maintaining digital infrastructure, on the grounds that software development is " +
-"a commercial rather than charitable activity. The implicit assumption embedded in such tax laws is that the governance of digital infrastructure is a private commercial matter rather than a public interest concern. This assumption needs to change.\n" +
+"Tax policy in various jurisdictions could further regularise and incentivise voluntary contributions. Donations of money or engineering work to a commons-maintaining organisation could qualify for tax breaks, analogous to those available for contributions to scientific research or cultural heritage. In some locales, this could run into issues when tax law has a restrictive interpretation of charitable purposes which tends to exclude organisations focused on developing or maintaining digital infrastructure, on the grounds that software development is assumed to be a commercial rather than charitable activity. The implicit assumption embedded in such tax laws is that the governance of digital infrastructure is a private commercial matter rather than a public interest concern. This assumption needs to change.\n" +
 "")+
 par(
 "The principal downside of the voluntary approach is that infrastructure is known to be chronically under-provisioned when funding depends on goodwill rather than obligation " +
 references(
 "(" +
-link("#bib-882b90a359dfe01793046e7601524ee739d70746df1c1364e8c3f345c191d9ec", 
+link(label("bib-882b90a359dfe01793046e7601524ee739d70746df1c1364e8c3f345c191d9ec"), 
 "Frischmann 2013" +
 "")+
 ")" +
@@ -1537,19 +1328,21 @@ par(
 "It is also unclear how search defaults would operate under a purely voluntary system. Absent a structured mechanism for selecting defaults, the same market dynamics that produced the current concentration would likely reassert themselves.\n" +
 "")+
 heading(level: 2, 
-"Fiduciary Obligations for User Agents\n" +
+"Fiduciary Obligations for User Agents" +
 "")+
 par(
 "A complementary approach that addresses the incentive misalignment at the heart of the levy rather than the funding mechanism directly is to impose legally enforceable fiduciary duties on " +
-"user agents" +
-". The idea is that software acting on behalf of a person in their interactions with online services should be bound by duties of loyalty, care, and confidentiality analogous to those imposed on other fiduciaries such as lawyers, doctors, or financial advisors " +
+strong(
+"user agents " +
+"")+
+"(including voice/chat browser and other unconventional browsers). The idea is that software acting on behalf of a person in their interactions with online services should be bound by duties of loyalty, care, and confidentiality analogous to those imposed on other fiduciaries such as lawyers, doctors, or financial advisors " +
 references(
 "(" +
-link("#bib-f71e8cdf4116b384bbcbb7fbd19b50b772263725d9f9ecce1cdbdaaed5b7642e", 
+link(label("bib-f71e8cdf4116b384bbcbb7fbd19b50b772263725d9f9ecce1cdbdaaed5b7642e"), 
 "Berjon 2021b" +
 "")+
 "; " +
-link("#bib-e8c16612eb9b980d5db1dcc16c1b39d1e8c20c9c0313588997bb793cd9142f64", 
+link(label("bib-e8c16612eb9b980d5db1dcc16c1b39d1e8c20c9c0313588997bb793cd9142f64"), 
 "Berjon and Yasskin 2025" +
 "")+
 ")" +
@@ -1557,54 +1350,36 @@ link("#bib-e8c16612eb9b980d5db1dcc16c1b39d1e8c20c9c0313588997bb793cd9142f64",
 ".\n" +
 "")+
 par(
-"The relevance to the levy is that if fiduciary duties were imposed by law, a browser " +
-"could not " +
-"default to a search engine whose practices " +
-"conflict with users' interests (e.g. through deceptive ad presentation or invasive data collection). It " +
-"also wouldn’t " +
-"be able to surveil all online activity in the way that Chrome " +
-"does. A fiduciary browser could still receive revenue from search engines, but the terms of that relationship would be constrained by a legal obligation to put users first, rather than by the current arrangement in which the search engine's commercial leverage overrides the user's interests. This framework extends naturally to AI agents, which hold comparable positions of trust. This makes fiduciary duties a forward-looking intervention as well as a remedy for present dysfunction.\n" +
+"The relevance to the levy is that if fiduciary duties were imposed by law, a browser would incur significant liability (even class-action liability) if it were to default to a search engine whose practices demonstrably conflict with users' interests (e.g. through deceptive ad presentation or invasive data collection). It simply would not be able to surveil all online activity in the way that Chrome currently does. A fiduciary browser could still receive revenue from search engines, but the terms of that relationship would be constrained by a legal obligation to put users first, rather than by the current arrangement in which the search engine's commercial leverage overrides the user's interests. This framework extends naturally to AI agents, which hold comparable positions of trust. This makes fiduciary duties a forward-looking intervention as well as a remedy for present dysfunction.\n" +
 "")+
 par(
-"A fiduciary approach is useful enough that it could be implemented independently of levy reforms, and it would meaningfully address several of the problems documented above such as " +
-"the " +
-"the deployment of deceptive design " +
-"patterns or the search engine's ability to veto browser privacy features. However, it does not solve the funding problem. A browser bound by fiduciary duties still needs revenue, and if the only available revenue comes from search engine default payments, the fiduciary obligation creates a tension without resolving the underlying economic dependency. Fiduciary duties are therefore best understood as a necessary complement to structural funding reform rather than as a substitute for it.\n" +
+"A fiduciary approach is useful enough that it could be implemented independently of levy reforms, and it would meaningfully address several of the problems documented above such as the deployment of deceptive design anti-patterns or the search engine's ability to veto browser privacy features. However, it does not solve the funding problem. A browser bound by fiduciary duties still needs revenue, and if the only available revenue comes from search engine default payments, the fiduciary obligation creates a tension without resolving the underlying economic dependency. Fiduciary duties are therefore best understood as a necessary complement to structural funding reform rather than as a substitute for it.\n" +
 "")+
 heading(level: 2, 
-"Retroactive Public Goods Funding\n" +
+"Retroactive Public Goods Funding" +
 "")+
 par(
 "For completeness, it is worth noting the model of Retroactive Public Goods Funding (RPGF), which has been explored primarily in the blockchain ecosystem by projects such as Optimism. The core idea is that public goods are funded " +
 emph(
 "after" +
 "")+
-" they have demonstrated value rather than before, on the theory that retroactive assessment makes it easier to identify and reward genuinely useful contributions" +
-". This inverts the traditional grant model, in which funders must predict which projects will succeed, and instead allocates resources based on observed impact.\n" +
+" they have demonstrated value rather than before, on the theory that retroactive assessment makes it easier to identify and reward genuinely useful contributions, particularly structural dependencies. This inverts the traditional grant model, in which funders must predict which projects will succeed, and instead allocates resources based on observed impact.\n" +
 "")+
 par(
-"The primary innovation compared to voluntary donations is that retroactive assessment mechanism. However, this assumes that projects can bootstrap without funding and front all the costs of development and operation without any payment certainty, which is problematic at any given time and particularly poorly matched to the scale of browser engine development, which requires sustained multi-year investment of significant size. What’s more, there is, to date, scant evidence that RPGF produces meaningful long-term funding at infrastructure scale, or that the community-driven allocation mechanisms consistently direct resources toward the most critical " +
-"needs" +
-" rather than toward the most visible or fashionable projects. " +
-"RPGF " +
-"may " +
-"have a role" +
-", but it is " +
-"not " +
-"a credible " +
+"The primary innovation compared to voluntary donations is that retroactive assessment mechanism. However, this assumes that projects can bootstrap without funding and front all the costs of development and operation without any payment certainty, which is problematic at any given time and particularly poorly matched to the scale of browser engine development, which requires sustained multi-year investment of significant size. What’s more, there is, to date, scant evidence that RPGF produces meaningful long-term funding at infrastructure scale, or that the community-driven allocation mechanisms consistently direct resources toward the most critical infrastructure rather than toward the most visible or fashionable projects. Some form of RPGF or retrospective evaluation may well have a role (for instance, as a way of prioritizing feature development or in-kind contributions to a browser project in the public interest), but it is my position that it should not be mistaken for a credible " +
+emph(
 "standalone " +
-"solution for browser engine" +
-"s" +
-".\n" +
+"")+
+"solution for browser engine funding.\n" +
 "")+
 heading(level: 2, 
-"Global Levy for an Open Web (GLOW)\n" +
+"Global Levy for an Open Web (GLOW)" +
 "")+
 par(
 "Another approach would be to establish a formal, transnational levy dedicated to financing open web infrastructure, the Global Levy for an Open Web or GLOW. The concept draws on precedents in international development finance, where solidarity levies have been successfully deployed to fund global public goods. The most prominent example is the airline ticket solidarity levy, introduced by France in 2006 and used as a microlevy to support global health initiatives operated through UNITAID. The levy has raised over €4bn since its inception " +
 references(
 "(" +
-link("#bib-edd7e75de39609f67a1a597c9fc8fe4482dc890095521eb55436de807a5edefa", 
+link(label("bib-edd7e75de39609f67a1a597c9fc8fe4482dc890095521eb55436de807a5edefa"), 
 "Bertrand et al. 2023" +
 "")+
 ")" +
@@ -1618,7 +1393,7 @@ par(
 "Such an approach might also align with the long-standing aspirations of the New World Information and Communication Order (NWICO), a movement that has long advocated for a more equitable global information system in which developing nations are not merely passive consumers of information infrastructure designed and governed by the global minority " +
 references(
 "(" +
-link("#bib-dec50e429b1d051fb12bf2bddb9c801bfe318e744bf762469b55831a4ffa1f27", 
+link(label("bib-dec50e429b1d051fb12bf2bddb9c801bfe318e744bf762469b55831a4ffa1f27"), 
 "MacBride 1980" +
 "")+
 ")" +
@@ -1626,24 +1401,13 @@ link("#bib-dec50e429b1d051fb12bf2bddb9c801bfe318e744bf762469b55831a4ffa1f27",
 ".\n" +
 "")+
 par(
-"The challenges, however, are substantial. Any transnational levy requires international coordination, and ensuring that the resulting funds are governed with the interests of people everywhere in mind and not just the narrow community currently involved in browser development. A GLOW is worth pursuing" +
-", but it may be " +
-"easier" +
-" in some cases" +
-" to convince countries to set up " +
-"infrastructure directly, " +
-"independently of the " +
-"funding model" +
-".\n" +
+"The challenges, however, are substantial. Any transnational levy requires international coordination, and ensuring that the resulting funds are governed with the interests of people everywhere in mind and not just the narrow community currently involved in browser development. A GLOW is worth pursuing as a long-term strategic goal, but it may be tactically easier, in some cases, to convince countries to set up sovereign infrastructure directly, orthogonally to questions of funding models and long-term governance.\n" +
 "")+
 heading(level: 2, 
-"The League of Digital Infrastructure\n" +
+"The League of Digital Infrastructure" +
 "")+
 par(
-"Mark Carney's 2026 Davos address centred on a " +
-"diagnostic " +
-"word" +
-": " +
+"Mark Carney's 2026 Davos address centred on a key diagnostic assessment: " +
 emph(
 "rupture" +
 "")+
@@ -1655,8 +1419,7 @@ par(
 emph(
 "League of Digital Infrastructure" +
 "")+
-" with which to build durable " +
-"independence.\n" +
+" with which to build durable digital independence.\n" +
 "")+
 par(
 "Such a league would likely focus on “middle powers”, states that are too consequential to ignore but too limited to independently impose their will on the global order. What the rupture has made clear is that middle powers face a choice. The two dominant players — the United States and China — are treating digital infrastructure as an instrument of power and middle powers find themselves needing to decide if they align with a power, go it solo, or forge a path forward together.\n" +
@@ -1668,28 +1431,23 @@ par(
 "In addition to geopolitical transformation, a recurring concern is the maintenance of democracy. This makes any kind of international league difficult to maintain as it has to deal with the very real possibility that one or several of its members may defect to fully or partially (“competitive”) authoritarianism " +
 references(
 "(" +
-link("#bib-abeb02035251441b782f063b760093ead6ed8de9bec4fb99e6e7fb8d20ff5357", 
+link(label("bib-abeb02035251441b782f063b760093ead6ed8de9bec4fb99e6e7fb8d20ff5357"), 
 "Levitsky and Way 2020" +
 "")+
 ")" +
 "")+
-". Paradoxically, this is a" +
-" reason" +
+". Paradoxically, this is an argument " +
 emph(
 "in favour" +
 "")+
-" of these countries aligning their approaches to " +
-"infrastructure" +
-" rather than " +
-"the other way around" +
-". In " +
+" of these countries aligning their approaches to digital infrastructure coöperatively, rather than an argument for skepticism of such coalitions. In " +
 emph(
 "Meteorology as Infrastructural Globalism" +
 "")+
 " Paul N. Edwards recounts what he calls “the first WWW” — the World Weather Watch, a “global network for the automatic collection, processing, and distribution of weather and climate information for the entire planet” " +
 references(
 "(" +
-link("#bib-b84b6a4a09ca852dfbb44dd2bbc61c71a696046b3af20f6b2c39e035b75a41ba", 
+link(label("bib-b84b6a4a09ca852dfbb44dd2bbc61c71a696046b3af20f6b2c39e035b75a41ba"), 
 "Edwards 2006" +
 "")+
 ")" +
@@ -1698,15 +1456,10 @@ link("#bib-b84b6a4a09ca852dfbb44dd2bbc61c71a696046b3af20f6b2c39e035b75a41ba",
 emph(
 "infrastructural globalism" +
 "")+
-": the process by which shared technical systems created international cooperation that long outlasted the political " +
-"arrangements that sponsored them — not through idealism but rather technical needs and commitment that exceeded any country's capacity.\n" +
+": the process by which shared technical systems created international cooperation that long outlasted the political and economic arrangements that sponsored them — not through idealism but rather technical needs and commitment that exceeded any country's capacity.\n" +
 "")+
 par(
-"Infrastructure creates its own political logic and its value compounds over time: shared systems raise the costs of defection, common standards generate network effects, and institutions formed around technical coordination develop constituencies and durability that political agreements " +
-"alone cannot. The conclusion to draw here is that today’s democracies that find themselves backsliding should " +
-"invest in such infrastructure with well-established transnational democratic governance as a " +
-"protection " +
-"against their own future authoritarianism.\n" +
+"Infrastructure creates its own political logic and its value compounds over time: shared systems raise the costs of defection, common standards generate network effects, and institutions formed around technical coordination develop constituencies and durability that political agreements and trade treaties alone cannot. The conclusion to draw here is that today’s democracies that find themselves backsliding should be the first to invest in such infrastructure with well-established transnational democratic governance as a backstop against their own future authoritarianism.\n" +
 "")+
 par(
 "Such an approach has for instance been advocated for in the context of AI in the " +
@@ -1716,60 +1469,35 @@ emph(
 " proposal " +
 references(
 "(" +
-link("#bib-01ba3c5cd6788f7ad36846d35262af3a2bcd9275273a15c52c6256cc5ef66230", 
+link(label("bib-01ba3c5cd6788f7ad36846d35262af3a2bcd9275273a15c52c6256cc5ef66230"), 
 "Tan et al. 2025" +
 "")+
 ")" +
 "")+
-", though not from the " +
-"democra" +
-"tic angle" +
+", though not from the perspective of protecting democracy " +
+emph(
+"per se" +
+"")+
 ". Airbus was born of the recognition that no single European economy could sustain a competitive aerospace industry against American incumbents operating at continental scale with massive subsidies. The solution was joint ownership of " +
+emph(
 "productive capacity" +
-". Critically, " +
-"Airbus " +
-"was also a " +
-"business model, " +
-"not " +
-"merely " +
-"a " +
-"public works" +
-" project" +
-". " +
-"It" +
-" competed in commercial markets, generated revenue, and created industrial ecosystems in each participating country" +
-".\n" +
+"")+
+". Critically, this made Airbus innovative and imbued certain resiliencies to its business model, which should " +
+emph(
+"not be caricatured as " +
+"")+
+"a straightforward “public works” project by European states. Airbus competed in commercial markets, generated revenue, and created industrial ecosystems in each participating country, in ways more like a transnational corporation than a national investment.\n" +
 "")+
 par(
-"This report is not the right place to develop a fully worked out vision for such a League, but several countries aligning on solutions described herein could be its first building block. Pooling these decisions would help shield the countries from American retaliation as the Trump regime predictably seeks to maintain " +
-"the " +
-"control " +
-"capa" +
-"c" +
-"it" +
-"y" +
-" of its tech companies. The funds driven through " +
-"this" +
-" system " +
-"w" +
-"ould help support the development of infrastructure and cooperat" +
-"e" +
-" through the " +
-"teething pains" +
-" of a nascent democratic regime for the internet. Pragmatically, having fewer regional variations to deal with " +
-"will also be " +
-"easier for browser and search engine vendors" +
-".\n" +
+"This report is not the right place to develop a fully worked out vision for such a League, but several countries aligning on solutions described herein could be its first building block. Pooling these decisions would help shield the countries from American retaliation as the Trump regime predictably seeks to maintain control over the capabilities of its tech companies. The funds driven through an Airbus-style co-owned transnational system could help support the development of infrastructure and cooperation through the risky “teething pains” period of a nascent democratic regime for the internet. Pragmatically, having fewer regional variations to deal with (and heightened incentive alignment between participants with vastly different budgetary stakes in the endeavor) could make distributed contribution easier for browser and search engine vendors to plan, budget, and coordinate.\n" +
 "")+
 heading(level: 2, 
-"Web Infrastructure Search Endowment (WISE)\n" +
+"Web Infrastructure Search Endowment (WISE)" +
 "")+
 par(
 "The WISE proposal reforms the levy system while preserving its core economic logic that search revenue should fund web infrastructure, and addresses its structural failings by using control points to force " +
 "governance" +
-". Rather than relying on voluntary contributions or new taxation, WISE would formali" +
-"z" +
-"e the existing levy by delegating the management of browser and search choice screens to an institution governed by relevant stakeholders, including browser vendors, search engines, the web community, and representatives of the public interest.\n" +
+". Rather than relying on voluntary contributions or new taxation, WISE would formalise the existing levy by delegating the management of browser and search choice screens to an institution governed by relevant stakeholders, including browser vendors, search engines, the web community, and representatives of the public interest.\n" +
 "")+
 par(
 "Two aspects of this system need to be considered. First, the " +
@@ -1833,7 +1561,7 @@ par(
 "). By retaining the economic foundation of the existing levy while subjecting it to transparent, multistakeholder governance, WISE offers a path that is both structurally sound and politically feasible.\n" +
 "")+
 heading(level: 2, 
-"Search Protocol\n" +
+"Search Protocol" +
 "")+
 par(
 "Perhaps the most architecturally transformative proposal is to reconceive search not as a website but as a protocol, essentially a standardised interface through which browsers access search functionality and render results themselves" +
@@ -1863,9 +1591,7 @@ par(
 "s" +
 " the user experience" +
 ". Different browsers " +
-"could present results differently, experiment with new layouts, or develop speciali" +
-"z" +
-"ed interfaces for different query types" +
+"could present results differently, experiment with new layouts, or develop specialised interfaces for different query types" +
 ". " +
 "")+
 par(
@@ -1876,9 +1602,7 @@ emph(
 ": the browser can retrieve results from multiple search engines simultaneously, merge them, and present a unified view" +
 ". " +
 "Or i" +
-"t could dynamically select different sources based on query analysis, routing a medical question to a health-speciali" +
-"z" +
-"ed index and a product query to a commerce-focused one" +
+"t could dynamically select different sources based on query analysis, routing a medical question to a health-specialised index and a product query to a commerce-focused one" +
 "." +
 "")+
 par(
@@ -1936,7 +1660,7 @@ emph(
 ", following approaches like NLWeb that ground AI responses in verifiable web content " +
 references(
 "(" +
-link("#bib-1a35349c4829a1a7aa4f2844ef7b4a190f726d29c3c8bfc25468a86308910575", 
+link(label("bib-1a35349c4829a1a7aa4f2844ef7b4a190f726d29c3c8bfc25468a86308910575"), 
 "Guha 2026" +
 "")+
 ")" +
@@ -1946,24 +1670,18 @@ link("#bib-1a35349c4829a1a7aa4f2844ef7b4a190f726d29c3c8bfc25468a86308910575",
 ". WISE governance of choice screens and protocol-based search access are complementary reforms that together address both the funding and the architectural dimensions of the issue.\n" +
 "")+
 heading(level: 2, 
-"Other Control Points\n" +
+"Other Control Points" +
 "")+
 par(
-"David Clark's work " +
-"on control point analysis " +
+"David Clark's work over the years on control point analysis " +
 references(
 "(" +
-link("#bib-c55ba72ec0ebeae7d49e965805db5b2a743ca903e24c60cef76d2956119fdfe5", 
+link(label("bib-c55ba72ec0ebeae7d49e965805db5b2a743ca903e24c60cef76d2956119fdfe5"), 
 "Clark 2012" +
 "")+
 ")" +
 "")+
-" provides a systematic method" +
-" for cataloging and understanding the points of power created by specific design decisions in internet architecture. Rather than beginning from abstract principles, Clark's approach looks" +
-" concrete tasks (such as retrieving and viewing a web page) to identify which actors exercise control at each " +
-"stage" +
-", what options for control they possess, and what vulnerabilities those control points create" +
-".\n" +
+" provides a systematic methodology for cataloging and understanding the points of power created by specific design decisions in internet architecture. Rather than beginning from abstract principles, Clark's approach looks at concrete tasks (such as retrieving and viewing a web page) to identify which actors exercise control at each technological event or informational hop, what options for control they possess, and what vulnerabilities those control points create in aggregate.\n" +
 "")+
 par(
 "Importantly, it is not technology alone that assures the correct operation of the internet. Rather, the actors who sit at control points must be " +
@@ -1977,24 +1695,18 @@ emph(
 " control, shaping outcomes by influencing the behavior of those who hold direct power at the relevant control points.\n" +
 "")+
 par(
-"Search and browsers are " +
-"control points that this document has focused on, but they are only " +
-"one " +
-"among several that could be used to capture funding for web infrastructure if search-" +
-"based" +
-" approaches prove insufficient or politically infeasible. Commerce platforms operate as control points for economic transactions on the web, and open marketplace protocols like the Beckn Protocol already demonstrate that these can be structured to support multistakeholder governance rather than private monopoly " +
+"Search and browsers are the two main control points that this document has focused on, but they are only two among several that could be used to capture funding for web infrastructure if search-focused approaches prove insufficient or politically infeasible. Commerce platforms operate as control points for economic transactions on the web, and open marketplace protocols like the Beckn Protocol already demonstrate that these can be structured to support multistakeholder governance rather than private monopoly " +
 references(
 "(" +
-link("#bib-a159ce6a597971ee1d743ea0a12569623aa87f94122bd0176a02b15c634a6efa", 
+link(label("bib-a159ce6a597971ee1d743ea0a12569623aa87f94122bd0176a02b15c634a6efa"), 
 "Beckn 2026" +
 "")+
 ")" +
 "")+
-". Social media constitutes another control point, and the AT Protocol's decomposition of social into interoperable layers creates governance surfaces that could support " +
-"infrastructure levies " +
+". Social media constitutes another control point, and the AT Protocol's decomposition of social into interoperable layers creates governance surfaces that could support other infrastructure levies and economies of scale " +
 references(
 "(" +
-link("#bib-bef8f1dd49c0e36756b26dbf08c853bcc603c50fa360ce98549078fc3bcfdf17", 
+link(label("bib-bef8f1dd49c0e36756b26dbf08c853bcc603c50fa360ce98549078fc3bcfdf17"), 
 "AT Proto 2026" +
 "")+
 ")" +
@@ -2002,20 +1714,16 @@ link("#bib-bef8f1dd49c0e36756b26dbf08c853bcc603c50fa360ce98549078fc3bcfdf17",
 ". Advertising, concentrated around exchange networks, is a control point whose current private governance has produced cascading dysfunction across the web ecosystem and could also be eligible for better governance.\n" +
 "")+
 par(
-"These solutions are not mutually exclusive, in fact they are mutually reinforcing. Covenants for Beckn-based commerce networks, governance frameworks for the AT Protocol's social infrastructure, and shared institutions for advertising markets all make sense independently and ought to be used to finance their own respective infrastructure layers. But they should also be connected to an improved levy governance body such as WISE and collaborate on areas of overlapping interest, potentially co-financing projects that benefit the entire web ecosystem such as browser engine development, accessibility standards, or privacy-preserving technologies. The " +
-"goal" +
-" is not a single monolithic institution but a federation of infrastructure governance bodies, each managing its own domain while participating in shared funding and coordination mechanisms for the commons they all depend upon.\n" +
+"These solutions are not mutually exclusive, in fact they are mutually reinforcing. Covenants for Beckn-based commerce networks, governance frameworks for the AT Protocol's social infrastructure, and shared institutions for advertising markets all make sense independently and ought to be used to finance their own respective infrastructure layers. But they should also be connected to an improved levy governance body such as WISE and collaborate on areas of overlapping interest, potentially co-financing projects that benefit the entire web ecosystem such as browser engine development, accessibility standards, or privacy-preserving technologies. The ideal solution, informed by the literature on commons governance, is not a single monolithic institution but a federation of infrastructure governance bodies, each managing its own domain while participating in shared funding and coordination mechanisms for the commons they all depend upon.\n" +
 "")+
 heading(level: 2, 
-"Another Web Ahead\n" +
+"Another Web Ahead" +
 "")+
 par(
 "Finally, it must be acknowledged that if the levy system cannot be improved but proves too entrenched to reform, if browser engine diversity continues to decline, and if the parasitism of Google and browser vendors over the rest of the web continues to degrade content quality and to defund the web, then it may ultimately be necessary to consider whether the web's current architecture can sustain the kind of open, democratic information ecosystem that its founders envisioned at all — or if we might not just be better off declaring it dead for good and moving on.\n" +
 "")+
 par(
-"One emerging " +
-"alternative " +
-"is the AT Protocol, which already supports long-form writing, embedded applications, and offers a growing ecosystem of social tools architected around " +
+"One emerging splinter web is the AT Protocol, which already supports long-form writing, embedded applications, and offers a growing ecosystem of social tools architected around " +
 "people" +
 " rather than servers and origins. In a sense, the AT Protocol represents what the web " +
 "might look like if rebuilt on " +
@@ -2047,9 +1755,9 @@ emph(
 ". The better course is to fight for the web's renewal while keeping one eye on the alternatives that may be needed if renewal fails.\n" +
 "")+
 heading(level: 2, 
-"Putting It All Together\n" +
+"Putting It All Together" +
 "")+
-heading(level: 2, 
+par(
 "The solutions surveyed in this chapter are not mutually exclusive; in fact many are complementary. They can be woven together into a layered strategy in which each element reinforces the others, and their execution can be sequenced to avoid trying too many things at once. We are facing a major problem that also presents a generational opportunity, the goal here is to fit these solutions together into an ambitious but feasible strategy brief.\n" +
 "")+
 par(
@@ -2074,7 +1782,7 @@ strong(
 " Liberal democracies have traditionally focused on neutrality with respect to a number of societal dimensions (e.g. speech, religion, enterprise), with limited correctives for harm. This theory of government works to the extent that we are not dealing with powerful transnational infrastructure providers. In the latter case, the power differential between state and actor is much reduced. As a result, simply being neutral with the occasional timid prodding to prevent harm will not produce infrastructure neutrality (nor will it prevent harm). We need to shift our political thinking from neutrality to neutralisation " +
 references(
 "(" +
-link("#bib-a4eead4a94bd481c2981c10b41d4fd1b78976bb8e83a68d6dc858ee5826b0e27", 
+link(label("bib-a4eead4a94bd481c2981c10b41d4fd1b78976bb8e83a68d6dc858ee5826b0e27"), 
 "Thumfart 2024" +
 "")+
 ")" +
@@ -2088,9 +1796,8 @@ par(
 "that it embodies" +
 ". With a stable funding base drawn from the levy, WISE can advocate for the broader ecosystem reforms that a healthy web requires, develop better technosocial arrangements outside its core scope, and help develop democratic governance for other sectors of the digital sphere.\n" +
 "")+
-pagebreak() +
 heading(level: 1, 
-"WISE Covenant Governance\n" +
+"WISE Covenant Governance" +
 "")+
 par(
 "The promise of WISE is to bring the existing levy under democratic governance in order to reshape it so as to address its many shortcomings. But what governance is that? The idea of a democratic system often brings up images of " +
@@ -2114,7 +1821,7 @@ par(
 "This chapter does not attempt to define a complete set of bylaws or a fully specified governance mechanism. That work must be done collaboratively, within the institution itself during its bootstrap phase, through the kind of contested public debate that democratic governance requires. Rather, it touches on a variety of design dimensions to establish feasibility and plausibility, and that there is ample precedent for governing infrastructure of comparable complexity and importance through multistakeholder institutions.\n" +
 "")+
 heading(level: 2, 
-"What Does This Need to Be?\n" +
+"What Does This Need to Be?" +
 "")+
 par(
 "At its core, WISE must be an accountable power structure that represents the multiple constituencies whose interests the search/browser levy affects: browsers, search engines, publishers and the wider web development community, and the public. The current system's " +
@@ -2165,7 +1872,7 @@ par(
 ") unchecked monopoly control.\n" +
 "")+
 heading(level: 2, 
-"Runtime Governance vs. Private Government\n" +
+"Runtime Governance vs. Private Government" +
 "")+
 par(
 "The governance model that WISE requires differs fundamentally from what the web standards community is accustomed to. Existing standards bodies practice what might be called " +
@@ -2195,7 +1902,7 @@ par(
 ", in which \"voluntary\" is a term that applies meaningfully only to a small number of powerful actors. A runtime governance institution makes the exercise of power over infrastructure explicit and subjects it to democratic accountability, which is to say that it does openly and legitimately what Google currently does privately and without mandate.\n" +
 "")+
 heading(level: 2, 
-"A SWIFT Precedent\n" +
+"A SWIFT Precedent" +
 "")+
 par(
 "The claim that a multistakeholder cooperative can govern critical global infrastructure at this scale often meets skepticism. People tend to think of cooperatives as quaint, small-scale, and fundamentally unserious. Something that runs an organic grocery stores, perhaps, but not for systems on which the global economy depends. This perception, of course, is the province of people who haven’t heard about " +
@@ -2208,7 +1915,7 @@ par(
 "SWIFT's bylaws are instructive for WISE's design " +
 references(
 "(" +
-link("#bib-dda2ae97a75d24c8b8a0fa581b6692efabdd28098ce396517d324770f2a7119a", 
+link(label("bib-dda2ae97a75d24c8b8a0fa581b6692efabdd28098ce396517d324770f2a7119a"), 
 "S.W.I.F.T. SC 2024" +
 "")+
 ")" +
@@ -2223,7 +1930,7 @@ par(
 "If the world's banks and financial institutions, who aren’t exactly famous for their cooperative spirit, can run essential infrastructure this way, so can the web, which people so often consider a commons intended to serve all humankind.\n" +
 "")+
 heading(level: 2, 
-"Constituencies\n" +
+"Constituencies" +
 "")+
 par(
 "The work of establishing constituencies properly will need to be done during bootstrapping, but we can consider " +
@@ -2285,7 +1992,7 @@ strong(
 ""),
 ) +
 heading(level: 2, 
-"Scope and Limits\n" +
+"Scope and Limits" +
 "")+
 par(
 "Defining what WISE governs is as important as defining how it governs.\n" +
@@ -2346,11 +2053,11 @@ list(
 (
 "It should resist the " +
 "institutional " +
-"tendency, familiar from every standards organization, to expand its scope incrementally until it encompasses everything tangentially related to its original mandate.\n" +
+"tendency, familiar from every standards organisation, to expand its scope incrementally until it encompasses everything tangentially related to its original mandate.\n" +
 ""),
 ) +
 heading(level: 2, 
-"How to Not Break Browsers\n" +
+"How to Not Break Browsers" +
 "")+
 par(
 "There is a long history of failed standards, and we should often be grateful that they failed. XHTML 2.0, the Semantic Web's more grandiose ambitions, and numerous W3C specifications that never saw meaningful implementation all represent cases where the standards community's judgment about what the web needed was wrong, and developers’ refusal to implement provided valuable feedback. The risk with creating a governance body, like WISE, that has real enforcement power is that it could impose standards of no actual value, or worse, standards that actively harm the web's functioning. This would have happened if the W3C of the early 2000s had been given runtime governance authority.\n" +
@@ -2375,13 +2082,13 @@ par(
 "WISE should therefore conceive of its authority as a backstop that serves the purpose of organising infrastructure in a way that supports a highly plural and open system, rather than a primary mechanism.\n" +
 "")+
 heading(level: 2, 
-"How to Avoid Corruption and Oligarchy\n" +
+"How to Avoid Corruption and Oligarchy" +
 "")+
 par(
 "Every democratic institution faces the challenge that Robert Michels identified over a century ago as the Iron Law of Oligarchy: the tendency of organisations, no matter how democratic their founding principles, to develop entrenched leadership whose interests diverge from those of the broader membership " +
 references(
 "(" +
-link("#bib-eb6c7ad8ee73e6cab39c2c11c1c0b12136fead35beb818393e0b058032367ddb", 
+link(label("bib-eb6c7ad8ee73e6cab39c2c11c1c0b12136fead35beb818393e0b058032367ddb"), 
 "Michels et al. 1915" +
 "")+
 ")" +
@@ -2399,16 +2106,16 @@ emph(
 "responding " +
 references(
 "(" +
-link("#bib-5adc1230ac17eb2f2b78a53b12687b0de4ccb90cfb2d88add7023b7798862fbc", 
-"Ostrom et al. 1961" +
+link(label("bib-5adc1230ac17eb2f2b78a53b12687b0de4ccb90cfb2d88add7023b7798862fbc"), 
+"V. Ostrom et al. 1961" +
 "")+
 "; " +
-link("#bib-4bd686da34d2ad7b3b879a78705db2b586e956d0971dd818f3e6208cf3d2fa6f", 
+link(label("bib-4bd686da34d2ad7b3b879a78705db2b586e956d0971dd818f3e6208cf3d2fa6f"), 
 "McGinnis and Indiana University Bloomington 2002" +
 "")+
 "; " +
-link("#bib-f0cb26aae57cb12eada5dc0de20b6fb558d98732d3d72356567b2e7a9d80f6f0", 
-"Ostrom 2006" +
+link(label("bib-f0cb26aae57cb12eada5dc0de20b6fb558d98732d3d72356567b2e7a9d80f6f0"), 
+"V. Ostrom 2006" +
 "")+
 ")" +
 "")+
@@ -2456,7 +2163,7 @@ emph(
 " with the interests of well-connected participants spread less readily through organisational networks " +
 references(
 "(" +
-link("#bib-a7ffeba060c43c9d0b332306e89ac9b81050ef715ecd3765e2a9e6b46778f2f8", 
+link(label("bib-a7ffeba060c43c9d0b332306e89ac9b81050ef715ecd3765e2a9e6b46778f2f8"), 
 "Allen et al. 2019" +
 "")+
 ")" +
@@ -2474,9 +2181,8 @@ emph(
 " norm that challenges to institutional authority are healthy" +
 ".\n" +
 "")+
-pagebreak() +
 heading(level: 1, 
-"Enforcement\n" +
+"Enforcement" +
 "")+
 par(
 "There is an important distinction in institutional theory between " +
@@ -2490,8 +2196,8 @@ emph(
 "(what actually happens when people interact with the institution's authority) " +
 references(
 "(" +
-link("#bib-c067a8e0e849e6b0e4f46edee64a82ee96e293dbacd2e2358507fc2c01a70f55", 
-"Ostrom 2005" +
+link(label("bib-c067a8e0e849e6b0e4f46edee64a82ee96e293dbacd2e2358507fc2c01a70f55"), 
+"E. Ostrom 2005" +
 "")+
 ")" +
 "")+
@@ -2520,10 +2226,10 @@ par(
 "This chapter addresses the practical dimensions of making WISE's authority real: how to bootstrap the system, how to grow it across jurisdictions, which regulatory instruments can underwrite it, and how to design the choice screens that serve as its primary enforcement mechanism.\n" +
 "")+
 heading(level: 2, 
-"Implementation Stages\n" +
+"Implementation Stages" +
 "")+
 heading(level: 3, 
-"Bootstrap\n" +
+"Bootstrap" +
 "")+
 par(
 "Getting WISE off the ground will require a bootstrap phase during which many of the early operational details are worked out in practice. The first jurisdiction to support the system will need to adopt a relatively hands-on approach by defining acceptable initial ground rules, ensuring that the institution operates within its mandate, and providing the regulatory backstop that gives WISE's authority teeth. \n" +
@@ -2534,7 +2240,7 @@ par(
 ".\n" +
 "")+
 heading(level: 3, 
-"Self-Enforcement and Growth\n" +
+"Self-Enforcement and Growth" +
 "")+
 par(
 "Once operational, WISE has a clear toolbox for enforcement" +
@@ -2544,7 +2250,7 @@ par(
 "A significant challenge lies in growing across jurisdictions that may have different expectations, legal frameworks, and political priorities. WISE's governance design must accommodate this variation through subsidiarity principles that enable regional flexibility. Again, SWIFT's experience in navigating the regulatory expectations of over 200 countries provides both precedent and practical lessons for managing this complexity.\n" +
 "")+
 heading(level: 2, 
-"The Digital Markets Act (DMA)\n" +
+"The Digital Markets Act (DMA)" +
 "")+
 par(
 "Europe's Digital Markets Act is the logical regulatory instrument with which to bootstrap WISE. The DMA was designed precisely to structure digital markets so that they operate in alignment with societal needs, and it already contains provisions for browser and search choice screens that map directly onto WISE's proposed governance scope. The infrastructure of enforcement to back WISE with — gatekeeper designations, conduct requirements, the capacity to impose fines — is already in place.\n" +
@@ -2553,8 +2259,8 @@ par(
 "The DMA's application, unfortunately, has so far been underwhelming. Its choice screen mandates have been implemented through bilateral negotiations with the very monopolies they are supposed to constrain, proceeding at a pace that meets neither the needs of the market, the democratic urgency to reform the digital sphere, nor the promises made by the Commission during the DMA's development. The work is carried out largely behind closed doors, in ways that keep gatekeepers in the driving seat and that are devoid of meaningful public accountability " +
 references(
 "(" +
-link("#bib-d7eb7fffd4cd18b6f45b675eec1e9a3081d99e2737bccdad39fc66086afebd64", 
-"Open Web Advocacy 2025" +
+link(label("bib-d7eb7fffd4cd18b6f45b675eec1e9a3081d99e2737bccdad39fc66086afebd64"), 
+"OWA 2025" +
 "")+
 ")" +
 "")+
@@ -2564,19 +2270,23 @@ par(
 "Expert technology policymakers have been arguing for some time that DMA enforcement would benefit from a more open and collaborative approach. There is a strong case that the Commission going it alone is not working in large part because despite competent employees it lacks the technical bandwidth, the granular market knowledge, and the stakeholder relationships needed to design effective interventions in a system as complex and opaque as browser and search distribution " +
 references(
 "(" +
-link("#bib-fe5f4411c19125aa04470f8fe01579e3a799477dcdf705122dcd0f53671567a3", 
+link(label("bib-fe5f4411c19125aa04470f8fe01579e3a799477dcdf705122dcd0f53671567a3"), 
 "Cattan and Toledano 2022" +
 "")+
 ")" +
 "")+
 ". The Commission would fare better if it " +
+emph(
 "organised " +
+"")+
 "its own openness rather than acting as an ivory citadel. A " +
+strong(
 "co-regulatory " +
+"")+
 "approach, in which the Commission delegates operational details to a bootstrap WISE group while retaining oversight authority and enforcement power, would strengthen the DMA's impact at no additional cost. The Commission provides the legal mandate and the backstop of fines; WISE provides the technical expertise, the accountable multistakeholder legitimacy, and the capacity for iterative refinement that a regulator with a huge intervention surface inherently lacks.\n" +
 "")+
 heading(level: 2, 
-"Isn't a Covenant of This Kind Illegal?\n" +
+"Isn't a Covenant of This Kind Illegal?" +
 "")+
 par(
 "Some objections naturally arise: can competitors legally band together to govern shared infrastructure without running afoul of competition law? Can a public-interest body of this kind be granted authority to structure a market? Before answering these questions, it is worth noting that it would be difficult for WISE would be " +
@@ -2586,22 +2296,35 @@ emph(
 " problematic than the cartel-like arrangement that exists today, in which a single company pays billions to organise a market and foreclose competition (an arrangement that, notably, a US federal court has already found to be an illegal monopoly maintenance scheme).\n" +
 "")+
 par(
-"That said, the concern is not frivolous. Article 16 of the EU Charter of Fundamental Rights guarantees the freedom to conduct business, and any cooperative arrangement among competitors must be structured to avoid deleterious anticompetitive coordination. Several precedents, however, demonstrate that such structures can be both legal and societally beneficent. Creating some constraints on the exercise of business can increase the freedom to conduct business by preventing more constrictive alternatives — of the kind that dominate today’s digital sphere — from emerging.\n" +
+"That said, the concern is not frivolous. Article 16 of the EU Charter of Fundamental Rights guarantees the freedom to conduct business, and any cooperative arrangement among competitors must be structured to avoid deleterious anticompetitive coordination. Several precedents, however, demonstrate that such structures can be both legal and societally beneficent" +
+". Creating some constraints on the exercise of business can increase the freedom to conduct business by preventing more constrictive alternatives — of the kind that dominate today’s digital sphere — from emerging.\n" +
 "")+
 par(
-"SWIFT, which is a cooperative of otherwise fierce competitors, is one example. Its members coordinate on messaging standards, infrastructure investment, and operational rules without this coordination being deemed anticompetitive. On the contrary, the infrastructure SWIFT provides is widely understood to be pro-competitive in that it lowers transaction costs for all participants and enables smaller institutions to access the same global network as the largest. Infrastructure is often considered to be subject to monopolisation, and is typically regulated to prevent the negative effects of monopolies. This can be challenging to apply in a transnational context, however, as is the case with SWIFT and WISE. A cooperative with regulator oversight can provide a comparable model.\n" +
+"SWIFT, which is a cooperative of otherwise fierce competitors, is one example. Its members coordinate on messaging standards, infrastructure investment, and operational rules without this coordination being deemed anticompetitive. On the contrary, the infrastructure SWIFT provides is widely understood to be pro-competitive in that it lowers transaction costs for all participants and enables smaller institutions to access the same global network as the largest. Infrastructure is often considered to be " +
+"subject " +
+"to monopolisation, and is typically regulated to prevent the negative effects of monopolies. This can be challenging to apply in a transnational context, however, as is the case with SWIFT and WISE. A co" +
+"o" +
+"perative with regulator oversight can provide a comparable model.\n" +
 "")+
 par(
-"Standards organisations provide another well-established setting in which competitors coordinate without antitrust liability, on the principle that interoperability standards benefit consumers and promote competition even when they require cooperation among rivals. \n" +
+"Standards organisations provide another well-established setting in which competitors coordinate " +
+"without " +
+"antitrust liabilit" +
+"y" +
+", on the principle that interoperability standards benefit consumers and promote competition even when they require cooperation among rivals. " +
 "")+
 par(
-"There is also ample precedent for cooperatives with varied stakeholder classes who hold different rights such as supermarket cooperatives in which workers and customers are both stakeholders or credit unions in which borrowers and savers coexist under the same governance structure.\n" +
+"There is also ample precedent for cooperatives with varied stakeholder classes who hold different rights" +
+" such as " +
+"supermarket cooperatives in which workers and customers are both stakeholders" +
+" or credit unions in which borrowers and savers coexist under the same governance structure" +
+"." +
 "")+
 par(
-"WISE sits at the intersection of a SWIFT-style infrastructure cooperative and an open standards organisation, overseen by regulators. This intersection does not undermine either component. In fact, SWIFT itself functions as a standards organisation in addition to being a cooperative. WISE is not merely permissible but desirable. It is precisely the kind of market-structuring intervention that the DMA was designed to enact.\n" +
+"WISE sits at the intersection of a SWIFT-style infrastructure cooperative and an open standards organisation, overseen by regulators. This intersection does not undermine either component, however, and should be seen as additive and complementary to them. In fact, SWIFT itself functions as a standards organisation in addition to being a cooperative. WISE is not merely permissible but desirable. It is precisely the kind of market-structuring intervention that the DMA was designed to enact.\n" +
 "")+
 heading(level: 2, 
-"Aren’t Choice Screens Bad?\n" +
+"Aren’t Choice Screens Bad?" +
 "")+
 par(
 "There is extensive precedent for bad choice screen programmes, but these have to be understood in context. In many cases, the details of the choice screen had been delegated to the monopoly that they were supposed to undermine. Enforcement was, at times, bad to the point of embarrassment such as when the Microsoft Windows browser choice screen, mandated by the European Commission, was infamously broken for fourteen months without anyone noticing. Google and Apple's compliance with DMA choice screen requirements has been grudging and minimalist. In a number of ways, the DMA's enforcement of its choice screen mandates is following in those unfortunate footsteps: proceeding bilaterally with monopolies, keeping them in the driving seat, and operating largely without meaningful public accountability.\n" +
@@ -2614,7 +2337,7 @@ emph(
 "\" " +
 references(
 "(" +
-link("#bib-56f11d8e3dfc2f3a4d5328c3a9061263fb1748b7de6f288395193f55144c3b8c", 
+link(label("bib-56f11d8e3dfc2f3a4d5328c3a9061263fb1748b7de6f288395193f55144c3b8c"), 
 "OWA 2026" +
 "")+
 ")" +
@@ -2625,7 +2348,7 @@ par(
 "Mozilla's research on choice screen design provides a strong and systematic evidence base for how to do this well " +
 references(
 "(" +
-link("#bib-53f04b4206450aad8ace5dea5aa8e23b0e778af3b4e5bffb68e2f94655f47b95", 
+link(label("bib-53f04b4206450aad8ace5dea5aa8e23b0e778af3b4e5bffb68e2f94655f47b95"), 
 "Akesson et al. 2023" +
 "")+
 ")" +
@@ -2634,38 +2357,64 @@ link("#bib-53f04b4206450aad8ace5dea5aa8e23b0e778af3b4e5bffb68e2f94655f47b95",
 emph(
 "really" +
 "")+
-" liked having a choice screen and preferred it more informative: \"" +
+" liked having a choice screen and preferred it to be more informative: \"" +
 emph(
 "98% of people stated that they wanted to be shown a choice screen, with most preferring the screen with more information and greater number of browsers." +
 "")+
-"\" This runs directly counter to the industry narrative that choice screens are an unwanted imposition that confuses users. People want to choose, but they simply want the choice to be meaningful rather than performative.\n" +
+"\" This runs directly counter to the industry narrative that choice screens are an unwanted imposition that confuses users. People want to choose, but they simply want the choice to be " +
+strong(
+"meaningful " +
+"")+
+"rather than performative.\n" +
 "")+
 par(
 "Building on this evidence, a WISE-governed choice screen could incorporate several design principles:\n" +
 "")+
 par(
+strong(
 emph(
-"Regular recurrence." +
+"Regular recurrence" +
+"")+
+"")+
+emph(
+"." +
 "")+
 " Choice screens should be shown not only at device setup but periodically (perhaps annually) or triggered by contextual nudges that remind people that alternatives exist.\n" +
 "")+
 par(
+strong(
 emph(
-"Ubiquitous availability." +
+"Ubiquitous availability" +
 "")+
-" The choice should be accessible at device setup time (which Mozilla's research identifies as the option preferred by most people) but also easily reachable in settings, systematically everywhere the relevant decision can be made. A choice that is technically available but buried five menus deep is not a choice at all.\n" +
+"")+
+emph(
+"." +
+"")+
+" The choice should be accessible at device setup time (which Mozilla's research identifies as the option preferred by most people) but also easily reachable in settings, systematically and predictably present in every" +
+"where" +
+" the relevant decision can be made. A choice that is technically available but buried five menus deep is not a choice at all.\n" +
 "")+
 par(
+strong(
 emph(
-"No win-backs." +
+"No win-backs" +
+"")+
+"")+
+emph(
+"." +
 "")+
 " The monopoly platform must not be permitted to use deceptive patterns, prompts, or degraded functionality to steer users back to its preferred default after they have made an alternative choice.\n" +
 "")+
 par(
+strong(
 emph(
-"Informative non-experiential attributes." +
+"Informative non-experiential attributes" +
 "")+
-" The choice screen should provide of information about qualities that users cannot readily evaluate through direct experience. For instance:\n" +
+"")+
+emph(
+"." +
+"")+
+" The choice screen should provide information about qualities that users cannot readily evaluate through direct experience. For instance:\n" +
 "")+
 list(
 (
@@ -2682,28 +2431,29 @@ strong(
 ""),
 ) +
 par(
-"Additionally, we can set some user preferences directly on the choice screen such as whether they wish the browser to send an automated privacy signal or whether they want to preclude the search engine from showing them AI summaries.\n" +
+"Additionally, we can set some user preferences directly on the choice screen such as whether they wish the browser to send an automated privacy signal" +
+" or whether they want to preclude the search engine from showing them AI summaries.\n" +
 "")+
 par(
 "A choice screen designed through an accountable expert process within WISE, informed by behavioural research and iteratively refined based on measured outcomes, can perform dramatically better than screens designed by monopolies in a sluggish feedback loop with understaffed enforcement agencies that can be prone to political timidity. The evidence already demonstrates that even poorly designed choice screens produce meaningful shifts in market share. Well-designed ones could transform the competitive landscape.\n" +
 "")+
 heading(level: 2, 
-"Isn’t Co-Regulation Terrible?\n" +
+"Isn’t Co-Regulation Terrible?" +
 "")+
 par(
 "Co-regulation has, deservedly, a mixed reputation. It is frequently a vehicle for regulatory capture. The history of industry self-regulation in digital advertising, in privacy (as under the FTC’s mandated self-regulatory regime), and in content moderation provides ample grounds for skepticism. The concern that WISE could become captured by the actors it is meant to govern is legitimate.\n" +
 "")+
 par(
-"Several design features can mitigate this risk. First, small challengers who are currently crushed under the existing system must be given real power within WISE through weighted representation that reflects their importance to ecosystem diversity and not just their current market share. The quadratic decay voting mechanism discussed in the governance chapter serves precisely this function: it limits the ability of large incumbents to simply outvote the rest of the membership.\n" +
+"Several design features can mitigate this risk. First, small challengers who are currently crushed under the existing system must be given real power within WISE through weighted representation that reflects their importance to ecosystem diversity and not just their current market share. The quadratic-decay voting mechanism discussed in the governance chapter serves precisely this function: it limits the ability of large incumbents to simply outvote the rest of the membership.\n" +
 "")+
 par(
 "Second, deploying WISE across multiple jurisdictions creates overlapping oversight from different regulatory authorities with different institutional cultures, different political pressures, and different susceptibilities to capture. As mentioned above, this creates polycentric robustness.\n" +
 "")+
 par(
-"Third, WISE's internal decision-making structure must be designed to stymie the formation of alliances that would defeat the system's purpose. This means selecting constituencies whose interests are not naturally aligned and further breaking up governance concentration across geographic subdivisions where possible. \n" +
+"Third, WISE's internal decision-making structure must be designed to stymie the formation of alliances that would defeat the system's purpose. This means selecting constituencies whose interests are not naturally aligned and further breaking up governance concentration across geographic subdivisions where possible. Having an “ombudsperson”-type role incentivised to monitor collusion and chilling effects contributes significantly to this goal.\n" +
 "")+
 par(
-"Finally, the most important safeguard is public accountability. Co-regulation fails most spectacularly when it operates purely in private and only between actors who have aligned interests. WISE's deliberations must be public by default, its decision-making processes documented and contestable, and its outcomes subject to external review notably by the relevant regulators. At the risk of a trite statement, this needs to be " +
+"Finally, the most important safeguard is public accountability. Co-regulation fails most spectacularly when it operates purely in private and only between actors who have aligned interests. WISE's deliberations must be public by default, its decision-making processes documented and contestable, and its outcomes subject to external review notably by the relevant regulators. Here as well, an “ombudsperson” is a significant preventative measure against festering intransparency. At the risk of a trite statement, this needs to be " +
 strong(
 underline(
 "co" +
@@ -2712,26 +2462,37 @@ underline(
 "-regulation.\n" +
 "")+
 heading(level: 2, 
-"Reference Implementation\n" +
+"Reference Implementation" +
 "")+
 par(
-"Along with this report, example implementations of the browser and search choice screens have been provided on the ftw.fund website. These reference implementations demonstrate that the design principles outlined above can be rendered usable (though I am not a designer and better designs are undoubtedly possible).\n" +
+"Along with this report, example implementations of the browser and search choice screens have been provided on the " +
+strong(
+"https://ftw.fund/" +
+"")+
+" website. These reference implementations demonstrate that the design principles outlined above can be rendered usable (though I am not a designer and better designs are undoubtedly possible).\n" +
 "")+
 par(
-"A pragmatic approach to compliance would be for participating jurisdictions to simply adopt or adapt this reference implementation, providing a concrete, testable baseline from which iterative improvements can proceed. This is not the only possible implementation, and WISE's governance processes could over time develop alternatives and refinements. But having a working example from day one makes compliance much easier and provides a tangible artifact around which early consensus can form.\n" +
+"A pragmatic approach to compliance would be for participating jurisdictions to simply adopt or adapt this reference implementation, providing a concrete, testable baseline from which iterative improvements can proceed. This is not the only possible implementation, and WISE's governance processes could and should develop alternatives and refinements over time. But having a working example from day one makes compliance much easier and provides a tangible artifact around which early consensus can form.\n" +
 "")+
-pagebreak() +
 heading(level: 1, 
-"Fund Attribution\n" +
+"Fund Attribution" +
 "")+
 par(
-"A reformed system must answer a set of practical questions that the current ad hoc arrangement has never been forced to confront, or at least not in public: How much money should be levied from search? How should it be divided between browsers and engines? And what other funding needs might the levy support?\n" +
+"A reformed system must answer a set of practical questions that the current " +
+emph(
+"ad hoc " +
+"")+
+"arrangement has never been forced to confront, or at least not in public: How much money should be levied from search? How should it be divided between browsers and engines? And what other funding needs might the levy support?\n" +
 "")+
 par(
-"This chapter addresses those questions. The answers are necessarily provisional and to some degree speculative as the precise figures would be negotiated within the WISE governance framework rather than decreed in advance but the elements we have are sufficient to establish that the funding potential is more than adequate and that a well-governed levy could simultaneously reduce the burden on search while dramatically expanding investment in the web and the infrastructure of our digital sphere.\n" +
+"This chapter addresses those questions. The answers are necessarily provisional and to some degree " +
+emph(
+"speculative " +
+"")+
+"as the precise figures would be negotiated within the WISE governance framework rather than decreed in advance but the elements we have are sufficient to establish that the funding potential is more than adequate and that a well-governed levy could simultaneously reduce the burden on search while dramatically expanding investment in the web and the infrastructure of our digital sphere.\n" +
 "")+
 heading(level: 2, 
-"How Much to Levy from Search?\n" +
+"How Much to Levy from Search?" +
 "")+
 par(
 "The exact levy rate and collection mechanism would need to be negotiated within WISE's governance framework, balancing the interests of search engines, browsers, and the public. Search engines derive their near-entire value from the existence of a functional, content-rich web, and the web in turn depends on browsers and browser engines to render that content accessible. They therefore have an incentive to contribute to web infrastructure. Of course, the literature on infrastructure and public goods shows that funding for these is almost systematically underprovisioned, but we can expect a levy level decided by a group of stakeholders would be adequate in part because not only search engines have a voice, and because they benefit from the funding too.\n" +
@@ -2744,25 +2505,17 @@ emph(
 " remedies proceedings revealed that Apple levied 36% of Google's search revenue generated through Safari, a figure subsequently confirmed by Sundar Pichai himself " +
 references(
 "(" +
-link("#bib-3bb5d6077ee048d90735411402bd5ba4f7dd6e2bfd7c278a6804564ce303c2f5", 
-"" +
+link(label("bib-3bb5d6077ee048d90735411402bd5ba4f7dd6e2bfd7c278a6804564ce303c2f5"), 
+"United States v Google 2024" +
 "")+
 ")" +
-"")+
-link("https://www.zotero.org/google-docs/?0vFq5B", 
-emph(
-"United States v Google" +
-"")+
-"")+
-link("https://www.zotero.org/google-docs/?0vFq5B", 
-" 2024)" +
 "")+
 ". This is an extraordinary extraction rate (significantly higher than corporate tax rates in most jurisdictions).\n" +
 "")+
 par(
 "We can play with a simple model of what various levy rates could produce under a reformed system. Total annual global search revenue is approximately $240 billion. A 36% levy (likely a much higher level than other competitors get, but still informative) would yield over $86 billion. Halving that figure to account for the competitive pricing that would prevail in a non-monopolistic search market still yields $43 billion. Reducing the levy rate to a far more modest 5% and still halving for competitive ad pricing gives us about $6 billion, which is still comfortably more than even the highest estimates of the cost of maintaining all three browser engines and their associated browsers, with substantial margin for investment in standards, testing, research, and governance.\n" +
 "")+
-table(columns: 3, 
+align(center, table(columns: 3, 
 (
 strong(
 "Levy Rate" +
@@ -2805,7 +2558,7 @@ strong(
 (
 "~$6 billion\n" +
 ""),
-) +
+)) +
 par(
 "There is clearly room to finance solid, thriving web infrastructure in the public interest while extracting far less money from search than the current system takes. And this calculation does not account for the positive second-order effects of reform: money that is no longer captured by monopoly ad pricing does not disappear from the economy. It most likely recirculates through other marketing channels which massively benefits the rest of the digital ecosystem and the publishers who depend on advertising revenue to produce the content that gives search its value in the first place.\n" +
 "")+
@@ -2813,16 +2566,16 @@ par(
 "One important note: under a protocol search system of the kind described in the solutions chapter, the browser itself collects the funds—whether from user subscriptions, contextual advertising, or per-query payments. But this only shifts where the money is collected, not the overall logic of fund distribution. Whether revenue flows from search engine to WISE to browsers, or from users to browsers to search engines with a levy extracted at the browser level, the fundamental decisions remain the same.\n" +
 "")+
 heading(level: 2, 
-"The Browser/Engine Split\n" +
+"The Browser/Engine Split" +
 "")+
 par(
-"As the chapter on browser costs showed, the variation in estimates reflects a genuine ambiguity about what responsibilities exactly fall within the browser’s remit. A reformed levy system must confront this ambiguity directly, because getting the split wrong has consequences. If funding flows primarily to browsers and browsers are free to adopt open-source engines without contributing to their maintenance, the free-riding problem documented earlier will persist under new management. If we under-value important but low visibility services provided by browsers (like parts of the security stack) then we may end up indirectly underfunding essential services by undercutting browser revenue more than it needs to be. \n" +
+"As the chapter on browser costs showed, the variation in estimates reflects a genuine ambiguity about what responsibilities exactly fall within the browser’s remit. A reformed levy system must confront this ambiguity directly, because getting the split wrong has serious consequences. If funding flows primarily to browsers and browsers are free to adopt open-source engines without contributing to their maintenance, the free-riding problem documented earlier will persist under new management. If we under-value important but low visibility services provided by browsers (like parts of the security stack, the Safe Browsing blocklist, moderation, etc) then we may end up indirectly underfunding essential services by undercutting browser revenue more than it needs to be. \n" +
 "")+
 par(
 "Determining the ideal allocation is challenging, but the WISE framework provides the institutional mechanism to resolve it: browser and browser engine projects that participate in the system would benefit from surfacing costs that may not otherwise be well known. \n" +
 "")+
 heading(level: 2, 
-"Other Funding Opportunities\n" +
+"Other Funding Opportunities" +
 "")+
 par(
 "A reformed levy need not limit itself to financing browsers and engines. The current system's failures have produced cascading underinvestment across the entire web infrastructure stack, and a well-governed levy could address several of these gaps simultaneously.\n" +
@@ -2831,54 +2584,102 @@ par(
 strong(
 "Open source security & maintenance programmes." +
 "")+
-" Germany's Sovereign Tech Agency has demonstrated that effective investment in open digital infrastructure is possible at relatively modest scale. Operating with a budget of approximately €20 million, the agency funds maintenance and improvement of critical open-source projects. The model is compelling precisely because of its efficiency: targeted funding of specific infrastructure needs, governed by people who understand the technology, with scouting and minimal administrative overhead for grantees. A WISE-governed levy could generali" +
-"z" +
-"e this model to all jurisdictions covered by the system, establishing sovereign technology programs that address locally relevant infrastructure needs. Scaling the STA’s model even modestly could transform the digital infrastructure landscape.\n" +
+" Germany's Sovereign Tech Agency has demonstrated that effective investment in open digital infrastructure is possible at relatively modest scale. Operating with a budget of approximately €20 million, the agency funds maintenance and improvement of critical open-source projects. The model is compelling precisely because of its efficiency: targeted funding of specific infrastructure needs, governed by people who understand the technology, with scouting and minimal administrative overhead for grantees. A WISE-governed levy could generalise this model to all jurisdictions covered by the system, establishing sovereign technology programs that address locally relevant infrastructure needs. Scaling the STA’s model even modestly could transform the digital infrastructure landscape.\n" +
 "")+
 par(
 strong(
 "Standards development." +
 "")+
-" Web standards are routinely underfunded, and the consequences are visible in their quality and pace of development. Under the current model, serious participation in standards work requires contributing to the drafting of specifications which is an expert art that demands deep technical knowledge and considerable time. The result is that standards are slower and lower-quality than they need to be, and dominated by the commercial interests of the tech monopolies whose employees can be dedicated to the work full-time. A levy-funded program of professional specification writers,  whose job would be to listen to community consensus and translate it into rigorous, implementable specifications, would be an improvement. Removing membership fees and actively supporting participation from underrepresented parties, geographies, and smaller organisations would also broaden the base of expertise that informs the web's evolution.\n" +
+" Web standards are routinely underfunded, and the consequences are visible in their quality and pace of development. Under the current model, serious participation in standards work requires contributing to the drafting of specifications which is an expert art that demands deep technical knowledge and considerable time. The result is that standards are slower and lower-quality than they need to be, and dominated by the commercial interests of the tech monopolies whose employees can be dedicated to the work full-time. (It is also worth noting that the professionalisation and cost structure of standards work generally alienates volunteer and community participants in various ways, further entrenching the market power of larger players.) A levy-funded program of professional specification writers,  whose job would be to listen to community consensus and translate it into rigorous, implementable specifications, would be an improvement and a counterweight to that bias. Removing membership fees and actively supporting participation from underrepresented parties, geographies, and smaller organisations would also broaden the base of expertise that informs the web's evolution.\n" +
 "")+
 par(
 strong(
 "Testing." +
 "")+
-" Web Platform Tests (WPT) is the critical mechanism through which the web achieves interoperability. It’s a shared suite of over two million tests against which all browser engines verify their implementations of web standards " +
+" Web Platform Tests (WPT) is the critical mechanism through which the web achieves interoperability today. It’s a shared suite of over two million tests against which all browser engines verify their implementations of web standards " +
 references(
 "(" +
-link("#bib-83bb698e7ab78772e2a507b1b961b6f9fa1a19210d8725039b214f8dca36d666", 
+link(label("bib-83bb698e7ab78772e2a507b1b961b6f9fa1a19210d8725039b214f8dca36d666"), 
 "Sender 2024" +
 "")+
 ")" +
 "")+
-". WPT is one of the largest open-source testing projects in existence, and the infrastructure it operates is expensive. A reformed levy should dedicate stable, predictable funding to WPT infrastructure, test development, and the tooling that enables engine developers to efficiently identify and fix interoperability gaps.\n" +
+". WPT is one of the largest open-source testing projects in existence, and the infrastructure it operates is " +
+emph(
+"expensive" +
+"")+
+". A reformed levy should dedicate stable, predictable funding to WPT infrastructure, test development, and the tooling that enables engine developers to efficiently identify and fix interoperability gaps.\n" +
 "")+
 par(
 strong(
 "Long-term research and democratic governance." +
 "")+
-" Looking beyond immediate operational infrastructure needs, the web would benefit from an endowment dedicated to its long-term health. This would support research into future web technologies, policy analysis of emerging threats and opportunities, and the cultivation of expertise in digital governance. Equally impactful would be funding an organization tasked with militantly developing user agency and democratic control over digital infrastructure through new protocols, products, advocacy, and policy work. The elimination of political debate from standards and web infrastructure discussions, under the guise of an imaginary “neutrality” that treats all commercial interests as equally legitimate and all power structures as natural, is a key driver of the system having been captured by monopolies. It’s also why existing internet governance bodies lack the institutional spine to so much as hold the discussions needed to fix our digital governance system. Using levy funds to reposition the web as an explicitly hegemonic project in support of agency and democracy is a necessary corrective to decades of pretending that infrastructure governance is apolitical while monopolies quietly write the rules.\n" +
+" Looking beyond immediate operational infrastructure needs, the web would benefit from an endowment dedicated to its long-term health. This would support research into future web technologies, policy analysis of emerging threats and opportunities, and the cultivation of expertise in digital governance. Equally impactful would be funding an organisation tasked exclusively with developing and protecting user agency and democratic control over digital infrastructure through new protocols, products, advocacy, and policy work. The elimination of “political” debate from standards and web infrastructure discussions, under the guise of an imaginary “neutrality” that treats all commercial interests as equally legitimate and all power structures as natural, is spurious and demonstrably a key driver of technical standardisation having been captured by monopolies. It’s also why existing internet governance bodies lack the institutional spine to so much as hold the discussions needed to fix our digital governance system. Using levy funds to reposition the web as an explicitly hegemonic project in support of agency and democracy is a necessary corrective to decades of pretending that infrastructure governance is apolitical while monopolies quietly wrote the rules.\n" +
 "")+
 heading(level: 2, 
-"Conditionalities\n" +
+"Conditionalities" +
 "")+
 par(
-"No system of this kind can operate on goodwill alone. For a state to delegate governance authority over a public interest levy to a multistakeholder institution like WISE, it must impose minimum standards of performance, transparency, and accountability short of which the state retains the right to intervene directly, which is to say conditionalities. These conditionalities serve as the backstop that prevents institutional capture, the insurance policy against the scenario in which WISE's governance is progressively captured by the same commercial interests that corrupted the current system.\n" +
+"No system of this kind can operate on goodwill alone. For a state to delegate governance authority over a public interest levy to a multistakeholder institution like WISE, it must impose minimum standards of performance, transparency, and accountability short of which the state retains the right to intervene directly, which is to say " +
+emph(
+"conditionalities" +
+"")+
+". These conditionalities serve as the backstop that prevents institutional capture, the insurance policy against the scenario in which WISE's governance is progressively captured by the same commercial interests that corrupted the current system.\n" +
 "")+
 par(
-"The precise conditionalities would need to be specified by the authorising jurisdictions, but they should include at minimum: transparency requirements for all funding recipients, including auditable cost breakdowns, clear guidance regarding market structuring versus participating in the market, diversity requirements for funding recipients, ensuring that no single entity receives a dominant share, accountability mechanisms for browser and search engine behaviour, regular public reporting on the health of the web infrastructure ecosystem, and sunset provisions that trigger automatic regulatory review if specified metrics of web health (e.g. engine diversity, search pluralism, publisher revenue trends, privacy properties of relevant technologies) deteriorate below defined thresholds. The goal is not to micromanage WISE from above but to ensure that the institution remains answerable to the public interest that justifies its existence. The resulting system should exhibit the kind of robustness that polycentric arrangements have, such that WISE is prevented from going off course by redundant oversight capabilities from (eventually) multiple jurisdictions.\n" +
+"The precise conditionalities would need to be specified by the authorising jurisdictions, but they should include at minimum: \n" +
 "")+
-pagebreak() +
+list(
+(
+strong(
+"transparency " +
+"")+
+"requirements for all funding recipients, including auditable cost breakdowns, \n" +
+""),
+(
+"clear guidance regarding " +
+strong(
+"market structuring" +
+"")+
+" versus participating in the market,\n" +
+""),
+(
+strong(
+"diversity requirements" +
+"")+
+" for funding recipients, ensuring that no single entity receives a dominant share, \n" +
+""),
+(
+strong(
+"accountability " +
+"")+
+"mechanisms for browser and search engine behaviour, \n" +
+""),
+(
+"regular public " +
+strong(
+"reporting " +
+"")+
+"on the health of the web infrastructure ecosystem, and \n" +
+""),
+(
+strong(
+"sunset provisions" +
+"")+
+" that trigger automatic regulatory review if specified metrics of web health (e.g. engine diversity, search pluralism, publisher revenue trends, privacy properties of relevant technologies) deteriorate below defined thresholds.\n" +
+""),
+) +
+par(
+"The goal here is not to micromanage WISE from above but to ensure that the institution remains answerable to the public interest that justifies its existence, enumerating touchpoints where intervention is justified. The resulting system should exhibit the kind of robustness that polycentric arrangements have, such that WISE is prevented from going off course by redundant oversight capabilities from (eventually) multiple jurisdictions.\n" +
+"")+
 heading(level: 1, 
-"Conclusion\n" +
+"Conclusion" +
 "")+
 par(
 "The model explored in this report implements a shift from the private government of the web towards one that focuses on infrastructure governed by or at least in the interest of its users. This is hardly a novel approach outside of the digital world: treating infrastructure as a public good creates downstream benefits to both businesses and citizens " +
 references(
 "(" +
-link("#bib-060de7dc074e90d2723b52f6af5979eaec5e8547eeece1cf5998b733e4bfc841", 
+link(label("bib-060de7dc074e90d2723b52f6af5979eaec5e8547eeece1cf5998b733e4bfc841"), 
 "Ricks et al. 2022" +
 "")+
 ")" +
@@ -2889,15 +2690,15 @@ par(
 "While there is no room to go beyond search and browsers in any detail here, we can readily see how this approach could benefit other digital markets. Even without a League of Digital Infrastructure, runtime collective governance over shared infrastructure is an idea that is being explored in other spaces. An older proposal (still being explored) suggested a comparable approach as a solution to the many ills of the advertising ecosystem " +
 references(
 "(" +
-link("#bib-479b26386b3e78eadeb0611005766adc8054df143d6e9b978e8bb00f63baf60c", 
+link(label("bib-479b26386b3e78eadeb0611005766adc8054df143d6e9b978e8bb00f63baf60c"), 
 "Berjon 2021a" +
 "")+
 ")" +
 "")+
-". The network built atop the AT Protocol, which brings together many different actors, is considering a “covenant” that would allow for joint governance of the overall ecosystem " +
+". The network built atop the AT Protocol, which brings together many different actors, is evolving towards something like a “covenant” that would allow for joint governance of the overall ecosystem " +
 references(
 "(" +
-link("#bib-bef8f1dd49c0e36756b26dbf08c853bcc603c50fa360ce98549078fc3bcfdf17", 
+link(label("bib-bef8f1dd49c0e36756b26dbf08c853bcc603c50fa360ce98549078fc3bcfdf17"), 
 "AT Proto 2026" +
 "")+
 ")" +
@@ -2905,7 +2706,7 @@ link("#bib-bef8f1dd49c0e36756b26dbf08c853bcc603c50fa360ce98549078fc3bcfdf17",
 ". And the Beckn Protocol has already deployed network-specific governance bodies (for instance for retail) and is investigating extending the model more broadly " +
 references(
 "(" +
-link("#bib-a159ce6a597971ee1d743ea0a12569623aa87f94122bd0176a02b15c634a6efa", 
+link(label("bib-a159ce6a597971ee1d743ea0a12569623aa87f94122bd0176a02b15c634a6efa"), 
 "Beckn 2026" +
 "")+
 ")" +
@@ -2913,13 +2714,13 @@ link("#bib-a159ce6a597971ee1d743ea0a12569623aa87f94122bd0176a02b15c634a6efa",
 ".\n" +
 "")+
 par(
-"People the world around have found the limits of today’s system of private government and are reaching for the same toolbox that was previously used to solve similar problems: democracy. Funding the web by putting the search/browser market under democratic control would be a major contribution to the emerging world of hopeful, liberated, collectively-governed internet systems.\n" +
+"People the world around are increasingly recognising the limits of today’s system of private government and are reaching for the same toolbox that was previously used to solve similar problems: democracy. Funding the web by putting the search/browser market under democratic control would be a major contribution to the emerging world of hopeful, liberated, collectively-governed internet systems.\n" +
 "")+
 par(
 "Pappus of Alexandria famously reports Archimedes stating “Give me a place to stand on, and I will move the Earth” " +
 references(
 "(" +
-link("#bib-86b104f9297a60c153b6ced3dc9fd22602178b8131b98ddcdf6daf5fc1616e3f", 
+link(label("bib-86b104f9297a60c153b6ced3dc9fd22602178b8131b98ddcdf6daf5fc1616e3f"), 
 "Jones 1986" +
 "")+
 ")" +
@@ -2940,19 +2741,20 @@ emph(
 par(
 "There is little that could be more impactful in building a better internet, today." +
 "")+
-pagebreak() +
 heading(level: 1, 
-"Acknowledgements\n" +
+"Acknowledgements" +
 "")+
 par(
 "Many former or current employees from browser vendors and search engines large and small provided crucial information on condition of anonymity. I am deeply thankful for the time you gave me and you dedication to fixing this arrangement, even though your employers benefit from it.\n" +
 "")+
 par(
-"Many thanks to all the participants in the lively and highly-attended browser funding workshop at Web Engines Hackfest 2025 — this document surfaces many of your views — and to Igalia for their warm welcome and outstanding organisation. Special mentions to Brian Kardell, Eric Meyer, Stephanie Stimac, Alex Moore, and Xan López for your contributions to browser funding issues and precious conversations. My heartfelt thanks as well to the participants of the KGI workshop on search remedies, and in particular to Alissa Cooper.\n" +
+"Many thanks to all the participants in the lively and highly-attended browser funding workshop at Web Engines Hackfest 2025 — this document surfaces many of your views — and to Igalia for their warm welcome and outstanding organisation. Special mentions to Brian Kardell, Eric Meyer, Stephanie Stimac, Alex Moore, and Xan López for your contributions to browser funding issues and precious conversations. A shout-out as well to the indefatigable people at OWA. My heartfelt thanks as well to the participants of the KGI workshop on search remedies, and in particular to Alissa Cooper.\n" +
 "")+
 par(
-"The following people (in alphabetical order) have provided invaluable input into this draft: Dietrich Ayala, Ian Brown," +
-" Alissa Cooper, Matthew Frehlich, Aurélien Mähl, Mark Nottingham, and Max Gendler.\n" +
+"The following people (in alphabetical order) have provided invaluable input into this draft (albeit at times unknowingly): Dietrich Ayala, Ian Brown, Alissa Cooper, Matthew Frehlich, Aurélien Mähl, Mark Nottingham, and Max Gendler.\n" +
+"")+
+par(
+"Many thanks to Juan “Bumblefudge” Caballero for his extensive contributions to this report.\n" +
 "")+
 par(
 strong(
@@ -2960,22 +2762,13 @@ strong(
 "")+
 ". I had a great time meeting and exchanging with others in my cohort.\n" +
 "")+
-pagebreak() +
 heading(level: 1, 
 "References" +
 "")+
-terms(
-terms.item(
-"" +
-[#label("bib-3bb5d6077ee048d90735411402bd5ba4f7dd6e2bfd7c278a6804564ce303c2f5")]
-, 
-"  " +
-"United States v Google (UNITED STATES DISTRICT COURT FOR THE DISTRICT OF COLUMBIA August 5, 2024). https://www.adexchanger.com/wp-content/uploads/2024/08/DOJ-Google-search-antitrust-Judge-Amit_Mehta-ruling.pdf." +
-"\n" +
-""),
+terms(tight: false, 
 terms.item(
 "AT Proto 2026" +
-[#label("bib-bef8f1dd49c0e36756b26dbf08c853bcc603c50fa360ce98549078fc3bcfdf17")]
+[* *#label("bib-bef8f1dd49c0e36756b26dbf08c853bcc603c50fa360ce98549078fc3bcfdf17")]
 , 
 "  " +
 "AT Proto. 2026. " +
@@ -2987,7 +2780,7 @@ emph(
 ""),
 terms.item(
 "Akesson et al. 2023" +
-[#label("bib-53f04b4206450aad8ace5dea5aa8e23b0e778af3b4e5bffb68e2f94655f47b95")]
+[* *#label("bib-53f04b4206450aad8ace5dea5aa8e23b0e778af3b4e5bffb68e2f94655f47b95")]
 , 
 "  " +
 "Akesson, Jesper, Michael Luca, Gemma Petrie, and Kush Amlani. 2023. " +
@@ -2999,7 +2792,7 @@ emph(
 ""),
 terms.item(
 "Allen et al. 2019" +
-[#label("bib-a7ffeba060c43c9d0b332306e89ac9b81050ef715ecd3765e2a9e6b46778f2f8")]
+[* *#label("bib-a7ffeba060c43c9d0b332306e89ac9b81050ef715ecd3765e2a9e6b46778f2f8")]
 , 
 "  " +
 "Allen, Danielle, Henry Farrell, and Cosma Rohilla Shalizi. 2019. " +
@@ -3011,7 +2804,7 @@ emph(
 ""),
 terms.item(
 "Anderson et al. 2019" +
-[#label("bib-9000d49d2e289d218db731c4a92d6f82edd314c806e2a992bac490b5309c4931")]
+[* *#label("bib-9000d49d2e289d218db731c4a92d6f82edd314c806e2a992bac490b5309c4931")]
 , 
 "  " +
 "Anderson, Elizabeth, Stephen Macedo, Ann Hughes, David Bromwich, Niko Kolodny, and Tyler Cowen. 2019. " +
@@ -3023,7 +2816,7 @@ emph(
 ""),
 terms.item(
 "Appelquist et al. 2024" +
-[#label("bib-282aea1761cf2d03ec38c8a02bb236bf8216e0bbab94104b713d3a5a8cd841a7")]
+[* *#label("bib-282aea1761cf2d03ec38c8a02bb236bf8216e0bbab94104b713d3a5a8cd841a7")]
 , 
 "  " +
 "Appelquist, Daniel, Hadley Beeman, and Amy Guy. 2024. " +
@@ -3035,7 +2828,7 @@ emph(
 ""),
 terms.item(
 "Ayala 2026" +
-[#label("bib-319c879a9875bf360f47701a58b556e22d3c2d491f2da7df60e7333fa5913738")]
+[* *#label("bib-319c879a9875bf360f47701a58b556e22d3c2d491f2da7df60e7333fa5913738")]
 , 
 "  " +
 "Ayala, Dietrich. 2026. “Servo Baseline Readiness.” https://webtransitions.org/servo-readiness/." +
@@ -3043,7 +2836,7 @@ terms.item(
 ""),
 terms.item(
 "Barzilai-Nahon 2008" +
-[#label("bib-49c0aa01baa0d1ff4dd0025693ebb8f463e1c3df9c758dfac102d23af3f653ad")]
+[* *#label("bib-49c0aa01baa0d1ff4dd0025693ebb8f463e1c3df9c758dfac102d23af3f653ad")]
 , 
 "  " +
 "Barzilai-Nahon, Karine. 2008. “Toward a Theory of Network Gatekeeping: A Framework for Exploring Information Control.” " +
@@ -3055,7 +2848,7 @@ emph(
 ""),
 terms.item(
 "Beckn 2026" +
-[#label("bib-a159ce6a597971ee1d743ea0a12569623aa87f94122bd0176a02b15c634a6efa")]
+[* *#label("bib-a159ce6a597971ee1d743ea0a12569623aa87f94122bd0176a02b15c634a6efa")]
 , 
 "  " +
 "Beckn. 2026. " +
@@ -3067,7 +2860,7 @@ emph(
 ""),
 terms.item(
 "Berjon 2021a" +
-[#label("bib-479b26386b3e78eadeb0611005766adc8054df143d6e9b978e8bb00f63baf60c")]
+[* *#label("bib-479b26386b3e78eadeb0611005766adc8054df143d6e9b978e8bb00f63baf60c")]
 , 
 "  " +
 "Berjon, Robin. 2021a. " +
@@ -3079,13 +2872,19 @@ emph(
 ""),
 terms.item(
 "Berjon 2021b" +
-[#label("bib-f71e8cdf4116b384bbcbb7fbd19b50b772263725d9f9ecce1cdbdaaed5b7642e")]
+[* *#label("bib-f71e8cdf4116b384bbcbb7fbd19b50b772263725d9f9ecce1cdbdaaed5b7642e")]
 , 
-"undefined" +
+"  " +
+"Berjon, Robin. 2021b. “The Fiduciary Duties of User Agents.” " +
+emph(
+"SSRN Electronic Journal" +
+"")+
+", ahead of print. https://doi.org/10.2139/ssrn.3827421." +
+"\n" +
 ""),
 terms.item(
 "Berjon 2025" +
-[#label("bib-8946ce3b9f21bfb3402f9e5f11d35273169bb39c41affe36aa027e4466f4faab")]
+[* *#label("bib-8946ce3b9f21bfb3402f9e5f11d35273169bb39c41affe36aa027e4466f4faab")]
 , 
 "  " +
 "Berjon, Robin. 2025. " +
@@ -3097,7 +2896,7 @@ emph(
 ""),
 terms.item(
 "Berjon and Yasskin 2025" +
-[#label("bib-e8c16612eb9b980d5db1dcc16c1b39d1e8c20c9c0313588997bb793cd9142f64")]
+[* *#label("bib-e8c16612eb9b980d5db1dcc16c1b39d1e8c20c9c0313588997bb793cd9142f64")]
 , 
 "  " +
 "Berjon, Robin, and Jeffrey Yasskin. 2025. " +
@@ -3109,7 +2908,7 @@ emph(
 ""),
 terms.item(
 "Bertrand et al. 2023" +
-[#label("bib-edd7e75de39609f67a1a597c9fc8fe4482dc890095521eb55436de807a5edefa")]
+[* *#label("bib-edd7e75de39609f67a1a597c9fc8fe4482dc890095521eb55436de807a5edefa")]
 , 
 "  " +
 "Bertrand, Arnauld, Christina Castella, Jérémie None, Soline Bouchacourt, Dominique Kerouedan, and Aka Kakou. 2023. " +
@@ -3121,7 +2920,7 @@ emph(
 ""),
 terms.item(
 "Cattan and Toledano 2022" +
-[#label("bib-fe5f4411c19125aa04470f8fe01579e3a799477dcdf705122dcd0f53671567a3")]
+[* *#label("bib-fe5f4411c19125aa04470f8fe01579e3a799477dcdf705122dcd0f53671567a3")]
 , 
 "  " +
 "Cattan, Jean, and Joëlle Toledano. 2022. “La Commission dans la mise en œuvre du DMA : Citadelle assiégée ou chef d’orchestre ?” " +
@@ -3133,15 +2932,15 @@ emph(
 ""),
 terms.item(
 "Clark 2012" +
-[#label("bib-c55ba72ec0ebeae7d49e965805db5b2a743ca903e24c60cef76d2956119fdfe5")]
+[* *#label("bib-c55ba72ec0ebeae7d49e965805db5b2a743ca903e24c60cef76d2956119fdfe5")]
 , 
 "  " +
 "Clark, David. 2012. “Control Point Analysis.” Preprint, SSRN. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2032124." +
 "\n" +
 ""),
 terms.item(
-"Clinton-Gore Administration 1997" +
-[#label("bib-04a8e1c4289f025ef62720d96698e609d35a2ca51651ead34439da26d75984eb")]
+"Clinton-Gore Administration 1997, emphasis mine" +
+[* *#label("bib-04a8e1c4289f025ef62720d96698e609d35a2ca51651ead34439da26d75984eb")]
 , 
 "  " +
 "Clinton-Gore Administration. 1997. “A FRAMEWORK FOR GLOBAL ELECTRONIC COMMERCE.” https://clintonwhitehouse4.archives.gov/WH/New/Commerce/summary.html." +
@@ -3149,7 +2948,7 @@ terms.item(
 ""),
 terms.item(
 "Collectif 2024" +
-[#label("bib-9b82ddb5a50524bf137513e6852fd239bc5284358c63ceeb80d7623797322ddd")]
+[* *#label("bib-9b82ddb5a50524bf137513e6852fd239bc5284358c63ceeb80d7623797322ddd")]
 , 
 "  " +
 "Collectif. 2024. “Pour Le Pluralisme Algorithmique!” " +
@@ -3161,7 +2960,7 @@ emph(
 ""),
 terms.item(
 "Cooper 2025a" +
-[#label("bib-355d13fe0f4ad907ed6e733979379569dce30b606be813c01927355124c10e08")]
+[* *#label("bib-355d13fe0f4ad907ed6e733979379569dce30b606be813c01927355124c10e08")]
 , 
 "  " +
 "Cooper, Alissa. 2025a. “The True Cost of Browser Innovation: Why Chrome’s Divestiture Wouldn’t End the Open Web.” https://www.techpolicy.press/the-true-cost-of-browser-innovation-why-chromes-divestiture-wouldnt-end-the-open-web/." +
@@ -3169,7 +2968,7 @@ terms.item(
 ""),
 terms.item(
 "Cooper 2025b" +
-[#label("bib-ae1df74ac29fe4831f4dd7d7dba6b2d414d843214e7ec3a11b8007f3d4b2324e")]
+[* *#label("bib-ae1df74ac29fe4831f4dd7d7dba6b2d414d843214e7ec3a11b8007f3d4b2324e")]
 , 
 "  " +
 "Cooper, Alissa. 2025b. “The Web Can Thrive Without Google’s Search Monopoly.” https://www.techpolicy.press/the-web-can-thrive-without-googles-search-monopoly/." +
@@ -3177,7 +2976,7 @@ terms.item(
 ""),
 terms.item(
 "Doctorow 2025" +
-[#label("bib-025190cb68d0ad821d08fc59690af85ace5152a6d0ded48c2c4fcfb65ad8da6e")]
+[* *#label("bib-025190cb68d0ad821d08fc59690af85ace5152a6d0ded48c2c4fcfb65ad8da6e")]
 , 
 "  " +
 "Doctorow, Cory. 2025. " +
@@ -3188,8 +2987,32 @@ emph(
 "\n" +
 ""),
 terms.item(
+"E. Ostrom 2005" +
+[* *#label("bib-c067a8e0e849e6b0e4f46edee64a82ee96e293dbacd2e2358507fc2c01a70f55")]
+, 
+"  " +
+"Ostrom, Elinor. 2005. " +
+emph(
+"Understanding Institutional Diversity" +
+"")+
+". Princeton Paperbacks. Princeton University Press." +
+"\n" +
+""),
+terms.item(
+"E. Ostrom 2019" +
+[* *#label("bib-90fb2269f405ae0ed941ef4090d0b60ce3cee3ff9d87277c6019b13c6a682683")]
+, 
+"  " +
+"Ostrom, Elinor. 2019. " +
+emph(
+"Governing the Commons: The Evolution of Institutions for Collective Action" +
+"")+
+". 10th printing. Canto Classics. Cambridge University Press." +
+"\n" +
+""),
+terms.item(
 "Edwards 2006" +
-[#label("bib-b84b6a4a09ca852dfbb44dd2bbc61c71a696046b3af20f6b2c39e035b75a41ba")]
+[* *#label("bib-b84b6a4a09ca852dfbb44dd2bbc61c71a696046b3af20f6b2c39e035b75a41ba")]
 , 
 "  " +
 "Edwards, Paul N. 2006. “Meteorology as Infrastructural Globalism.” " +
@@ -3201,7 +3024,7 @@ emph(
 ""),
 terms.item(
 "Elsayed-Ali and Berjon 2025" +
-[#label("bib-280821d7f7207132d91b688cc8abce6f51e4ea712959bfd76c72752e17befc92")]
+[* *#label("bib-280821d7f7207132d91b688cc8abce6f51e4ea712959bfd76c72752e17befc92")]
 , 
 "  " +
 "Elsayed-Ali, Sherif, and Robin Berjon. 2025. " +
@@ -3213,7 +3036,7 @@ emph(
 ""),
 terms.item(
 "Frischmann 2013" +
-[#label("bib-882b90a359dfe01793046e7601524ee739d70746df1c1364e8c3f345c191d9ec")]
+[* *#label("bib-882b90a359dfe01793046e7601524ee739d70746df1c1364e8c3f345c191d9ec")]
 , 
 "  " +
 "Frischmann, Brett M. 2013. " +
@@ -3225,7 +3048,7 @@ emph(
 ""),
 terms.item(
 "Germain 2025" +
-[#label("bib-77f12ba734f28732220751c606fa09a57b45816a88e0dc5260dc97043aabc2e7")]
+[* *#label("bib-77f12ba734f28732220751c606fa09a57b45816a88e0dc5260dc97043aabc2e7")]
 , 
 "  " +
 "Germain, Thomas. 2025. " +
@@ -3237,7 +3060,7 @@ emph(
 ""),
 terms.item(
 "Google 2015" +
-[#label("bib-40420e811f38d241a22aaad85a45826bef07137278873663cf7f5fded12b4167")]
+[* *#label("bib-40420e811f38d241a22aaad85a45826bef07137278873663cf7f5fded12b4167")]
 , 
 "  " +
 "Google. 2015. " +
@@ -3249,7 +3072,7 @@ emph(
 ""),
 terms.item(
 "Guha 2026" +
-[#label("bib-1a35349c4829a1a7aa4f2844ef7b4a190f726d29c3c8bfc25468a86308910575")]
+[* *#label("bib-1a35349c4829a1a7aa4f2844ef7b4a190f726d29c3c8bfc25468a86308910575")]
 , 
 "  " +
 "Guha, R.V. 2026. " +
@@ -3261,7 +3084,7 @@ emph(
 ""),
 terms.item(
 "Hodgson et al. 2025" +
-[#label("bib-8fbec0cccf5550082df12144118ec572ed7fcef5980b49100e7bcc5562fa6158")]
+[* *#label("bib-8fbec0cccf5550082df12144118ec572ed7fcef5980b49100e7bcc5562fa6158")]
 , 
 "  " +
 "Hodgson, Ramsay, Cristina Criddle, and Tim Bradshaw. 2025. “AI May Fatally Wound Web’s Ad Model, Warns Tim Berners-Lee.” " +
@@ -3273,7 +3096,7 @@ emph(
 ""),
 terms.item(
 "ITU 2022" +
-[#label("bib-205618eb1b9088bd5d592c08d9fda8dfe99b900b140ad7dd517aafcf300ff68b")]
+[* *#label("bib-205618eb1b9088bd5d592c08d9fda8dfe99b900b140ad7dd517aafcf300ff68b")]
 , 
 "  " +
 "ITU. 2022. " +
@@ -3285,7 +3108,7 @@ emph(
 ""),
 terms.item(
 "Jones 1986" +
-[#label("bib-86b104f9297a60c153b6ced3dc9fd22602178b8131b98ddcdf6daf5fc1616e3f")]
+[* *#label("bib-86b104f9297a60c153b6ced3dc9fd22602178b8131b98ddcdf6daf5fc1616e3f")]
 , 
 "  " +
 "Jones, Alexander. 1986. " +
@@ -3297,7 +3120,7 @@ emph(
 ""),
 terms.item(
 "Kardell 2022" +
-[#label("bib-38a283e98682062294526e879741ed947b4402ea25c89c200b999b653e33e420")]
+[* *#label("bib-38a283e98682062294526e879741ed947b4402ea25c89c200b999b653e33e420")]
 , 
 "  " +
 "Kardell, Brian. 2022. “Where Browsers Come From.” https://bkardell.com/blog/WhereBrowsersComeFrom.html." +
@@ -3305,7 +3128,7 @@ terms.item(
 ""),
 terms.item(
 "Kollnig 2025" +
-[#label("bib-8f8eac7a7d27f220efe54be04bcb1459a7ac79c9536ca304a7e40db2583d7a25")]
+[* *#label("bib-8f8eac7a7d27f220efe54be04bcb1459a7ac79c9536ca304a7e40db2583d7a25")]
 , 
 "  " +
 "Kollnig, Konrad. 2025. “The Enshittification of Online Search? Privacy and Quality of Google, Bing and Apple in Coding Advice.” arXiv:2512.03793. Preprint, arXiv, December 3. https://doi.org/10.48550/arXiv.2512.03793." +
@@ -3313,7 +3136,7 @@ terms.item(
 ""),
 terms.item(
 "Lardinois 2021" +
-[#label("bib-903dd65d8ecb65463ab7e7d7c2ef8b821d7b76ee8d70c93ee65c22a17c8c3f86")]
+[* *#label("bib-903dd65d8ecb65463ab7e7d7c2ef8b821d7b76ee8d70c93ee65c22a17c8c3f86")]
 , 
 "  " +
 "Lardinois, Frederic. 2021. " +
@@ -3325,7 +3148,7 @@ emph(
 ""),
 terms.item(
 "Levitsky and Way 2020" +
-[#label("bib-abeb02035251441b782f063b760093ead6ed8de9bec4fb99e6e7fb8d20ff5357")]
+[* *#label("bib-abeb02035251441b782f063b760093ead6ed8de9bec4fb99e6e7fb8d20ff5357")]
 , 
 "  " +
 "Levitsky, Steven, and Lucan Way. 2020. “The New Competitive Authoritarianism.” " +
@@ -3337,7 +3160,7 @@ emph(
 ""),
 terms.item(
 "Luu 2023" +
-[#label("bib-5cd95a07ebec2cfd43345c093bfab4b327aee4d63e03fea189e43889056c4968")]
+[* *#label("bib-5cd95a07ebec2cfd43345c093bfab4b327aee4d63e03fea189e43889056c4968")]
 , 
 "  " +
 "Luu, Dan. 2023. " +
@@ -3349,7 +3172,7 @@ emph(
 ""),
 terms.item(
 "MacBride 1980" +
-[#label("bib-dec50e429b1d051fb12bf2bddb9c801bfe318e744bf762469b55831a4ffa1f27")]
+[* *#label("bib-dec50e429b1d051fb12bf2bddb9c801bfe318e744bf762469b55831a4ffa1f27")]
 , 
 "  " +
 "MacBride, Seán. 1980. " +
@@ -3361,7 +3184,7 @@ emph(
 ""),
 terms.item(
 "Mahdawi 2025" +
-[#label("bib-0b43892b131662efe0ddac8abad39b5a1c46f30d02cbac06674928726d5ca740")]
+[* *#label("bib-0b43892b131662efe0ddac8abad39b5a1c46f30d02cbac06674928726d5ca740")]
 , 
 "  " +
 "Mahdawi, Arwa. 2025. “AI-Generated ‘Slop’ Is Slowly Killing the Internet, so Why Is Nobody Trying to Stop It?” Technology. " +
@@ -3373,7 +3196,7 @@ emph(
 ""),
 terms.item(
 "McGinnis and Indiana University Bloomington 2002" +
-[#label("bib-4bd686da34d2ad7b3b879a78705db2b586e956d0971dd818f3e6208cf3d2fa6f")]
+[* *#label("bib-4bd686da34d2ad7b3b879a78705db2b586e956d0971dd818f3e6208cf3d2fa6f")]
 , 
 "  " +
 "McGinnis, Michael D. and Indiana University Bloomington, eds. 2002. " +
@@ -3385,7 +3208,7 @@ emph(
 ""),
 terms.item(
 "Michels et al. 1915" +
-[#label("bib-eb6c7ad8ee73e6cab39c2c11c1c0b12136fead35beb818393e0b058032367ddb")]
+[* *#label("bib-eb6c7ad8ee73e6cab39c2c11c1c0b12136fead35beb818393e0b058032367ddb")]
 , 
 "  " +
 "Michels, R., E. Paul, and C. Paul. 1915. " +
@@ -3397,7 +3220,7 @@ emph(
 ""),
 terms.item(
 "Nottingham 2020" +
-[#label("bib-d2599206e4d2169f47f6d6652e0e2b2d1b76ba0d360cff7a6d4674bc2c85a9c2")]
+[* *#label("bib-d2599206e4d2169f47f6d6652e0e2b2d1b76ba0d360cff7a6d4674bc2c85a9c2")]
 , 
 "  " +
 "Nottingham, Mark. 2020. " +
@@ -3409,7 +3232,7 @@ emph(
 ""),
 terms.item(
 "Nylen 2023" +
-[#label("bib-8f4943b0466cc823eec048c1f533229b63f001fb361f2066db22ae6e3e46d014")]
+[* *#label("bib-8f4943b0466cc823eec048c1f533229b63f001fb361f2066db22ae6e3e46d014")]
 , 
 "  " +
 "Nylen, Leah. 2023. " +
@@ -3420,72 +3243,24 @@ emph(
 "\n" +
 ""),
 terms.item(
+"OWA 2025" +
+[* *#label("bib-d7eb7fffd4cd18b6f45b675eec1e9a3081d99e2737bccdad39fc66086afebd64")]
+, 
+"  " +
+"OWA. 2025. “Apple’s Browser Engine Ban Persists, Even Under the DMA.” Open Web Advocacy, July 14. https://open-web-advocacy.org/blog/apples-browser-engine-ban-persists-even-under-the-dma/." +
+"\n" +
+""),
+terms.item(
 "OWA 2026" +
-[#label("bib-56f11d8e3dfc2f3a4d5328c3a9061263fb1748b7de6f288395193f55144c3b8c")]
+[* *#label("bib-56f11d8e3dfc2f3a4d5328c3a9061263fb1748b7de6f288395193f55144c3b8c")]
 , 
 "  " +
 "OWA. 2026. “Google Backs Down: Will Grant Hotseat in EU Browser Choice Screen.” Open Web Advocacy, March 12. https://open-web-advocacy.org/blog/google-backs-down--will-grant-hotseat-in-eu-browser-choice-screen/." +
 "\n" +
 ""),
 terms.item(
-"Open Web Advocacy 2025" +
-[#label("bib-d7eb7fffd4cd18b6f45b675eec1e9a3081d99e2737bccdad39fc66086afebd64")]
-, 
-"  " +
-"Open Web Advocacy. 2025. “Apple’s Browser Engine Ban Persists, Even Under the DMA.” July 14. https://open-web-advocacy.org/blog/apples-browser-engine-ban-persists-even-under-the-dma/." +
-"\n" +
-""),
-terms.item(
-"Ostrom 2005" +
-[#label("bib-c067a8e0e849e6b0e4f46edee64a82ee96e293dbacd2e2358507fc2c01a70f55")]
-, 
-"  " +
-"Ostrom, Elinor. 2005. " +
-emph(
-"Understanding Institutional Diversity" +
-"")+
-". Princeton Paperbacks. Princeton University Press." +
-"\n" +
-""),
-terms.item(
-"Ostrom 2006" +
-[#label("bib-f0cb26aae57cb12eada5dc0de20b6fb558d98732d3d72356567b2e7a9d80f6f0")]
-, 
-"  " +
-"Ostrom, Vincent. 2006. " +
-emph(
-"The Meaning of Democracy and the Vulnerability of Democracies: A Response to Tocqueville’s Challenge" +
-"")+
-". 3. print. Univ. of Michigan Pr." +
-"\n" +
-""),
-terms.item(
-"Ostrom 2019" +
-[#label("bib-90fb2269f405ae0ed941ef4090d0b60ce3cee3ff9d87277c6019b13c6a682683")]
-, 
-"  " +
-"Ostrom, Elinor. 2019. " +
-emph(
-"Governing the Commons: The Evolution of Institutions for Collective Action" +
-"")+
-". 10th printing. Canto Classics. Cambridge University Press." +
-"\n" +
-""),
-terms.item(
-"Ostrom et al. 1961" +
-[#label("bib-5adc1230ac17eb2f2b78a53b12687b0de4ccb90cfb2d88add7023b7798862fbc")]
-, 
-"  " +
-"Ostrom, Vincent, Charles M. Tiebout, and Robert Warren. 1961. “The Organization of Government in Metropolitan Areas: A Theoretical Inquiry.” " +
-emph(
-"American Political Science Review" +
-"")+
-" 55 (4): 831–42. https://doi.org/10.2307/1952530." +
-"\n" +
-""),
-terms.item(
 "Pierce 2023" +
-[#label("bib-5b2d997f6c169c263b782f6ce45a662fbac8fdad635f06714f8db5faf03dc4fd")]
+[* *#label("bib-5b2d997f6c169c263b782f6ce45a662fbac8fdad635f06714f8db5faf03dc4fd")]
 , 
 "  " +
 "Pierce, David. 2023. " +
@@ -3497,7 +3272,7 @@ emph(
 ""),
 terms.item(
 "Rahman 2018" +
-[#label("bib-8d2fb4365813546dacf9f34242cb7cd3d10002e0d3189fcd37620c3f33a03659")]
+[* *#label("bib-8d2fb4365813546dacf9f34242cb7cd3d10002e0d3189fcd37620c3f33a03659")]
 , 
 "  " +
 "Rahman, K. Sabeel. 2018. “Infrastructural Regulation and the New Utilities.” SSRN Scholarly Paper No. 3205994. Social Science Research Network, June 30. https://papers.ssrn.com/abstract=3205994." +
@@ -3505,7 +3280,7 @@ terms.item(
 ""),
 terms.item(
 "Ricks et al. 2022" +
-[#label("bib-060de7dc074e90d2723b52f6af5979eaec5e8547eeece1cf5998b733e4bfc841")]
+[* *#label("bib-060de7dc074e90d2723b52f6af5979eaec5e8547eeece1cf5998b733e4bfc841")]
 , 
 "  " +
 "Ricks, Morgan, Ganesh Sitaraman, Shelley Welton, and Lev Menand. 2022. " +
@@ -3517,7 +3292,7 @@ emph(
 ""),
 terms.item(
 "S.W.I.F.T. SC 2024" +
-[#label("bib-dda2ae97a75d24c8b8a0fa581b6692efabdd28098ce396517d324770f2a7119a")]
+[* *#label("bib-dda2ae97a75d24c8b8a0fa581b6692efabdd28098ce396517d324770f2a7119a")]
 , 
 "  " +
 "S.W.I.F.T. SC. 2024. “Swift By-Laws.” SWIFT, June. https://www2.swift.com/knowledgecentre/rest/v1/publications/s_byl/4.0/s_byl.pdf." +
@@ -3525,7 +3300,7 @@ terms.item(
 ""),
 terms.item(
 "Sato 2024" +
-[#label("bib-2eef7cfb8dd7da84cbe433d984e9bb63a3248a4bc4ce137bcc5cf336a7615c9e")]
+[* *#label("bib-2eef7cfb8dd7da84cbe433d984e9bb63a3248a4bc4ce137bcc5cf336a7615c9e")]
 , 
 "  " +
 "Sato, Mia. 2024. " +
@@ -3537,7 +3312,7 @@ emph(
 ""),
 terms.item(
 "Sender 2024" +
-[#label("bib-83bb698e7ab78772e2a507b1b961b6f9fa1a19210d8725039b214f8dca36d666")]
+[* *#label("bib-83bb698e7ab78772e2a507b1b961b6f9fa1a19210d8725039b214f8dca36d666")]
 , 
 "  " +
 "Sender, Boaz. 2024. “WPT: An Overview and History - Bocoup.” https://www.bocoup.com/blog/wpt-an-overview-and-history." +
@@ -3545,7 +3320,7 @@ terms.item(
 ""),
 terms.item(
 "Stolton 2026" +
-[#label("bib-d7705551c297efc1329623893b8b844865d1a544306ae82203c5672f6bc85459")]
+[* *#label("bib-d7705551c297efc1329623893b8b844865d1a544306ae82203c5672f6bc85459")]
 , 
 "  " +
 "Stolton, Samuel. 2026. " +
@@ -3557,7 +3332,7 @@ emph(
 ""),
 terms.item(
 "Szymielewicz et al. 2025" +
-[#label("bib-2a8dee07c7e146c8f44c412237ac14df9f4a4febfbfaf2d56d13f9c44e9c7f1f")]
+[* *#label("bib-2a8dee07c7e146c8f44c412237ac14df9f4a4febfbfaf2d56d13f9c44e9c7f1f")]
 , 
 "  " +
 "Szymielewicz, Katarzyna, Pamela Valenti, Ian Brown, Vid Logar, and Laurens Naudts. 2025. " +
@@ -3569,7 +3344,7 @@ emph(
 ""),
 terms.item(
 "Tan et al. 2025" +
-[#label("bib-01ba3c5cd6788f7ad36846d35262af3a2bcd9275273a15c52c6256cc5ef66230")]
+[* *#label("bib-01ba3c5cd6788f7ad36846d35262af3a2bcd9275273a15c52c6256cc5ef66230")]
 , 
 "  " +
 "Tan, Joshua, Brandon Jackson, Robin Berjon, and Diane Coyle. 2025. " +
@@ -3581,7 +3356,7 @@ emph(
 ""),
 terms.item(
 "Tarakiyee 2025" +
-[#label("bib-329e7ac8d07bc703f7fe80fd39256e8c08dfd3647be483acad6e97eb34621dce")]
+[* *#label("bib-329e7ac8d07bc703f7fe80fd39256e8c08dfd3647be483acad6e97eb34621dce")]
 , 
 "  " +
 "Tarakiyee, Tara. 2025. “Digital Sovereignty in Practice: Web Browsers as a Reality Check.” Do Flamingos Know They’re Pink, June 27. https://tarakiyee.com/digital-sovereignty-in-practice-web-browsers-as-a-reality-check/." +
@@ -3589,7 +3364,7 @@ terms.item(
 ""),
 terms.item(
 "The Economist 2025" +
-[#label("bib-168fab63ad2ddf1544bcde36e9818dc0edaea29c319c90333c07b2266a871c19")]
+[* *#label("bib-168fab63ad2ddf1544bcde36e9818dc0edaea29c319c90333c07b2266a871c19")]
 , 
 "  " +
 "The Economist. 2025. “AI Is Killing the Web. Can Anything Save It?” " +
@@ -3601,7 +3376,7 @@ emph(
 ""),
 terms.item(
 "Thumfart 2024" +
-[#label("bib-a4eead4a94bd481c2981c10b41d4fd1b78976bb8e83a68d6dc858ee5826b0e27")]
+[* *#label("bib-a4eead4a94bd481c2981c10b41d4fd1b78976bb8e83a68d6dc858ee5826b0e27")]
 , 
 "  " +
 "Thumfart, Johannes. 2024. " +
@@ -3613,7 +3388,7 @@ emph(
 ""),
 terms.item(
 "Tremayne-Pengelly 2025" +
-[#label("bib-bf95763c2a6ac34e0605b509dcf945d866d311e8e641f2f2feff5e06ece0b24b")]
+[* *#label("bib-bf95763c2a6ac34e0605b509dcf945d866d311e8e641f2f2feff5e06ece0b24b")]
 , 
 "  " +
 "Tremayne-Pengelly, Alexandra. 2025. “Tim Berners-Lee Warns A.I. Could Kill the Web Economy as No One Visits Sites Anymore.” " +
@@ -3624,8 +3399,40 @@ emph(
 "\n" +
 ""),
 terms.item(
+"United States v Google 2024" +
+[* *#label("bib-3bb5d6077ee048d90735411402bd5ba4f7dd6e2bfd7c278a6804564ce303c2f5")]
+, 
+"  " +
+"United States v Google (UNITED STATES DISTRICT COURT FOR THE DISTRICT OF COLUMBIA August 5, 2024). https://www.adexchanger.com/wp-content/uploads/2024/08/DOJ-Google-search-antitrust-Judge-Amit_Mehta-ruling.pdf." +
+"\n" +
+""),
+terms.item(
+"V. Ostrom 2006" +
+[* *#label("bib-f0cb26aae57cb12eada5dc0de20b6fb558d98732d3d72356567b2e7a9d80f6f0")]
+, 
+"  " +
+"Ostrom, Vincent. 2006. " +
+emph(
+"The Meaning of Democracy and the Vulnerability of Democracies: A Response to Tocqueville’s Challenge" +
+"")+
+". 3. print. Univ. of Michigan Pr." +
+"\n" +
+""),
+terms.item(
+"V. Ostrom et al. 1961" +
+[* *#label("bib-5adc1230ac17eb2f2b78a53b12687b0de4ccb90cfb2d88add7023b7798862fbc")]
+, 
+"  " +
+"Ostrom, Vincent, Charles M. Tiebout, and Robert Warren. 1961. “The Organization of Government in Metropolitan Areas: A Theoretical Inquiry.” " +
+emph(
+"American Political Science Review" +
+"")+
+" 55 (4): 831–42. https://doi.org/10.2307/1952530." +
+"\n" +
+""),
+terms.item(
 "Viljoen et al. 2021" +
-[#label("bib-edddd864116f8c0f847ed3a8cf5d3e34020a509c44cf8bc282e652ae560d4784")]
+[* *#label("bib-edddd864116f8c0f847ed3a8cf5d3e34020a509c44cf8bc282e652ae560d4784")]
 , 
 "  " +
 "Viljoen, Salomé, Jake Goldenfein, and Lee McGuigan. 2021. “Design Choices: Mechanism Design and Platform Capitalism.” " +
@@ -3637,7 +3444,7 @@ emph(
 ""),
 terms.item(
 "Wilson and Çelik 2025" +
-[#label("bib-1ff40eec73416308c9322531ce87e9eb6134272fb700be93238edb591a1468d0")]
+[* *#label("bib-1ff40eec73416308c9322531ce87e9eb6134272fb700be93238edb591a1468d0")]
 , 
 "  " +
 "Wilson, Chris, and Tantek Çelik. 2025. " +
@@ -3649,7 +3456,7 @@ emph(
 ""),
 terms.item(
 "van Ess 2025" +
-[#label("bib-a4a6cca63d61907d3f03b4ffb34bbcd2ccb0d9098cb57e96d5dfbe23b3404d6d")]
+[* *#label("bib-a4a6cca63d61907d3f03b4ffb34bbcd2ccb0d9098cb57e96d5dfbe23b3404d6d")]
 , 
 "  " +
 "Ess, Henk van. 2025. " +
@@ -3660,6 +3467,5 @@ emph(
 "\n" +
 ""),
 ) +
-pagebreak() +
 "")
 }
