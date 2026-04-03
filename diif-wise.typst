@@ -1364,6 +1364,17 @@ link(label("bib-dec50e429b1d051fb12bf2bddb9c801bfe318e744bf762469b55831a4ffa1f27
 par(
 "The challenges, however, are substantial. Any transnational levy requires international coordination, and ensuring that the resulting funds are governed with the interests of people everywhere in mind and not just the narrow community currently involved in browser development. A GLOW is worth pursuing as a long-term strategic goal, but it may be tactically easier, in some cases, to convince countries to set up sovereign infrastructure directly, orthogonally to questions of funding models and long-term governance.\n" +
 "")+
+par(
+"A comparable levy, initially restricted to the EU, has been proposed for LLMs to pay for the content that they use in training " +
+references(
+"(" +
+link(label("bib-f208cd4715f396f17abeccf80432d8356f37a1c77e9c4745ffc6733ed3c93181"), 
+"Mensch 2026" +
+"")+
+")" +
+"")+
+". While it is interesting to see the idea of levies being supported in mainstream publications and opening up to a wider debate, the details are too scant and the way in which the funds would benefit actual content creators (particularly smaller ones) is too unclear.\n" +
+"")+
 heading(level: 2, 
 "The League of Digital Infrastructure" +
 "")+
@@ -3201,6 +3212,18 @@ emph(
 "Polycentric Governance and Development: Readings from the Workshop in Political Theory and Policy Analysis" +
 "")+
 ". Nachdr. Institutional Analysis. Univ. of Michigan Press." +
+"\n" +
+""),
+terms.item(
+"Mensch 2026" +
+[* *#label("bib-f208cd4715f396f17abeccf80432d8356f37a1c77e9c4745ffc6733ed3c93181")]
+, 
+"  " +
+"Mensch, Arthur. 2026. “Mistral CEO: AI Companies Should Pay a Content Levy in Europe.” " +
+emph(
+"FT" +
+"")+
+", March 20. https://www.ft.com/content/d63d6291-687f-4e05-8b23-4d545d78c64a." +
 "\n" +
 ""),
 terms.item(
