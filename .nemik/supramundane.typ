@@ -52,6 +52,11 @@
   set par(
     justify: true,
   )
+  set list(indent: 1em)
+  set enum(indent: 1em)
+  show list: it => block(spacing: 1em, it)
+  show enum: it => block(spacing: 1em, it)
+  show figure: set block(spacing: 2em)
   // set heading(numbering: "1.")
   show heading: set text(font: "Cormorant")
   show heading.where(level: 1): set text(
@@ -77,6 +82,9 @@
     weight: 600,
     size: 22pt,
   )
+  show "⁂": it => box(inset: (y: 2em), text(weight: 900, size: 22pt, "⁂"))
+  // show "⁂": set text(weight: 900, size: 22pt)
+  show link.where(body: regex("^http")): it => box(it)
 
   // COVER
   page(
@@ -176,13 +184,13 @@
   // ABSTRACT
   page(
     numbering: none,
-    [
-      #set text(
+    {
+      set text(
         style: "italic",
         size: 10pt
       )
-      #abstract
-    ]
+      abstract
+    }
   )
   // TOC
   show outline: set heading(level: 2)
